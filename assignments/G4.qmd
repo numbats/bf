@@ -14,5 +14,5 @@ title: Assignment 4
 ```{r}
 #| output: asis
 source(here::here("course_info.R"))
-submit(schedule, "Assignment 4")
+submit(schedule, "GA4")
 ```
