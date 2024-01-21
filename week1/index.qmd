@@ -1,0 +1,48 @@
+---
+title: "Week 1: What is forecasting?"
+---
+
+```{r}
+week <- 1
+source(here::here("course_info.R"))
+```
+
+## What you will learn this week
+
+* How to think about forecasting from a statistical perspective
+* What makes something easy or hard to forecast?
+* Using the `tsibble` package in R
+
+## Pre-class activities
+
+* Install R and RStudio on your personal computer. Instructions are provided at [https://otexts.com/fpp3/appendix-using-r.html](https://otexts.com/fpp3/appendix-using-r.html).
+* Read [Chapter 1 of the textbook](http://OTexts.com/fpp3/intro.html) and watch all embedded videos
+* Watch this video
+
+<iframe width="100%" height="415" src="https://www.youtube.com/embed/HNJYRf0mvxg?si=k0wfI3Sq68TPm4Ek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## Exercises (on your own or in tutorial)
+
+Your task this week is to make sure you are familiar with R, RStudio and the tidyverse packages. If you've already done one of ETX2250/ETC1010 or something equivalent you should be fairly familiar with these concepts and probably will not need much help. But if you're new to R and the tidyverse, then you will need to get yourself up-to-speed. 
+
+- To get started first look through the Appendix in the [textbook](https://otexts.com/fpp3/appendix-using-r.html).
+
+- During the tutorials you will work your way through chapters 1-5 and 8 of [learnr.numbat.space](https://learnr.numbat.space/). This is material we have prepared for you and other Monash students working in R. 
+
+- There are lots of online resources available to help you cover the necessary material. Here are my suggestions:
+
+  - Read the first four chapters of ["ModernDive"](https://moderndive.netlify.app/).  
+  - Work through the ["RYouWithMe"](https://rladiessydney.org/courses/ryouwithme/) course.
+  
+- You don't need to do everything in these links, but work on the parts where you are weakest. If you spend about 3-4 hours on this, you should cover enough of the relevant background to be ready for the rest of the unit.
+
+
+Your tutors will be in your tutorial class to assist you should you need it but you should do these at your own pace to understand the concepts.
+
+
+```{r}
+#| output: asis
+show_slides(week)
+show_activity(week)
+show_assignments(week)
+```

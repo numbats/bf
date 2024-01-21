@@ -1,0 +1,53 @@
+project:
+  type: website
+  render:
+  - "*.qmd"
+  - "!/slides"
+  - "!/handouts"
+  - "activities.qmd"
+
+website:
+  title: "ETF3231/ETF5231 Business Forecasting"
+  site-url: "https://af.numbat.space"
+  navbar:
+    background: "#006dae"
+    left:
+      - href: index.qmd
+        text: Home
+        icon: house-fill
+      - text: Schedule
+        icon: calendar2-fill
+        menu:
+          - week1/index.qmd
+      - text: Discussion
+        icon: chat-fill
+        href: https://learning.monash.edu/mod/forum/view.php?id=1449699
+      - text: Moodle
+        icon: mortarboard-fill
+        href: https://learning.monash.edu/course/view.php?id=10838
+      - text: Textbook
+        icon: book
+        href: https://OTexts.com/fpp3
+    right:
+      - icon: github
+        href: https://github.com/numbats/af
+
+date-format: "D MMMM YYYY"
+
+freeze: auto
+
+format:
+  html:
+    theme: [cosmo, numbat.scss]
+    highlight: textmate
+    toc: true
+    mainfont: "Fira Sans"
+    html-math-method: katex
+    include-in-header:
+      file: header.html
+
+execute:
+  echo: false
+  message: false
+  warning: false
+  cache: false

@@ -1,0 +1,115 @@
+---
+title: "ETF3231/5231 Business Forecasting"
+---
+
+```{r}
+#| label: load_packages
+#| include: false
+#| message: false
+#| warning: false
+#| echo: false
+#| cache: false
+library(tidyverse)
+options(knitr.kable.NA = '')
+source(here::here("course_info.R"))
+week <- as.integer(1 + ((Sys.Date() - as_date(start_semester))/7))
+```
+
+## Lecturer/Chief Examiner
+
+::: columns
+::: {.column width="30%"}
+
+![](https://www.monash.edu/__data/assets/image/0005/3437735/sq-george-athanasopoulos-23.jpg){style="border-radius: 50%;"}
+:::
+
+::: {.column width="70%"}
+
+[**George Athanasopoulos**](https://research.monash.edu/en/persons/george-athanasopoulos).
+
+Email: [George.Athanasopoulos@monash.edu](mailto:George.Athanasopoulos@monash.edu)
+:::
+
+:::
+
+## Consultations
+
+* George
+* [Joan Tan (Head Tutor)](mailto:joan.tan@monash.edu)
+* [Ari Handayani](mailto:ari.handayani@monash.edu)
+* Kulan Ranasinghe
+* Nadeeka Dilini Basnayake
+
+## Weekly schedule
+
+* Pre-recorded videos: approximately 1 hour per week
+* Tutorials: 1.5 hours in class per week
+* Seminars: 2pm Thursday, [Building K Level 3, K321, CA_K_K321](https://www.monash.edu/__data/assets/pdf_file/0010/2658961/Caulfield-campus-map.pdf).
+
+
+```{r}
+#| label: schedule2
+#| message: false
+#| warning: false
+#| echo: false
+#| output: asis
+schedule |>
+  transmute(
+    Week = format(Date, "%d %b"),
+    Show = !is.na(Week) & (Week <= week | Week <= 1),
+    Topic = if_else(!Show, Topic, glue::glue("[{Topic}](./week{Week}/index.html)")),
+    Chapter = if_else(is.na(Week), Chapter, glue::glue("[{Chapter}]({Chapter_URL})")),
+    Assessments = if_else(is.na(Assignment), Assignment, glue::glue("[{Assignment}]({File})"))
+  ) |>
+  select(-Show) |>
+  knitr::kable(format = "markdown")
+```
+
+## Assessments
+
+::: {.callout-note}
+Final exam 50%, 4x (ETF3231)/8x (ETF5231) assignments 50% 
+:::
+
+**IA**: denotes an individual assignment to be completed by all students. 
+
+**GA**: denotes a group assignment to be completed only by ETF5231 students
+
+The due dates will be confirmed throughout the semester as our speed in covering topics will vary depending on student needs.   
+_Please note: In these assessments, you must not use generative artificial intelligence (AI) to generate any materials or content in relation to the assessment tasks._
+
+|Weeks	| Assessment Task	| Weight|
+|:---|:---|:---|
+|2	|IA1	|5%|
+|3	|GA1	|5%|
+|6	|IA2	|7%|
+|7	|GA2	|7%|
+|8	|IA3	|10%|
+|9	|GA3	|10%|
+|11	|IA4	|18%|
+|12	|GA4	|18%|
+
+**ETF5231 students**: marks allocated to Assignments will be a combination between Individual Assignments and Group Assignments with a weights 0.7 and 0.3. So if you score 8/10 for IA3 and 5/10 for GA3 your mark for Assignment 3 will be 8*0.7+5*0.3=7.1 out of 10. Hence, it is important to make sure that groups are performing at the highest standard.
+
+**Presentation requirements**: using Rmarkdown, and should converted the assignment into pdf output file unless otherwise specified.
+
+**Criteria for marking**: Provided the task has been completed and your code runs without errors, full marks will be awarded. Marks will be deducted for incomplete tasks or if there are errors.
+
+**Penalties for late lodgement**: The University has a standard penalty for late submission. See the Marking and Feedback Procedure for more information
+
+**Additional information**: Additional information regarding this assessment will be provided during the scheduled class time and on Moodle.
+
+::: {.callout-tip title="Group Participation - ETF5231 Students ONLY"}
+
+Group participation rules for group assignments (GAs): It is expected that all group members participate equally to the group assignments. It sometimes helps to keep a log of the tasks each member is to complete. This may assist in keeping some balance throughout the semester. To ensure that all group members are contributing the following rules will apply for all the group assignments throughout the semester.
+
+Every group member has the right to express concern/dislike in terms of a group member being absent from group activities. This has to be expressed directly to me (and only me) via a formal email stating facts that have hindered the operations of the group (saying I do not like George because he is tall is not a reason for expressing concern). If at least two such complaints are submitted during the completion of an assignment, the group member concerned will receive a warning. If the situation is not improved during the next assignment and another two complaints are again submitted, the group member will be immediately removed from the group and will be expected to complete the rest of the group assignments alone. 
+:::
+
+## Getting Started: R package installation
+
+Here is the code to install the R packages we will be using in this unit.
+
+```r
+install.packages(c("tidyverse","fpp3", "GGally"), dependencies = TRUE)
+```
