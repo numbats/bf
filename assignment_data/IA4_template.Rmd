@@ -1,0 +1,122 @@
+---
+title: "ETF3231/5231 Individual Assignment 4"
+author: "Your name and Student ID"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval=TRUE, error=TRUE, cache=TRUE)
+library(fpp3)
+
+```
+
+*Your aim in the first part of the assignment is to build an ARIMA model and use this to forecast. Recall the first step in ARIMA modelling is to stabilize the variance of your data. If you decided that your data required a transformation in the previous assignments you will be required to use the same transformation for what follows (unless you have a reason to change your mind - please do so if you think it is necessary).*
+
+## Question 1
+
+*Visually inspect your data and decide on the transformation and what differencing is required to achieve stationarity. Plot the data at every step and comment on each plot justifying your actions. (No more than 50 words per plot). (6 marks)*
+
+```{r}
+
+```
+
+\newpage
+## Question 2
+
+*Plot the ACF and PACF of the stationary data. Reading from these choose an appropriate ARIMA model. Make sure you justify your choice. (No more than 70 words in total – do not revise the theory – describe what you see in your plots and decide what ARIMA orders may be appropriate. Also note that it is highly likely that the ACF and PACF plots will be very messy. Do the best you can). (6 marks)*
+
+```{r}
+
+```
+
+\newpage
+## Question 3
+
+*Check the whiteness of the residuals from the fitted ARIMA model. Based on these evaluate and if necessary review the ARIMA model specified in Q2. (No more than 50 words). (4 marks)*
+
+```{r}
+
+```
+
+\newpage
+## Question 4
+
+*Consider three (up to five if you think you need them) alternative ARIMA models based on your choice in Q2 and Q3. (Very briefly justify each choice with no more than 1 or 2 lines each). Use information criteria to choose the best model you have considered so far. (6 marks)*
+
+```{r}
+
+```
+
+\newpage
+## Question 5
+
+*Let the `ARIMA()` function choose a model. How does this compare with your chosen model from Q4? If you need to, make `ARIMA()` search harder exploring all possible options within the function. Perform a residual diagnostics analysis for your chosen model. (No more than 100 words). (6 marks)*
+
+```{r}
+
+```
+
+\newpage
+## Question 6
+
+*Remember that you cannot use information criteria to compare between models with different orders of differencing.* **If necessary** *use an appropriate test set to choose the ARIMA model you want to use for forecasting. Which model have you selected and why? (No more than 50 words). (4 marks)*
+
+```{r}
+
+```
+
+\newpage
+## Question 7
+
+*Generate and plot forecasts and forecast intervals from your chosen ARIMA model for two years following the end of your sample. Comment on these. (No more than 50 words). (3 marks)*
+
+```{r}
+
+```
+
+\newpage
+## Question 8
+
+*You have now considered several modelling frameworks and built several models for your data set. In this part of the assignment you will evaluate these.*
+
+*Update your data from the ABS website (https://www.abs.gov.au/statistics/industry/retail-and-wholesale-trade/retail-trade-australia Table 11). Explore your updated time series and comment on the series movement through the COVID-19 pandemic. Provide any necessary plots to support your analysis. Some States and Industries are unfortunately affected more than others. (6 marks)*
+
+\newpage
+## Question 9
+
+*Generate forecasts for the period post 2020 until the end of your sample, from the models considered "best" in all assignments. More specifically, generate forecasts from the best benchmark, the best ETS and best ARIMA model. Plot the forecasts (both point forecasts and prediction intervals) together with the observed data and comment on these. (Make sure you can clearly visualise these. You may choose to plot on multiple graphs.) (6 marks)* 
+
+```{r}
+
+```
+
+\newpage
+## Question 10
+
+*Evaluate the accuracy of the point forecasts over the period post 2020. A table with accuracy measures will be necessary to be presented here. Comment on which forecasts are the most accurate. (4 marks)*
+```{r}
+
+```
+
+
+\newpage
+## Question 11
+
+*Use all three models to forecast the next 24-months of your updated series. Generate the necessary plots and comment on the forecasts. Make sure you can clearly visualise these. How have your models faired amidst the effects of COVID-19? (9 marks)*
+
+```{r}
+
+```
+
+
+*You have now completed all tasks for this unit if you are enrolled in ETF3231 (one more to go for ETF5231). I hope you have learnt a lot from your hard work throughout the semester completing the assignments.*
+
+*Many congratulations.*\
+*Cheers,*\
+*George*
+

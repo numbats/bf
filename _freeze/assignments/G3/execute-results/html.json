@@ -1,0 +1,14 @@
+{
+  "hash": "ebef579b338a1c20d43816162b6a97bb",
+  "result": {
+    "markdown": "---\ntitle: Group Assignment 3 (10%)\n---\n\n\n**Files for download**:\n\n* Download the template\n\n::: {.callout appearance=\"minimal\"}\n<i class=\"bi bi-download\"></i> [Download GA3_template.Rmd](assignment_data/GA3_template.Rmd){download=\"GA3_template.qmd\"}\n:::\n\n\n\n<br><br><hr><b>Due: 2 May 2024</b><br><a href=https://learning.monash.edu/mod/assign/view.php?id=NA class = 'badge badge-large badge-blue'><font size='+2'>&nbsp;&nbsp;<b>Submit</b>&nbsp;&nbsp;</font><br></a>\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

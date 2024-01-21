@@ -1,9 +1,10 @@
 {
-  "hash": "dd25dc06ba2854b756fac0005bb4a47e",
+  "hash": "4d9a298175f9854a0645fa7a962ef452",
   "result": {
-    "engine": "knitr",
-    "markdown": "---\ntitle: Assignment 3\n---\n\n\nThis assignment will use national population data from 1960 -- 2022. Each student will use a different time series, selected using their student ID number as follows.\n\n```r\n# Replace seed with your student ID\nset.seed(12345678)\npop <- readr::read_rds(\"https://bit.ly/monashpopulationdata\") |>\n  filter(Country == sample(Country, 1))\n```\n\nPopulation should be modelled as a logarithm as it increases exponentially.\n\n1. Using a test set of 2018--2022, fit an ETS model chosen automatically, and three benchmark methods to the training data. Which gives the best forecasts on the test set, based on RMSE?\n2. Check the residuals from the best model using an ACF plot and a Ljung-Box test. Do the residuals appear to be white noise?\n3. Now use time-series cross-validation with a minimum sample size of 15 years, a step size of 1 year, and a forecast horizon of 5 years. Calculate the RMSE of the results. Does it change the conclusion you reach based on the test set?\n4. Which of these two methods of computing accuracy is more reliable? Why?\n\nSubmit an Rmd or qmd file which carries out the above analysis. You need to submit one file which implements all steps above.\n\nTo receive full marks, the Rmd or qmd file must compile without errors.\n\n\n<br><br><hr><b>Due: 12 April 2024</b><br><a href=https://learning.monash.edu/mod/assign/view.php?id=2034169 class = 'badge badge-large badge-blue'><font size='+2'>&nbsp;&nbsp;<b>Submit</b>&nbsp;&nbsp;</font><br></a>\n",
-    "supporting": [],
+    "markdown": "---\ntitle: Individual Assignment 3 (10%)\n---\n\n\nThe data you are to forecast is the same series you used in IA2. \n\n**Files for download**:\n\n* Download the template\n\n::: {.callout appearance=\"minimal\"}\n<i class=\"bi bi-download\"></i> [Download IA3_template.Rmd](assignment_data/IA3_template.Rmd){download=\"IA3_template.qmd\"}\n:::\n\n* Download the data (this is the same as in IA2)\n\n::: {.callout appearance=\"minimal\"}\n<i class=\"bi bi-download\"></i> [Download IA2_template.Rmd](assignment_data/IA_data.csv){download=\"IA_data.csv\"}\n:::\n\n\nYou are to submit both an `IA3_NameSurname.Rmd` file and a compiled `IA3_NameSurname.pdf` file for your assignment.\n\n\n<br><br><hr><b>Due: 25 April 2024</b><br><a href=https://learning.monash.edu/mod/assign/view.php?id=2034169 class = 'badge badge-large badge-blue'><font size='+2'>&nbsp;&nbsp;<b>Submit</b>&nbsp;&nbsp;</font><br></a>\n",
+    "supporting": [
+      "A3_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

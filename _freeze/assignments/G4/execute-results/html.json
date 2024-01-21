@@ -1,0 +1,16 @@
+{
+  "hash": "a66999a5fea84621ed4b7064ec21b77c",
+  "result": {
+    "markdown": "---\ntitle: Assignment 4\n---\n\n\n**Files for download**:\n\n* Download the template\n\n::: {.callout appearance=\"minimal\"}\n<i class=\"bi bi-download\"></i> [Download GA4_template.Rmd](assignment_data/GA4_template.Rmd){download=\"GA4_template.qmd\"}\n:::\n\n\n\n<br><br><hr><b>Due: </b><br><a href= class = 'badge badge-large badge-blue'><font size='+2'>&nbsp;&nbsp;<b>Submit</b>&nbsp;&nbsp;</font><br></a>\n",
+    "supporting": [
+      "G4_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
