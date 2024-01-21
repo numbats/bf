@@ -9,7 +9,7 @@ project:
 
 website:
   title: "ETF3231/ETF5231 Business Forecasting"
-  site-url: "https://af.numbat.space"
+  site-url: "https://etf3231.github.io/bf"
   navbar:
     background: "#006dae"
     left:
@@ -29,9 +29,6 @@ website:
       - text: Textbook
         icon: book
         href: https://OTexts.com/fpp3
-    right:
-      - icon: github
-        href: https://github.com/numbats/af
 
 date-format: "D MMMM YYYY"
 
