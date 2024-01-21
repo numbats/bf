@@ -89,7 +89,7 @@ _Please note: In these assessments, you must not use generative artificial intel
 |11	|IA4	|18%|
 |12	|GA4	|18%|
 
-**ETF5231 students**: marks allocated to Assignments will be a combination between Individual Assignments and Group Assignments with a weights 0.7 and 0.3. So if you score 8/10 for IA3 and 5/10 for GA3 your mark for Assignment 3 will be 8*0.7+5*0.3=7.1 out of 10. Hence, it is important to make sure that groups are performing at the highest standard.
+**ETF5231 students**: marks allocated to Assignments will be a combination between Individual Assignments and Group Assignments with a weights 0.7 and 0.3. So if you score 8/10 for IA3 and 5/10 for GA3 your mark for Assignment 3 will be $8*0.7+5*0.3=7.1$ out of 10. Hence, it is important to make sure that groups are performing at the highest standard.
 
 **Presentation requirements**: using Rmarkdown, and should converted the assignment into pdf output file unless otherwise specified.
 
