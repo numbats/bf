@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://af.numbat.space/index.html</loc>
-    <lastmod>2024-01-21T02:10:13.331Z</lastmod>
+    <lastmod>2024-01-21T03:11:26.459Z</lastmod>
   </url>
   <url>
     <loc>https://af.numbat.space/week9/slides.html</loc>
@@ -62,11 +62,11 @@
   </url>
   <url>
     <loc>https://af.numbat.space/assignments/A1.html</loc>
-    <lastmod>2024-01-21T02:10:00.759Z</lastmod>
+    <lastmod>2024-01-21T02:59:30.794Z</lastmod>
   </url>
   <url>
     <loc>https://af.numbat.space/assignments/A2.html</loc>
-    <lastmod>2024-01-21T02:10:01.271Z</lastmod>
+    <lastmod>2024-01-21T03:36:21.770Z</lastmod>
   </url>
   <url>
     <loc>https://af.numbat.space/assignments/A4.html</loc>
@@ -119,5 +119,9 @@
   <url>
     <loc>https://af.numbat.space/week9/index.html</loc>
     <lastmod>2024-01-21T02:10:11.981Z</lastmod>
+  </url>
+  <url>
+    <loc>https://af.numbat.space/assignments/G1.html</loc>
+    <lastmod>2024-01-21T03:11:41.808Z</lastmod>
   </url>
 </urlset>

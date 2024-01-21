@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ETF3231/ETF5231 Business Forecasting - Assignment 2</title>
+<title>ETF3231/ETF5231 Business Forecasting - Individual Assignment 2 (5%)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -96,22 +62,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Merriweather" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.css">
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
 
 </head>
 
@@ -191,7 +141,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Assignment 2</h1>
+<h1 class="title">Individual Assignment 2 (5%)</h1>
 </div>
 
 
@@ -206,23 +156,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>This assignment will use the same data that you will use in the <a href="../assignments/Project.html">retail project</a> later in semester. Each student will use a different time series, selected using their student ID number as follows.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace the seed with your student ID</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">12345678</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>retail <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_rds</span>(<span class="st">"https://bit.ly/monashretaildata"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="st">`</span><span class="at">Series ID</span><span class="st">`</span> <span class="sc">==</span> <span class="fu">sample</span>(<span class="st">`</span><span class="at">Series ID</span><span class="st">`</span>, <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ol type="1">
-<li>Plot your time series using the <code>autoplot()</code>&nbsp;command. What do you learn from the plot?</li>
-<li>Plot your time series using the <code>gg_season()</code>&nbsp;command. What do you learn from the plot?</li>
-<li>Plot your time series using the <code>gg_subseries()</code>&nbsp;command. What do you learn from the plot?</li>
-<li>Find an appropriate Box-Cox transformation for your data and explain why you have chosen the particular transformation parameter <span class="math inline">\lambda</span>.</li>
-<li>Produce a plot of an STL decomposition of the transformed data. What do you learn from the plot?</li>
-</ol>
-<p>You need to submit one Rmarkdown or Quarto file which implements all steps above.</p>
-<p>To receive full marks, the Rmd or qmd file must compile without errors.</p>
+<p>Use the <code>IA2_template.Rmd</code> to get started. Leave the “## Questions” and the pagebreaks “” as they are (do not remove these - these will help with marking the assignment). You are to submit both an “IA2_NameSurname.Rmd” file and a compiled <code>IA2_NameSurname.pdf</code> file for your assignment.</p>
+<p>Follow the assignment questions/instructions to complete some specific tasks. Add code where necessary (you can add more R chunks if and where you need to) and text to answer the questions where necessary. Keep within the suggested word restrictions in order to get full marks (marks will be deducted for grossly going over the word limit). This is to encourage you to be concise in your writing.</p>
+<p>You will be using this data in future assignments as you will build on the analysis you perform in this assignment. Furthermore, in the final assignment you will need to submit an .Rmd file that you will develop for all the assignment tasks throughout the semester. Marks will be allocated for code that runs without errors and produces the correct output. Make sure that every time your code works without errors. If you need help with this, please ask during consultation times. Keeping detailed comments in your program is always good practice (see for example the programs we are using in the lectures). This will help you remember in week 12 why you did certain things in week 4.</p>
+<p><strong>Files for download</strong>:</p>
+<ul>
+<li>Download the template</li>
+</ul>
+<div class="callout callout-style-simple callout-none no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><i class="bi bi-download"></i> <a href="assignment_data/IA2_template.Rmd" download="IA2_template.qmd">Download IA2_template.Rmd</a></p>
+</div>
+</div>
+</div>
+<ul>
+<li>Download the data</li>
+</ul>
+<div class="callout callout-style-simple callout-none no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><i class="bi bi-download"></i> <a href="assignment_data/IA_data.csv" download="IA_data.csv">Download IA2_template.Rmd</a></p>
+</div>
+</div>
+</div>
 <br><br>
 <hr>
-<p><b>Due: 22 March 2024</b><br><a href="https://learning.monash.edu/mod/assign/view.php?id=2034165" class="badge badge-large badge-blue"><font size="+2">&nbsp;&nbsp;<b>Submit</b>&nbsp;&nbsp;</font><br></a></p>
+<p><b>Due: 21 March 2024</b><br><a href="https://learning.monash.edu/mod/assign/view.php?id=2034165" class="badge badge-large badge-blue"><font size="+2">&nbsp;&nbsp;<b>Submit</b>&nbsp;&nbsp;</font><br></a></p>
 
 
 

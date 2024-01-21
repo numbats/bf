@@ -1,5 +1,5 @@
 ---
-title: Individual Assignment 1 (5%)
+title: Assignment 1
 ---
 
 **You must provide forecasts for the following items:**
@@ -25,5 +25,5 @@ Note that the assignment mark is not dependent at all on the score you obtain in
 ```{r}
 #| output: asis
 source(here::here("course_info.R"))
-submit(schedule, "IA1")
+submit(schedule, "Assignment 1")
 ```
