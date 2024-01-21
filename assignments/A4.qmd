@@ -12,11 +12,7 @@ The data you are to forecast is the same series you used in IA2.
 <i class="bi bi-download"></i> [Download IA4_template.Rmd](assignment_data/IA4_template.Rmd){download="IA4_template.qmd"}
 :::
 
-* Download the data (this is the same as in IA2)
 
-::: {.callout appearance="minimal"}
-<i class="bi bi-download"></i> [Download IA2_template.Rmd](assignment_data/IA_data.csv){download="IA_data.csv"}
-:::
 
 
 You are to submit both an `IA4_NameSurname.Rmd` file and a compiled `IA4_NameSurname.pdf` file for your assignment.

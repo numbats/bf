@@ -1,10 +1,8 @@
 {
-  "hash": "4d9a298175f9854a0645fa7a962ef452",
+  "hash": "c0a088ba3e9573608f80b349dba221e4",
   "result": {
-    "markdown": "---\ntitle: Individual Assignment 3 (10%)\n---\n\n\nThe data you are to forecast is the same series you used in IA2. \n\n**Files for download**:\n\n* Download the template\n\n::: {.callout appearance=\"minimal\"}\n<i class=\"bi bi-download\"></i> [Download IA3_template.Rmd](assignment_data/IA3_template.Rmd){download=\"IA3_template.qmd\"}\n:::\n\n* Download the data (this is the same as in IA2)\n\n::: {.callout appearance=\"minimal\"}\n<i class=\"bi bi-download\"></i> [Download IA2_template.Rmd](assignment_data/IA_data.csv){download=\"IA_data.csv\"}\n:::\n\n\nYou are to submit both an `IA3_NameSurname.Rmd` file and a compiled `IA3_NameSurname.pdf` file for your assignment.\n\n\n<br><br><hr><b>Due: 25 April 2024</b><br><a href=https://learning.monash.edu/mod/assign/view.php?id=2034169 class = 'badge badge-large badge-blue'><font size='+2'>&nbsp;&nbsp;<b>Submit</b>&nbsp;&nbsp;</font><br></a>\n",
-    "supporting": [
-      "A3_files"
-    ],
+    "markdown": "---\ntitle: Individual Assignment 3 (10%)\n---\n\n\nThe data you are to forecast is the same series you used in IA2. \n\n**Files for download**:\n\n* Download the template\n\n::: {.callout appearance=\"minimal\"}\n<i class=\"bi bi-download\"></i> [Download IA3_template.Rmd](assignment_data/IA3_template.Rmd){download=\"IA3_template.qmd\"}\n:::\n\n\nYou are to submit both an `IA3_NameSurname.Rmd` file and a compiled `IA3_NameSurname.pdf` file for your assignment.\n\n\n<br><br><hr><b>Due: 25 April 2024</b><br><a href=https://learning.monash.edu/mod/assign/view.php?id=2034169 class = 'badge badge-large badge-blue'><font size='+2'>&nbsp;&nbsp;<b>Submit</b>&nbsp;&nbsp;</font><br></a>\n",
+    "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],
