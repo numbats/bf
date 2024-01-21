@@ -106,10 +106,21 @@ Group participation rules for group assignments (GAs): It is expected that all g
 Every group member has the right to express concern/dislike in terms of a group member being absent from group activities. This has to be expressed directly to me (and only me) via a formal email stating facts that have hindered the operations of the group (saying I do not like George because he is tall is not a reason for expressing concern). If at least two such complaints are submitted during the completion of an assignment, the group member concerned will receive a warning. If the situation is not improved during the next assignment and another two complaints are again submitted, the group member will be immediately removed from the group and will be expected to complete the rest of the group assignments alone. 
 :::
 
-## Getting Started: R package installation
+## R package installation
 
 Here is the code to install the R packages we will be using in this unit.
 
 ```r
 install.packages(c("tidyverse","fpp3", "GGally"), dependencies = TRUE)
 ```
+
+## Textbook
+
+::: columns
+::: {.column width="40%"}
+![](https://otexts.com/fpp3/figs/fpp3_front_cover.jpg){width="200px" height="250px"}
+:::
+::: {.column width="60%"}
+[Hyndman, R. J., & Athanasopoulos, G. (2018). Forecasting: principles and practice. OTexts.](https://otexts.com/fpp3/)
+:::
+:::
