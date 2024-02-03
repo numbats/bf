@@ -21,11 +21,11 @@ schedule <- tibble(
     "The forecaster's toolbox",
     "Exponential smoothing",
     "Exponential smoothing",
+    "Exponential smoothing",
     "ARIMA models",
     "ARIMA models",
     "ARIMA models",
     "Multiple regression and forecasting",
-    "Dynamic regression",
     "Dynamic regression"
   ),
   Chapter = c(
