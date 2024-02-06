@@ -19,7 +19,7 @@ Read [Chapter 10 of the textbook](https://otexts.com/fpp3/dynamic.html) and watc
 
 ## Exercises (on your own or in tutorial)
 
-Complete Exercises 1-7 from [Section 7.10 of the book](https://otexts.com/fpp3/regression-exercises.html).
+Complete Exercises 1-7 from [Section 10.7 of the book](https://otexts.com/fpp3/dynamic-exercises.html).
 
 ```{r}
 #| output: asis
