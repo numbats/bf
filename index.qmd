@@ -55,13 +55,14 @@ Email: [George.Athanasopoulos@monash.edu](mailto:George.Athanasopoulos@monash.ed
 #| output: asis
 schedule |>
   transmute(
-    Week = format(Date, "%d %b"),
-    Show = !is.na(Week) & (Week <= week | Week <= 1),
+    Show = !is.na(Week), #& (Week <= week | Week <= 1),
     Topic = if_else(!Show, Topic, glue::glue("[{Topic}](./week{Week}/index.html)")),
     Chapter = if_else(is.na(Week), Chapter, glue::glue("[{Chapter}]({Chapter_URL})")),
-    Assessments = if_else(is.na(Assignment), Assignment, glue::glue("[{Assignment}]({File})"))
+    Assessments = if_else(is.na(Assignment), Assignment, glue::glue("[{Assignment}]({File})")),
+    Week = format(Date, "%d %b"),
   ) |>
   select(-Show) |>
+  select(Week, everything()) |>
   knitr::kable(format = "markdown")
 ```
 
