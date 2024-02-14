@@ -1,8 +1,10 @@
 {
-  "hash": "ee8f05dcdb3774ce4a674c5ee11d890c",
+  "hash": "6e6dfac3128f46197a46201e0e672217",
   "result": {
     "markdown": "---\ntitle: \"Week 12: Review\"\n---\n\n::: {.cell}\n\n:::\n\n\n## What you will learn this week\n\n* Review Assignment 1\n* Review initial case studies\n* Discuss exam\n\n## Pre-class activities\n\nCatch up on any exercises not yet done\n\n## Exercises (on your own or in tutorial)\n\nNone.\n\n\n## Slides for seminar\n\n<embed src='/week12/week12.pdf' type='application/pdf' width='100%' height=465></embed>\n<a href=/week12/week12.pdf class='badge badge-small badge-red'>Download pdf</a>\n\n\n## Post-class activities\n\n* Do any exercises not yet finished.\n* Complete past exams\n* Re-read the textbook\n* Listen again to all lectures\n\n\n\n\n## Assignments\n\n* [GA4](../assignments/G4.qmd) is due on Friday 24 May.\n",
-    "supporting": [],
+    "supporting": [
+      "index_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],
