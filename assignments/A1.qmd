@@ -7,14 +7,14 @@ title: Individual Assignment 1 (5%)
   1. Google closing stock price on 20 March 2024 [[Data](https://finance.yahoo.com/quote/GOOG/)].
   2. Maximum temperature at Melbourne airport on 10 April 2024 [[Data](http://www.bom.gov.au/climate/dwo/IDCJDW3049.latest.shtml)].
   3. The difference in points (Collingwood minus Essendon) scored in the AFL match between Collingwood and Essendon for the Anzac Day clash. 25 April 2024 [[Data](https://en.wikipedia.org/wiki/Anzac_Day_match)].
-  4. The seasonally adjusted estimate of total employment for April 2024. ABS CAT 6202, to be released around mid May 2024 [[Data](https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/latest-release)].
+  4. The seasonally adjusted estimate of total employment for April 2024 in ('000). ABS CAT 6202, to be released around mid May 2024 [[Data](https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/latest-release)].
   5. Google closing stock price on 22 May 2024 [[Data](https://finance.yahoo.com/quote/GOOG/)].
 
-**For each of these, give a point forecast and an 80% prediction interval, and explain in a couple of sentences how each was obtained.**
+For each of these, give a **point forecast** and an **80% prediction interval**, and **explain in a couple of sentences** how each was obtained.
 
 * Prepare short justifications with your forecasts and forecast intervals explaining in no more than 50-70 words how these were obtained. Only a couple of sentences are required. There is no need to use any fancy models or sophisticated methods. 
 * **Full marks will be awarded** if you submit the required information, and are able to meaningfully justify your results in a couple of sentences in each case. 
-* Your forecasts should be submitted via [google form](https://forms.gle/FJnakDEjp9mNADyK7) by 11.55pm on due date.
+* Your forecasts should be submitted via [google form](https://forms.gle/oGtsTHCFRNuSQE7SA) by **11.55pm, on Wednesday, March 8**.
 
 **Tips**
 
@@ -26,10 +26,3 @@ title: Individual Assignment 1 (5%)
 * Once the true values in each case are available, we will come back to this exercise and see who did the best using the scoring method described in class. The student with the best score will be the winner of our forecasting competition (something really nice to have on your CV), and will also win a $100 Amazon gift voucher.
 
 Note: your assignment mark is not dependent at all on the score you obtain in the competition.
-
-
-```{r}
-#| output: asis
-source(here::here("course_info.R"))
-submit(schedule, "IA1")
-```
