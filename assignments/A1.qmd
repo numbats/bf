@@ -14,7 +14,10 @@ For each of these, give a **point forecast** and an **80% prediction interval**,
 
 * Prepare short justifications with your forecasts and forecast intervals explaining in no more than 50-70 words how these were obtained. Only a couple of sentences are required. There is no need to use any fancy models or sophisticated methods. 
 * **Full marks will be awarded** if you submit the required information, and are able to meaningfully justify your results in a couple of sentences in each case. 
-* Your forecasts should be submitted via [google form](https://forms.gle/oGtsTHCFRNuSQE7SA) by **11.55pm, on Wednesday, March 8**.
+
+**Submission**
+
+Your forecasts should be submitted via [google form](https://forms.gle/oGtsTHCFRNuSQE7SA) by **11.55pm, on Wednesday, March 8**.
 
 **Tips**
 

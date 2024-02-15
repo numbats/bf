@@ -1,5 +1,5 @@
 ---
-title: Group Assignment 1
+title: Group Assignments
 ---
 
 It is expected that all group members participate equally to the group assignments. It sometimes helps to keep a log of the tasks each member is to complete. This may assist in keeping some balance throughout the semester. To ensure that all group members are contributing the following rules will apply for all the group assignments throughout the semester.
@@ -13,6 +13,8 @@ We need only **one submission per group** for each group assignment.
 ## Group Assignment 1
 
 The aim of this assignment is to meet your group members and begin interacting. Full marks will be allocated to the group by completing the tasks in the google form. Please try and be as efficient as possible in your writing (we are looking for short, sharp responses).
+
+**Submission**
 
 Fill in the [google form](https://forms.gle/f2EUGgPRcG8stYeG9) by **11.55 pm Wednesday 14th March 2024**.
 
