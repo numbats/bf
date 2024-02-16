@@ -1,7 +1,7 @@
 {
-  "hash": "203805391d763fcd2e224401c292b09f",
+  "hash": "12c27caf44585320954830a12dfde8c5",
   "result": {
-    "markdown": "---\ntitle: \"Week 8: ARIMA models\"\n---\n\n::: {.cell}\n\n:::\n\n\n## What you will learn this week\n\n* AR, MA, ARMA and ARIMA models\n* Selecting model orders manually and automatically\n\n## Pre-class activities\n\nRead [Sections 9.3-9.8 of the textbook](https://otexts.com/fpp3/arima.html) and watch all embedded videos\n\n\n## Exercises (on your own or in tutorial)\n\nComplete Exercises 6-8 from [Section 9.11 of the book](https://otexts.com/fpp3/arima-exercises.html).\n\n\n\n## Slides for seminar\n\n<embed src='/week8/week8.pdf' type='application/pdf' width='100%' height=465></embed>\n<a href=/week8/week8.pdf class='badge badge-small badge-red'>Download pdf</a>\n\n## Assignments\n\n* [IA3](../assignments/A3.qmd) is due on Friday 26 April.\n* [GA3](../assignments/G3.qmd) is due on Friday 03 May.\n",
+    "markdown": "---\ntitle: \"Week 8: ARIMA models\"\n---\n\n::: {.cell}\n\n:::\n\n\n## What you will learn this week\n\n* AR, MA, ARMA and ARIMA models\n* Selecting model orders manually and automatically\n\n## Pre-class activities\n\nRead [Sections 9.3-9.8 of the textbook](https://otexts.com/fpp3/arima.html) and watch all embedded videos\n\n\n## Exercises (on your own or in tutorial)\n\nComplete Exercise 1-4 from [Section 9.11 of the book](https://otexts.com/fpp3/arima-exercises.html)\n\n\n\n## Slides for seminar\n\n<embed src='/week8/week8.pdf' type='application/pdf' width='100%' height=465></embed>\n<a href=/week8/week8.pdf class='badge badge-small badge-red'>Download pdf</a>\n\n## Assignments\n\n* [IA3](../assignments/A3.qmd) is due on Wednesday 24 April.\n* [GA3](../assignments/G3.qmd) is due on Wednesday 01 May.\n",
     "supporting": [
       "index_files"
     ],
