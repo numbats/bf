@@ -1,10 +1,8 @@
 {
-  "hash": "d63f44407d51f8909c1b2b1933bc0ede",
+  "hash": "28d7fca3a3c3775e9f9a7e16364cbf88",
   "result": {
-    "markdown": "---\ntitle: \"Week 10: Multiple regression and forecasting\"\n---\n\n::: {.cell}\n\n:::\n\n\n## What you will learn this week\n\n* Useful predictors for time series forecasting using regression\n* Selecting predictors\n* Ex ante and ex post forecasting\n\n## Pre-class activities\n\nRead [Chapter 7 of the textbook](https://otexts.com/fpp3/regression.html) and watch all embedded videos\n\n## Exercises (on your own or in tutorial)\n\nComplete Exercises 11-13, 15-17 from [Section 9.11 of the book](https://otexts.com/fpp3/arima-exercises.html).\n\n\n## Slides for seminar\n\n<embed src='/week10/week10.pdf' type='application/pdf' width='100%' height=465></embed>\n<a href=/week10/week10.pdf class='badge badge-small badge-red'>Download pdf</a>\n\n## Assignments\n\n* [IA4](../assignments/A4.qmd) is due on Wednesday 15 May.\n* [GA4](../assignments/G4.qmd) is due on Wednesday 22 May.\n",
-    "supporting": [
-      "index_files"
-    ],
+    "markdown": "---\ntitle: \"Week 10: Multiple regression and forecasting\"\n---\n\n::: {.cell}\n\n:::\n\n\n## What you will learn this week\n\n* Useful predictors for time series forecasting using regression\n* Selecting predictors\n* Ex ante and ex post forecasting\n\n## Exercises (on your own or in tutorial)\n\nComplete Exercises 11-13, 15-17 from [Section 9.11 of the book](https://otexts.com/fpp3/arima-exercises.html).\n\n## Pre-seminar activities\n\nRead [Chapter 7 of the textbook](https://otexts.com/fpp3/regression.html) and watch all embedded videos\n\n\n\n\n\n\n## Assignments\n\n* [IA4](../assignments/A4.qmd) is due on Wednesday 15 May.\n* [GA4](../assignments/G4.qmd) is due on Wednesday 22 May.\n",
+    "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

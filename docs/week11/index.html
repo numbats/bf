@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -210,10 +176,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#what-you-will-learn-this-week" id="toc-what-you-will-learn-this-week" class="nav-link active" data-scroll-target="#what-you-will-learn-this-week">What you will learn this week</a></li>
-  <li><a href="#pre-class-activities" id="toc-pre-class-activities" class="nav-link" data-scroll-target="#pre-class-activities">Pre-class activities</a></li>
   <li><a href="#exercises-on-your-own-or-in-tutorial" id="toc-exercises-on-your-own-or-in-tutorial" class="nav-link" data-scroll-target="#exercises-on-your-own-or-in-tutorial">Exercises (on your own or in tutorial)</a></li>
-  <li><a href="#slides-for-seminar" id="toc-slides-for-seminar" class="nav-link" data-scroll-target="#slides-for-seminar">Slides for seminar</a></li>
-  <li><a href="#seminar-activities" id="toc-seminar-activities" class="nav-link" data-scroll-target="#seminar-activities">Seminar activities</a></li>
+  <li><a href="#pre-class-seminar" id="toc-pre-class-seminar" class="nav-link" data-scroll-target="#pre-class-seminar">Pre-class seminar</a></li>
   <li><a href="#assignments" id="toc-assignments" class="nav-link" data-scroll-target="#assignments">Assignments</a></li>
   </ul>
 </nav>
@@ -246,41 +210,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Lagged predictors</li>
 </ul>
 </section>
-<section id="pre-class-activities" class="level2">
-<h2 class="anchored" data-anchor-id="pre-class-activities">Pre-class activities</h2>
-<p>Read <a href="https://otexts.com/fpp3/dynamic.html">Chapter 10 of the textbook</a> and watch all embedded videos</p>
-</section>
 <section id="exercises-on-your-own-or-in-tutorial" class="level2">
 <h2 class="anchored" data-anchor-id="exercises-on-your-own-or-in-tutorial">Exercises (on your own or in tutorial)</h2>
 <p>Complete Exercises 1-7 from <a href="https://otexts.com/fpp3/regression-exercises.html">Section 7.10 of the book</a>.</p>
 </section>
-<section id="slides-for-seminar" class="level2">
-<h2 class="anchored" data-anchor-id="slides-for-seminar">Slides for seminar</h2>
-<embed src="../week11/week11.pdf" type="application/pdf" width="100%" height="465">
-
-<p><a href="../week11/week11.pdf" class="badge badge-small badge-red">Download pdf</a></p>
-</section>
-<section id="seminar-activities" class="level2">
-<h2 class="anchored" data-anchor-id="seminar-activities">Seminar activities</h2>
-<p>Repeat the daily electricity example, but instead of using a quadratic function of temperature, use a piecewise linear function with the “knot” around 20 degrees Celsius (use predictors <code>Temperature</code> &amp; <code>Temp2</code>). How can you optimize the choice of knot?</p>
-<p>The data can be created as follows.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>vic_elec_daily <span class="ot">&lt;-</span> vic_elec <span class="sc">|&gt;</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">year</span>(Time) <span class="sc">==</span> <span class="dv">2014</span>) <span class="sc">|&gt;</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">index_by</span>(<span class="at">Date =</span> <span class="fu">date</span>(Time)) <span class="sc">|&gt;</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">Demand =</span> <span class="fu">sum</span>(Demand)<span class="sc">/</span><span class="fl">1e3</span>,</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">Temperature =</span> <span class="fu">max</span>(Temperature),</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">Holiday =</span> <span class="fu">any</span>(Holiday)</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">Temp2 =</span> <span class="fu">I</span>(<span class="fu">pmax</span>(Temperature<span class="dv">-20</span>,<span class="dv">0</span>)),</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">Day_Type =</span> <span class="fu">case_when</span>(</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>      Holiday <span class="sc">~</span> <span class="st">"Holiday"</span>,</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>      <span class="fu">wday</span>(Date) <span class="sc">%in%</span> <span class="dv">2</span><span class="sc">:</span><span class="dv">6</span> <span class="sc">~</span> <span class="st">"Weekday"</span>,</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>      <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"Weekend"</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Repeat but using all available data, and handling the annual seasonality using Fourier terms.</p>
+<section id="pre-class-seminar" class="level2">
+<h2 class="anchored" data-anchor-id="pre-class-seminar">Pre-class seminar</h2>
+<p>Read <a href="https://otexts.com/fpp3/dynamic.html">Chapter 10 of the textbook</a> and watch all embedded videos</p>
 </section>
 <section id="assignments" class="level2">
 <h2 class="anchored" data-anchor-id="assignments">Assignments</h2>

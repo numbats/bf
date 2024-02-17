@@ -12,18 +12,22 @@ source(here::here("course_info.R"))
 * Stationarity and differencing
 * Autoregressive and moving average models
 
-## Pre-class activities
-
-Read [Sections 9.1-9.4 of the textbook](https://otexts.com/fpp3/arima.html) and watch all embedded videos
-
 ## Exercises (on your own or in tutorial)
 
 Complete Exercises 5-7, 10-15 from [Section 8.8 of the book](https://otexts.com/fpp3/expsmooth-exercises.html).
 
+## Pre-seminar activities
 
-```{r}
+Read [Sections 9.1-9.4 of the textbook](https://otexts.com/fpp3/arima.html) and watch all embedded videos
+
+
+```{r, eval=FALSE}
 #| output: asis
 show_slides(week)
 show_activity(week)
+```
+
+```{r}
+#| output: asis
 show_assignments(week)
 ```

@@ -12,18 +12,22 @@ source(here::here("course_info.R"))
 * AR, MA, ARMA and ARIMA models
 * Selecting model orders manually and automatically
 
-## Pre-class activities
-
-Read [Sections 9.3-9.8 of the textbook](https://otexts.com/fpp3/arima.html) and watch all embedded videos
-
-
 ## Exercises (on your own or in tutorial)
 
 Complete Exercise 1-4 from [Section 9.11 of the book](https://otexts.com/fpp3/arima-exercises.html)
 
+## Pre-seminar activities
+
+Read [Sections 9.3-9.8 of the textbook](https://otexts.com/fpp3/arima.html) and watch all embedded videos
+
+
+```{r, eval=FALSE}
+#| output: asis
+show_slides(week)
+show_activity(week)
+```
 
 ```{r}
 #| output: asis
-show_slides(week)
 show_assignments(week)
 ```
