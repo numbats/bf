@@ -34,7 +34,7 @@ Email: [George.Athanasopoulos@monash.edu](mailto:George.Athanasopoulos@monash.ed
 
 ## Consultations
 
-* George
+* George Athanasopoulos, Thursday 3.30-4.30pm.
 * [Joan Tan (Head Tutor) ](mailto:joan.tan@monash.edu)
 * [Ari Handayani](mailto:ari.handayani@monash.edu)
 * [Kulan Ranasinghe](mailto:kulan.ranasinghearachchige@monash.edu)
@@ -69,7 +69,7 @@ schedule |>
 ## Assessments
 
 ::: {.callout-note}
-Final exam 50%, 4x (ETF3231)/8x (ETF5231) assignments 50% 
+Final exam 60%, 4x (ETF3231)/8x (ETF5231) assignments 40% 
 :::
 
 **IA**: denotes an individual assignment to be completed by all students. 
