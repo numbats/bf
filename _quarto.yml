@@ -9,7 +9,7 @@ project:
 
 website:
   title: "ETF3231/ETF5231 Business Forecasting"
-  site-url: "https://etf3231.github.io/bf"
+  site-url: "https://bf.numbat.space/"
   navbar:
     background: "#006dae"
     left:

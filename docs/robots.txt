@@ -1,1 +1,1 @@
-Sitemap: https://etf3231.github.io/bf/sitemap.xml
+Sitemap: https://bf.numbat.space/sitemap.xml
