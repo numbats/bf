@@ -1,8 +1,10 @@
 {
-  "hash": "e0e02c334abbe16cc61b3be9aa4d55f9",
+  "hash": "20f6d3ca08da4985af467bc662b4ef2d",
   "result": {
     "markdown": "---\ntitle: \"Week 6: Exponential smoothing\"\n---\n\n::: {.cell}\n\n:::\n\n\n## What you will learn this week\n\n* Exponential smoothing methods with trend and seasonality\n* ETS models\n* Automatic model selection using the AICc\n\n## Exercises (on your own or in tutorial)\n\nComplete Exercises 1-4, 16, 17 from [Section 8.8](https://otexts.com/fpp3/expsmooth-exercises.html)\n\n## Pre-seminar activities\n\nRead [Chapter 8 of the textbook](https://otexts.com/fpp3/expsmooth.html) and watch all embedded videos\n\n\n\n\n\n\n## Assignments\n\n* [IA3](../assignments/A3.qmd) is due on Wednesday 24 April.\n",
-    "supporting": [],
+    "supporting": [
+      "index_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],
