@@ -34,17 +34,17 @@ Email: [George.Athanasopoulos@monash.edu](mailto:George.Athanasopoulos@monash.ed
 
 ## Consultations
 
-* George Athanasopoulos, Thursday 3.30-4.30pm, Room H5.83.
-* [Joan Tan (Head Tutor) ](mailto:joan.tan@monash.edu), [Friday 12-1pm.](https://monash.zoom.us/j/84833570459?pwd=M1M2Y0xscmhnQjE3N2hXSSszWWdYQT09)
-* [Ari Handayani](mailto:ari.handayani@monash.edu), [Tuesday 11-12.30pm.](https://monash.zoom.us/j/84833570459?pwd=M1M2Y0xscmhnQjE3N2hXSSszWWdYQT09)
-* [Kulan Ranasinghe](mailto:kulan.ranasinghearachchige@monash.edu), [Wednesday, 12-1pm, 3-3.30pm.](https://monash.zoom.us/j/84833570459?pwd=M1M2Y0xscmhnQjE3N2hXSSszWWdYQT09)
-* [Nadeeka Dilini Basnayake](mailto:Nadeeka.Basnayake@monash.edu), [Monday 5-6.30pm.](https://monash.zoom.us/j/84833570459?pwd=M1M2Y0xscmhnQjE3N2hXSSszWWdYQT09)
+* [Nadeeka Dilini Basnayake](mailto:Nadeeka.Basnayake@monash.edu), Monday 5-6.30pm, [zoom](https://monash.zoom.us/j/84833570459?pwd=M1M2Y0xscmhnQjE3N2hXSSszWWdYQT09).
+* [Ari Handayani](mailto:ari.handayani@monash.edu), Tuesday,  11-12.30pm, [zoom](https://monash.zoom.us/j/84833570459?pwd=M1M2Y0xscmhnQjE3N2hXSSszWWdYQT09).
+* [Kulan Ranasinghe](mailto:kulan.ranasinghearachchige@monash.edu), Wednesday, 12-1pm, 3-3.30pm. Room H4.62.
+* George Athanasopoulos, Thursday, 3.30-4.30pm, Room H5.83.
+* [Joan Tan (Head Tutor) ](mailto:joan.tan@monash.edu), Friday 12-1pm, [zoom](https://monash.zoom.us/j/84833570459?pwd=M1M2Y0xscmhnQjE3N2hXSSszWWdYQT09).
 
 ## Weekly schedule
 
 * Pre-recorded videos: approximately 1 hour per week
 * Tutorials: 1.5 hours in class per week
-* Seminars: 2pm Thursday, [Building K Level 3, K321, CA_K_K321](https://www.monash.edu/__data/assets/pdf_file/0010/2658961/Caulfield-campus-map.pdf).
+* Seminars: 2-3pm Thursday, [Building K Level 3, K321, CA_K_K321](https://www.monash.edu/__data/assets/pdf_file/0010/2658961/Caulfield-campus-map.pdf).
 
 
 ```{r}
