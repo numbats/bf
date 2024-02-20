@@ -1,5 +1,5 @@
 {
-  "hash": "f49409a71630eb03db10c7aa3d949c28",
+  "hash": "21089a29b14fb6d5ac63ec5d9a83a232",
   "result": {
     "markdown": "---\ntitle: \"Week 5: Exponential smoothing\"\n---\n\n::: {.cell}\n\n:::\n\n\n## What you will learn this week\n\n* Simple exponential smoothing\n* Corresponding ETS models\n\n## Exercises (on your own or in tutorial)\n\nComplete Exercises 1-6, 8-9, 11-12 from [Section 5.11 of the book](https://otexts.com/fpp3/toolbox-exercises.html).\n\n## Pre-class activities\n\nRead [Sections 8.1-8.4 of the textbook](https://otexts.com/fpp3/expsmooth.html) and watch all embedded videos\n\n\n\n\n\n## Assignments\n\n* [GA2](../assignments/G2.qmd) is due on Wednesday 27 March.\n",
     "supporting": [

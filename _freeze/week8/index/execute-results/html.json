@@ -1,5 +1,5 @@
 {
-  "hash": "fd3514c6efbd1e022d871c3a1ba1b888",
+  "hash": "d9f476b3d6991907e29f8e4a158367fe",
   "result": {
     "markdown": "---\ntitle: \"Week 8: ARIMA models\"\n---\n\n::: {.cell}\n\n:::\n\n\n## What you will learn this week\n\n* AR, MA, ARMA and ARIMA models\n* Selecting model orders manually and automatically\n\n## Exercises (on your own or in tutorial)\n\nComplete Exercise 1-4 from [Section 9.11 of the book](https://otexts.com/fpp3/arima-exercises.html)\n\n## Pre-seminar activities\n\nRead [Sections 9.3-9.8 of the textbook](https://otexts.com/fpp3/arima.html) and watch all embedded videos\n\n\n\n\n\n\n## Assignments\n\n* [IA3](../assignments/A3.qmd) is due on Wednesday 24 April.\n* [GA3](../assignments/G3.qmd) is due on Wednesday 01 May.\n",
     "supporting": [

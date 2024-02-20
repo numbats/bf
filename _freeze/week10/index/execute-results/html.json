@@ -1,5 +1,5 @@
 {
-  "hash": "b131ffbc7f65eb54509998f6da0331e7",
+  "hash": "28d7fca3a3c3775e9f9a7e16364cbf88",
   "result": {
     "markdown": "---\ntitle: \"Week 10: Multiple regression and forecasting\"\n---\n\n::: {.cell}\n\n:::\n\n\n## What you will learn this week\n\n* Useful predictors for time series forecasting using regression\n* Selecting predictors\n* Ex ante and ex post forecasting\n\n## Exercises (on your own or in tutorial)\n\nComplete Exercises 11-13, 15-17 from [Section 9.11 of the book](https://otexts.com/fpp3/arima-exercises.html).\n\n## Pre-seminar activities\n\nRead [Chapter 7 of the textbook](https://otexts.com/fpp3/regression.html) and watch all embedded videos\n\n\n\n\n\n\n## Assignments\n\n* [IA4](../assignments/A4.qmd) is due on Wednesday 15 May.\n* [GA4](../assignments/G4.qmd) is due on Wednesday 22 May.\n",
     "supporting": [
