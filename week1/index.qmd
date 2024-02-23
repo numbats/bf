@@ -33,7 +33,8 @@ Your tutors will be in your tutorial class to assist you should you need it but 
 ## Pre-class activities
 
 * Install R and RStudio on your personal computer. Instructions are provided at [https://otexts.com/fpp3/appendix-using-r.html](https://otexts.com/fpp3/appendix-using-r.html).
-* Read [Chapter 1 of the textbook](http://OTexts.com/fpp3/intro.html) and watch all embedded videos
+* Read [Chapter 1 of the textbook](http://OTexts.com/fpp3/intro.html) and watch all embedded videos.
+* Read [Section 2.1 of the textbook](https://otexts.com/fpp3/tsibbles.html#tsibbles) and watch the embedded video.
 
 
 ```{r}
