@@ -1,28 +1,36 @@
 library(fpp3)
 
-global_economy
+# 1. I have already downloaded the excel file
 
+# 2. Create a tsibble which is identical to the tourism tsibble from the tsibble package.
+
+# Here is the tourism tsibble
 tourism
 
-## PRISON ----------------------------------------------------------------------
-
-prison <- readr::read_csv("data/prison_population.csv") |>
-  mutate(Quarter = yearquarter(date)) |>
-  select(-date) |>
+my_tourism <- readxl::read_excel("tourism.xlsx") |>
+  mutate(Quarter = yearquarter(Quarter)) |>
   as_tsibble(
     index = Quarter,
-    key = c(state, gender, legal, indigenous)
+    key = c(Region, State, Purpose)
   )
+my_tourism
 
-## PBS ----------------------------------------------------------------------
+# 3. Find what combination of Region and Purpose had
+#    the maximum number of overnight trips on average.
 
-PBS |>
-  filter(ATC2 == "A10") |>
-  select(Month, Concession, Type, Cost) |>
-  summarise(total_cost = sum(Cost)) |>
-  mutate(total_cost = total_cost / 1e6) -> a10
+my_tourism  |>
+  as_tibble()  |>
+  group_by(Region, Purpose) |>
+  summarise(Trips = mean(Trips))  |>
+  ungroup() |>
+  filter(Trips == max(Trips))
 
-a10
+# 4. Create a new tsibble which combines the Purposes and Regions,
+#    and just has total trips by State.
 
-a10 |>
-  autoplot(total_cost)
+state_tourism <- my_tourism |>
+  group_by(State) |>
+  summarise(Trips = mean(Trips)) |>
+  ungroup()
+
+state_tourism
