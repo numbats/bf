@@ -36,6 +36,12 @@ Your tutors will be in your tutorial class to assist you should you need it but 
 * Read [Chapter 1 of the textbook](http://OTexts.com/fpp3/intro.html) and watch all embedded videos.
 * Read [Section 2.1 of the textbook](https://otexts.com/fpp3/tsibbles.html#tsibbles) and watch the embedded video.
 
+## R code used in Seminar
+
+::: {.callout appearance="minimal"}
+<i class="bi bi-download"></i> [Seminar_code.R](Seminar_code.R){download="Seminar_code.R"}
+:::
+
 
 ```{r}
 #| output: asis
