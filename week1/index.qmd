@@ -39,7 +39,7 @@ Your tutors will be in your tutorial class to assist you should you need it but 
 ## R code used in Seminar
 
 ::: {.callout appearance="minimal"}
-<i class="bi bi-download"></i> [Seminar_code.R](Seminar_code.R){download="Seminar_code.R"}
+<i class="bi bi-download"></i> [Seminar_code_week1.R](Seminar_code_week1.R){download="Seminar_code_week1.R"}
 :::
 
 
