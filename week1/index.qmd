@@ -36,6 +36,14 @@ Your tutors will be in your tutorial class to assist you should you need it but 
 * Read [Chapter 1 of the textbook](http://OTexts.com/fpp3/intro.html) and watch all embedded videos.
 * Read [Section 2.1 of the textbook](https://otexts.com/fpp3/tsibbles.html#tsibbles) and watch the embedded video.
 
+
+```{r}
+#| output: asis
+show_slides(week)
+show_activity(week)
+```
+
+
 ## R code used in Seminar
 
 ::: {.callout appearance="minimal"}
@@ -45,7 +53,5 @@ Your tutors will be in your tutorial class to assist you should you need it but 
 
 ```{r}
 #| output: asis
-show_slides(week)
-show_activity(week)
 show_assignments(week)
 ```
