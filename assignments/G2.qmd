@@ -13,13 +13,13 @@ You will be using this data in future assignments as you will build on the analy
 * Download the template
 
 ::: {.callout appearance="minimal"}
-<i class="bi bi-download"></i> [Download GA2_template.Rmd](assignment_data/GA2_template.Rmd){download="GA2_template.qmd"}
+<i class="bi bi-download"></i> [Download GA2_template.Rmd](../assignment_data/GA2_template.Rmd){download="GA2_template.qmd"}
 :::
 
 * Download the data 
 
 ::: {.callout appearance="minimal"}
-<i class="bi bi-download"></i> [Download GA_data.csv](assignment_data/GA_data.csv){download="GA_data.csv"}
+<i class="bi bi-download"></i> [Download GA_data.csv](../assignment_data/GA_data.csv){download="GA_data.csv"}
 :::
 
 

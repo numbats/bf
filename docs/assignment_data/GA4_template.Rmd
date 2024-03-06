@@ -1,0 +1,75 @@
+---
+title: "ETF5231 Group Assignment 4"
+subtitle: 'Group Number and Name'
+author:
+- Student Name (ID)
+- Student Name (ID)
+- Student Name (ID)
+- Student Name (ID)
+
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval=TRUE, error=TRUE, cache=TRUE)
+# write the appropriate code to read in your group data from Group_Data.csv
+```
+
+## Question 1
+
+*Identify the best possible ARIMA model for your data. Generate and plot forecasts for the next 2-years and comment on these. Present a complete analysis and justifications for each step you take. There is no word limit here. No more hints will be provided - we leave it up to you to provide a full analysis. Treat this as a consulting job for a client wanting some ARIMA forecasts (20 marks)*
+
+```{r}
+
+```
+
+\newpage
+## Question 2
+
+*Treat the last two years of your data as a test set. On the same graph, plot the point forecasts from all the 'best' alternative methods/models you have studied throughout the semester. Think about visualisation. Visually inspect these and comment on any similarities, differences, anomalies you may observe. (No more than 100 words). (8 marks)*
+
+```{r}
+
+```
+
+\newpage
+## Question 3
+
+*Summarise the accuracy of the competing forecasts over the test period and choose the best two models/methods from this evaluation. (6 marks)*
+
+```{r}
+
+```
+
+\newpage
+## Question 4
+
+*Update and plot your data. Do you see a COVID-19 effect? If your series has not been updated yet comment on what you expect the effect of COVID-19 will be. (3 marks)*
+
+```{r}
+
+```
+
+\newpage
+## Question 5
+
+*Use the best two models and generate forecasts for your series based on the end of your updated sample (or end of sample if your data has not been updated). Plot these on the same graph, together with prediction intervals. Think about visualisation. Comment on these. (No more than 100 words). (6 marks)*
+
+```{r}
+
+```
+
+\newpage
+## Question 6
+
+*You have now implemented all the modelling frameworks you have learnt about throughout the semester and forecasted multiple series. Write between 300-500 words on your thoughts of these frameworks. What has worked best for the series you have considered? Which one did you find the easiest to work with understand and implement? What are the highlights or disadvantages of the frameworks? Would a regression based model work better for the retail data given the COVID-19 situation? How would you implement this? (15 marks)*
+
+*This is a little open ended and I would like you to think beyond the questions I put forward here on what you have learnt, what you liked, what you didn't. You are expected to include at least one comment on each of, benchmarks, decomposition, ETS, ARIMA and regression frameworks. Treat this as a report advising/informing a client (who knows statistics) while you were working for your forecasting consulting group. Include your consulting group name.*
+
+*Congratulations you have completed all tasks for this unit. I hope you enjoyed the unit and learnt a lot from all your hard work.*
+
+*Cheers, George*
+
+```{r}
+
+```

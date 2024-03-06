@@ -13,13 +13,13 @@ You will be using this data in future assignments as you will build on the analy
 * Download the template
 
 ::: {.callout appearance="minimal"}
-<i class="bi bi-download"></i> [Download IA2_template.Rmd](assignment_data/IA2_template.Rmd){download="IA2_template.qmd"}
+<i class="bi bi-download"></i> [Download IA2_template.Rmd](../assignment_data/IA2_template.Rmd){download="IA2_template.qmd"}
 :::
 
 * Download the data 
 
 ::: {.callout appearance="minimal"}
-<i class="bi bi-download"></i> [Download IA_data.csv](assignment_data/IA_data.csv){download="IA_data.csv"}
+<i class="bi bi-download"></i> [Download IA_data.csv](../assignment_data/IA_data.csv){download="IA_data.csv"}
 :::
 
 

@@ -1,0 +1,85 @@
+---
+title: "ETF5231 Group Assignment 2"
+subtitle: 'Group Number and Name (see Question 8 for your group name)'
+author:
+- Student Name (ID)
+- Student Name (ID)
+- Student Name (ID)
+- Student Name (ID)
+output: pdf_document
+editor_options: 
+  chunk_output_type: console
+---
+
+
+
+## Question 1
+
+*What is your data about (no more than 50 words for each series)? Produce appropriate plots in order to become familiar with your data. Make sure you label your axes and plots appropriately. Comment on these. What do you see? (no more than 50 words per plot). (14 marks)*
+
+```{r}
+
+```
+
+\newpage
+## Question 2
+
+*Would transforming your data be useful (no more than 50 words)? Choose a transformation and justify your choice (no more than 50 words). (5 marks)*
+
+```{r}
+
+```
+
+\newpage
+## Question 3
+
+*Split your data into training and test sets. Leave the last two years’ worth of observations as the test set. Apply all four benchmark methods on the training set. Generate forecasts for the test set and plot them on the same graph. Compare their forecasting performance on the test set. Which method would you choose as an appropriate benchmark? Justify your answer (no more than 100 words). (Hint: it will be useful to tabulate your results.) (6 marks)*
+
+```{r}
+
+```
+
+\newpage
+## Question 4
+
+*Can you construct better forecasting method(s) for your data? Give a brief description of these. Evaluate the method(s) over the test set and compare them to the benchmarks  (no more than 50 words each). This question requires you to think about and only use tools you have acquired so far in this unit. Only materials from up to and including Chapter 5 (not Chapter 8) can be used. (Notice that more weight is now placed on this part of the assignment) (14 marks)*
+
+```{r}
+
+```
+
+\newpage
+## Question 5
+
+*Use time series cross-validation to select the best of the methods you have so far considered (you may only consider the most appropriate of the four benchmarks). Tabulate your results. How do these compare with the test set? Comment on the advantages and/or disadvantages of using this method (no more than 100 words). (10 marks)*
+
+```{r}
+
+```
+
+\newpage
+## Question 6
+
+*For the best method, do a residual analysis. Comment on these (no more than 150 words). (4 marks)*
+
+```{r}
+
+```
+
+\newpage
+## Question 7
+
+*Generate point forecasts for the next 2 years (future) from the method you have classified as best and plot them. Compare these visually and comment on the point and prediction intervals (no more than 100 words). (6 marks)*
+
+```{r}
+
+```
+
+\newpage
+## Question 8
+
+*Suppose that your group was a forecasting consulting group and you were working for a client. Give your group a name (add that to the subtitle above). Report your work here summarising and critically (think about assumption, limitations, extensions) evaluating the forecasts you are generating (no more than 200 words). (5 marks)*
+
+```{r}
+
+```
