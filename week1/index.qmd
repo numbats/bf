@@ -30,6 +30,8 @@ Your task this week is to make sure you are familiar with R, RStudio and the tid
 
 Your tutors will be in your tutorial class to assist you should you need it but you should do these at your own pace to understand the concepts.
 
+[**Check your understanding quiz**](https://learning.monash.edu/mod/quiz/view.php?id=2327331)
+
 ## Pre-class activities
 
 * Install R and RStudio on your personal computer. Instructions are provided at [https://otexts.com/fpp3/appendix-using-r.html](https://otexts.com/fpp3/appendix-using-r.html).

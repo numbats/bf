@@ -18,7 +18,6 @@ source(here::here("course_info.R"))
 
 Complete Exercises 1-5 from [Section 2.10 of the book](https://otexts.com/fpp3/graphics-exercises.html).
 
-
 ## Exercise solutions (forthcoming)
 
 ::: {.callout appearance="minimal"}
