@@ -19,7 +19,7 @@ You will be using this data in future assignments as you will build on the analy
 * Download the data 
 
 ::: {.callout appearance="minimal"}
-<i class="bi bi-download"></i> [Download IA_data.csv](../assignment_data/IA_data.csv){download="IA_data.csv"}
+<i class="bi bi-download"></i> [Download IA_data.csv](/assignment_data/IA_data.csv){download="IA_data.csv"}
 :::
 
 
