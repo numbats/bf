@@ -42,3 +42,20 @@ acfc <- ACF(mink, value) |> autoplot() +
   labs(x = "", title = "C") + ylim(-0.4, 1)
 (tp1 | tp2 | tp3 | tp4) / (acfa | acfb | acfc | acfd)
 ```
+
+3.  You can compute the daily changes in the Google stock price in 2018 using the code below. Do the daily changes look like white noise?
+
+\fontsize{11.5}{15}\sf
+
+
+```{r, eval = FALSE}
+dgoog <- gafa_stock |>
+  filter(Symbol == "GOOG", year(Date) >= 2018) |>
+  mutate(trading_day = row_number()) |>
+  update_tsibble(index=trading_day, regular=TRUE) |>
+  mutate(diff = difference(Close))
+```
+
+\fontsize{14}{16}\sf
+
+    

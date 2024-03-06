@@ -44,7 +44,7 @@ show_activity(week)
 ```
 
 
-## R code used in Seminar
+## Seminar code
 
 ::: {.callout appearance="minimal"}
 <i class="bi bi-download"></i> [Seminar_code_week1.R](Seminar_code_week1.R){download="Seminar_code_week1.R"}

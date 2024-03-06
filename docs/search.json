@@ -459,7 +459,7 @@
     "href": "week3/index.html#exercises-on-your-own-or-in-tutorial",
     "title": "Week 3: Time series decomposition",
     "section": "Exercises (on your own or in tutorial)",
-    "text": "Exercises (on your own or in tutorial)\nComplete Exercises 6-11 from Section 2.10 of the book."
+    "text": "Exercises (on your own or in tutorial)\nComplete Exercises 6, 8-11 from Section 2.10 of the book."
   },
   {
     "objectID": "week3/index.html#slides-for-seminar",
@@ -522,7 +522,7 @@
     "href": "week2/index.html#seminar-activities",
     "title": "Week 2: Time series graphics",
     "section": "Seminar activities",
-    "text": "Seminar activities\n\nWe have introduced various functions for time series graphics include autoplot(), gg_season(), gg_subseries(), gg_lag() and ACF. Use these functions to explore the quarterly tourism data for the Snowy Mountains.\nsnowy &lt;- tourism |&gt; filter(Region == \"Snowy Mountains\")\nWhat do you learn?\nWhich time plot corresponds to which ACF plot?"
+    "text": "Seminar activities\n\nWe have introduced various functions for time series graphics include autoplot(), gg_season(), gg_subseries(), gg_lag() and ACF. Use these functions to explore the quarterly tourism data for the Snowy Mountains.\nsnowy &lt;- tourism |&gt; filter(Region == \"Snowy Mountains\")\nWhat do you learn?\nWhich time plot corresponds to which ACF plot?\n\n\n\n\n\n\n\nYou can compute the daily changes in the Google stock price in 2018 using the code below. Do the daily changes look like white noise?\n\n\ndgoog &lt;- gafa_stock |&gt;\n  filter(Symbol == \"GOOG\", year(Date) &gt;= 2018) |&gt;\n  mutate(trading_day = row_number()) |&gt;\n  update_tsibble(index=trading_day, regular=TRUE) |&gt;\n  mutate(diff = difference(Close))"
   },
   {
     "objectID": "week2/index.html#assignments",
@@ -1180,7 +1180,7 @@
     "href": "week2/activities.html",
     "title": "ETF3231/ETF5231 Business Forecasting",
     "section": "",
-    "text": "We have introduced various functions for time series graphics include autoplot(), gg_season(), gg_subseries(), gg_lag() and ACF. Use these functions to explore the quarterly tourism data for the Snowy Mountains.\nsnowy &lt;- tourism |&gt; filter(Region == \"Snowy Mountains\")\nWhat do you learn?\nWhich time plot corresponds to which ACF plot?"
+    "text": "We have introduced various functions for time series graphics include autoplot(), gg_season(), gg_subseries(), gg_lag() and ACF. Use these functions to explore the quarterly tourism data for the Snowy Mountains.\nsnowy &lt;- tourism |&gt; filter(Region == \"Snowy Mountains\")\nWhat do you learn?\nWhich time plot corresponds to which ACF plot?\n\n\n\n\n\n\n\nYou can compute the daily changes in the Google stock price in 2018 using the code below. Do the daily changes look like white noise?\n\n\ndgoog &lt;- gafa_stock |&gt;\n  filter(Symbol == \"GOOG\", year(Date) &gt;= 2018) |&gt;\n  mutate(trading_day = row_number()) |&gt;\n  update_tsibble(index=trading_day, regular=TRUE) |&gt;\n  mutate(diff = difference(Close))"
   },
   {
     "objectID": "week2/slides.html#case-study-1-paperware-company-1",
@@ -1734,5 +1734,54 @@
     "title": "Week 1: What is forecasting?",
     "section": "R code used in Seminar",
     "text": "R code used in Seminar\n\n\n\n\n\n\n Seminar_code_week1.R"
+  },
+  {
+    "objectID": "week2/index.html#exercise-solutions-forthcoming",
+    "href": "week2/index.html#exercise-solutions-forthcoming",
+    "title": "Week 2: Time series graphics",
+    "section": "Exercise solutions (forthcoming)",
+    "text": "Exercise solutions (forthcoming)"
+  },
+  {
+    "objectID": "week1/index.html#code-for-seminar-activities",
+    "href": "week1/index.html#code-for-seminar-activities",
+    "title": "Week 1: What is forecasting?",
+    "section": "Code for seminar activities",
+    "text": "Code for seminar activities\n\n\n\n\n\n\n Seminar_code_week1.R"
+  },
+  {
+    "objectID": "week1/index.html#seminar-activities-code",
+    "href": "week1/index.html#seminar-activities-code",
+    "title": "Week 1: What is forecasting?",
+    "section": "Seminar activities code",
+    "text": "Seminar activities code\n\n\n\n\n\n\n Seminar_code_week1.R"
+  },
+  {
+    "objectID": "week2/index.html#seminar-activities-code",
+    "href": "week2/index.html#seminar-activities-code",
+    "title": "Week 2: Time series graphics",
+    "section": "Seminar activities code",
+    "text": "Seminar activities code\n\n\n\n\n\n\n Seminar_code_week2_incomplete.R"
+  },
+  {
+    "objectID": "week2/index.html#seminar-activities-1",
+    "href": "week2/index.html#seminar-activities-1",
+    "title": "Week 2: Time series graphics",
+    "section": "Seminar activities",
+    "text": "Seminar activities\n\nWe have introduced various functions for time series graphics include autoplot(), gg_season(), gg_subseries(), gg_lag() and ACF. Use these functions to explore the quarterly tourism data for the Snowy Mountains.\nsnowy &lt;- tourism |&gt; filter(Region == \"Snowy Mountains\")\nWhat do you learn?\nWhich time plot corresponds to which ACF plot?\n\n#| label: acf-quiz\n#| fig.asp: 0.5\n#| fig.width: 12\n#| echo: false\n#| warning: false\n#| out.width: 100%\n#| cache: false\nsource(here::here(\"setup.R\"))\nlibrary(patchwork)\ncowtemp &lt;- as_tsibble(fma::cowtemp)\nUSAccDeaths &lt;- as_tsibble(USAccDeaths)\nAirPassengers &lt;- as_tsibble(AirPassengers)\nmink &lt;- as_tsibble(fma::mink)\ntp1 &lt;- autoplot(cowtemp, value) +\n  labs(x = \"\", y = \"chirps per minute\", title = \"1. Daily temperature of cow\")\ntp2 &lt;- autoplot(USAccDeaths, value) +\n  labs(x = \"\", y = \"thousands\", title = \"2. Monthly accidental deaths\")\ntp3 &lt;- autoplot(AirPassengers, value) +\n  labs(x = \"\", y = \"thousands\", title = \"3. Monthly air passengers\")\ntp4 &lt;- autoplot(mink, value) +\n  labs(x = \"\", y = \"thousands\", title = \"4. Annual mink trappings\")\nacfb &lt;- ACF(cowtemp, value) |&gt; autoplot() +\n  labs(x = \"\", title = \"B\") + ylim(-0.4, 1)\nacfa &lt;- ACF(USAccDeaths, value) |&gt; autoplot() +\n  labs(x = \"\", title = \"A\") + ylim(-0.4, 1)\nacfd &lt;- ACF(AirPassengers, value) |&gt; autoplot() +\n  labs(x = \"\", title = \"D\") + ylim(-0.4, 1)\nacfc &lt;- ACF(mink, value) |&gt; autoplot() +\n  labs(x = \"\", title = \"C\") + ylim(-0.4, 1)\n(tp1 | tp2 | tp3 | tp4) / (acfa | acfb | acfc | acfd)\n\nYou can compute the daily changes in the Google stock price in 2018 using the code below. Do the daily changes look like white noise?\n\n{r, eval = FALSE} dgoog &lt;- gafa_stock |&gt;   filter(Symbol == \"GOOG\", year(Date) &gt;= 2018) |&gt;   mutate(trading_day = row_number()) |&gt;   update_tsibble(index=trading_day, regular=TRUE) |&gt;   mutate(diff = difference(Close))"
+  },
+  {
+    "objectID": "week1/index.html#seminar-code",
+    "href": "week1/index.html#seminar-code",
+    "title": "Week 1: What is forecasting?",
+    "section": "Seminar code",
+    "text": "Seminar code\n\n\n\n\n\n\n Seminar_code_week1.R"
+  },
+  {
+    "objectID": "week2/index.html#seminar-code",
+    "href": "week2/index.html#seminar-code",
+    "title": "Week 2: Time series graphics",
+    "section": "Seminar code",
+    "text": "Seminar code\n\n\n\n\n\n\n Seminar_code_week2_incomplete.R"
   }
 ]
