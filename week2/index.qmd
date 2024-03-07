@@ -21,7 +21,7 @@ Complete Exercises 1-5 from [Section 2.10 of the book](https://otexts.com/fpp3/g
 ## Exercise solutions (forthcoming)
 
 ::: {.callout appearance="minimal"}
-<!-- <i class="bi bi-download"></i> [*.Rmd](*.Rmd){download="*.Rmd"} -->
+<i class="bi bi-download"></i> [Week 2 Tutorial Solution.html](Week2.html){download="Week 2 Tutorial Solution.html"}
 :::
 
 
