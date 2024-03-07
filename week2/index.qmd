@@ -18,7 +18,7 @@ source(here::here("course_info.R"))
 
 Complete Exercises 1-5 from [Section 2.10 of the book](https://otexts.com/fpp3/graphics-exercises.html).
 
-## Exercise solutions (forthcoming)
+## Exercise solutions
 
 ::: {.callout appearance="minimal"}
 <i class="bi bi-download"></i> [Week 2 Tutorial Solution.html](Week2.html){download="Week 2 Tutorial Solution.html"}
