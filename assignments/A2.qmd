@@ -13,7 +13,7 @@ You will be using this data in future assignments as you will build on the analy
 * Download the template
 
 ::: {.callout appearance="minimal"}
-<i class="bi bi-download"></i> [Download IA2_template.Rmd](../assignment_data/IA2_template.Rmd){download="IA2_template.Rmd"}
+<i class="bi bi-download"></i> [Download template](../assignment_data/IA2_template.Rmd.zip){download="IA2_template.Rmd.zip"}
 :::
 
 * Download the data 
