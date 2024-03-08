@@ -1782,6 +1782,7 @@
     "href": "week2/index.html#seminar-code",
     "title": "Week 2: Time series graphics",
     "section": "Seminar code",
+<<<<<<< Updated upstream
     "text": "Seminar code\n\n\n\n\n\n\n Seminar_code_week2_incomplete.R"
   },
   {
@@ -1790,5 +1791,8 @@
     "title": "Week 2: Time series graphics",
     "section": "Exercise solutions",
     "text": "Exercise solutions\n\n\n\n\n\n\n Week 2 Tutorial Solution.html"
+=======
+    "text": "Seminar code\n\n\n\n\n\n\n Seminar_code_week2.R"
+>>>>>>> Stashed changes
   }
 ]
