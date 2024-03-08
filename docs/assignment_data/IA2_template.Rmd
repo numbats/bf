@@ -4,6 +4,7 @@ author: "Your name and Student ID"
 output: pdf_document
 editor_options: 
   chunk_output_type: console
+format: markdown+yaml_metadata_block
 ---
 
 ```{r setup, include=FALSE}
