@@ -7,7 +7,7 @@ title: Group Assignment 3 (10%)
 * Download the template
 
 ::: {.callout appearance="minimal"}
-<i class="bi bi-download"></i> [Download GA3_template.Rmd](../assignment_data/GA3_template.Rmd){download="GA3_template.qmd"}
+<i class="bi bi-download"></i> [Download template](../assignment_data/GA3_template.Rmd.zip){download="GA3_template.Rmd.zip"}
 :::
 
 

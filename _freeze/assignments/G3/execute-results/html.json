@@ -1,7 +1,7 @@
 {
-  "hash": "144d10824d22fa9140c39773821794ec",
+  "hash": "d75a84b7902bd6c92ba0f322a570e9ee",
   "result": {
-    "markdown": "---\ntitle: Group Assignment 3 (10%)\n---\n\n\n**Files for download**:\n\n* Download the template\n\n::: {.callout appearance=\"minimal\"}\n<i class=\"bi bi-download\"></i> [Download GA3_template.Rmd](../assignment_data/GA3_template.Rmd){download=\"GA3_template.qmd\"}\n:::\n\n\n\n<br><br><hr><b>Due: 1 May 2024</b><br><a href=https://learning.monash.edu/mod/assign/view.php?id=1450615 class = 'badge badge-large badge-blue'><font size='+2'>&nbsp;&nbsp;<b>Submit (ETF5231)</b>&nbsp;&nbsp;</font><br></a>\n",
+    "markdown": "---\ntitle: Group Assignment 3 (10%)\n---\n\n\n**Files for download**:\n\n* Download the template\n\n::: {.callout appearance=\"minimal\"}\n<i class=\"bi bi-download\"></i> [Download template](../assignment_data/GA3_template.Rmd.zip){download=\"GA3_template.Rmd.zip\"}\n:::\n\n\n\n<br><br><hr><b>Due: 1 May 2024</b><br><a href=https://learning.monash.edu/mod/assign/view.php?id=1450615 class = 'badge badge-large badge-blue'><font size='+2'>&nbsp;&nbsp;<b>Submit (ETF5231)</b>&nbsp;&nbsp;</font><br></a>\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
