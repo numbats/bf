@@ -8,16 +8,25 @@
 
 2. Why is a Box-Cox transformation unhelpful for the `canadian_gas` data?
 
-3. Produce the following decomposition
+3. Produce the following decomposition for the number (in thousands) of of people employed in Retail Trade in the US
 
     ```r
-    canadian_gas |>
-      STL(Volume ~ season(window=7) + trend(window=11)) |>
-      autoplot()
+    us_retail_employment <- us_employment |>
+      filter(year(Month) >= 1990, Title == "Retail Trade") |>
+      select(-Series_ID)
+
+    dcmp <- us_retail_employment |>
+            model(stl = STL(Employed)) 
     ```
-
-4. What happens as you change the values of the two `window` arguments?
-
-5. How does the seasonal shape change over time? [Hint: Try plotting the seasonal component using `gg_season`.]
-
-6. Can you produce a plausible seasonally adjusted series? [Hint: `season_adjust` is one of the variables returned by `STL`.]
+    
+    a. Plot the decomposition.
+    
+    b. Fit the trend component over the data [Hint: you can use `autolayer()` to add `trend` to the plot above. `trend` is one of the variables returned by `STL()`. ]
+    
+    c. Fit the trend and the seasonally adjusted [Hint: `seas_adjust` is one of the variables returned by `STL`. ]
+    
+    d. How does the seasonal shape change over time? [Hint: Try plotting the seasonal component using `gg_season()`.]
+    
+    e. What happens as you change the values of the two `window` arguments?
+    
+    f. Can you produce a plausible seasonally adjusted series? 
