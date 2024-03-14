@@ -21,12 +21,12 @@ schedule <- tibble(
     "The forecaster's toolbox",
     "Exponential smoothing",
     "Exponential smoothing",
-    "Exponential smoothing",
     "ARIMA models",
     "ARIMA models",
     "ARIMA models",
     "Multiple regression and forecasting",
-    "Dynamic regression"
+    "Dynamic regression",
+    "Revision"
   ),
   Chapter = c(
     "1. Getting started",
@@ -40,7 +40,7 @@ schedule <- tibble(
     "9. ARIMA models",
     "7. Time series regression models",
     "10. Dynamic regression models",
-    "10. Dynamic regression models"
+    "Revision"
   ),
   Chapter_URL = c(
     "https://OTexts.com/fpp3/intro.html",
@@ -54,7 +54,7 @@ schedule <- tibble(
     "https://OTexts.com/fpp3/arima.html",
     "https://OTexts.com/fpp3/regression.html",
     "https://OTexts.com/fpp3/dynamic.html",
-    "https://OTexts.com/fpp3/dynamic.html"
+    ""
   )
 )
 
