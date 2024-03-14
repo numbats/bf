@@ -24,6 +24,7 @@ Complete Exercises 1-5 from [Section 2.10 of the book](https://otexts.com/fpp3/g
 <i class="bi bi-download"></i> [Week 2 Tutorial Solution.html](Week2.html){download="Week 2 Tutorial Solution.html"}
 :::
 
+[**Check your understanding quiz**](https://learning.monash.edu/mod/quiz/view.php?id=2336392)
 
 ## Pre-seminar activities
 
