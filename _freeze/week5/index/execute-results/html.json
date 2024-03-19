@@ -1,7 +1,7 @@
 {
-  "hash": "f49409a71630eb03db10c7aa3d949c28",
+  "hash": "6ca3b7d5c189a02db147bb2dff9eeec5",
   "result": {
-    "markdown": "---\ntitle: \"Week 5: Exponential smoothing\"\n---\n\n::: {.cell}\n\n:::\n\n\n## What you will learn this week\n\n* Simple exponential smoothing\n* Corresponding ETS models\n\n## Exercises (on your own or in tutorial)\n\nComplete Exercises 1-6, 8-9, 11-12 from [Section 5.11 of the book](https://otexts.com/fpp3/toolbox-exercises.html).\n\n## Pre-class activities\n\nRead [Sections 8.1-8.4 of the textbook](https://otexts.com/fpp3/expsmooth.html) and watch all embedded videos\n\n\n\n\n\n## Assignments\n\n* [GA2](../assignments/G2.qmd) is due on Wednesday 10 April.\n",
+    "markdown": "---\ntitle: \"Week 5: Exponential smoothing\"\n---\n\n::: {.cell}\n\n:::\n\n\n## What you will learn this week\n\n* Simple exponential smoothing\n* Corresponding ETS models\n\n## Exercises (on your own or in tutorial)\n\nComplete Exercises 1-5, 8, 11-12 from [Section 5.11 of the book](https://otexts.com/fpp3/toolbox-exercises.html).\n\n## Pre-class activities\n\nRead [Sections 8.1-8.4 of the textbook](https://otexts.com/fpp3/expsmooth.html) and watch all embedded videos\n\n\n\n\n\n## Assignments\n\n* [GA2](../assignments/G2.qmd) is due on Wednesday 10 April.\n",
     "supporting": [
       "index_files"
     ],
