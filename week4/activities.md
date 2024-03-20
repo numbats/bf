@@ -7,11 +7,11 @@
 
 4. Test if the residuals are white noise. What do you conclude?
 
-5. Use `accuracy()` to evaluate Which benchmark fits the data best.
+5. Plot point and interval forecasts from the most appropriate benchmark.
 
-6. Plot point and interval forecasts from the most appropriate benchmark.
+6. Now try a decomposition forecasting model.
 
-7. Now try a decomposition forecasting model.
+7. Use `accuracy()` to evaluate Which benchmark fits the data best.
 
 8. Use a test set of last 3 years to check forecast accuracy.
 
