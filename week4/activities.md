@@ -1,12 +1,19 @@
 
+1. Create a tsibble with total Holiday travellers for Victoria and Queensland from the `tourism` data set. Plot the series. What do you see?
 
- * Produce forecasts using an appropriate benchmark method for household wealth (`hh_budget`). Plot the results using `autoplot()`.
- * Produce forecasts using an appropriate benchmark method for Australian takeaway food turnover (`aus_retail`). Plot the results using `autoplot()`.
+2. Generate 4 year ahead forecasts from all four benchmarks. Plot them using `autoplot()`. Comment in the resulting forecasts.
 
-  * Compute seasonal naïve forecasts for quarterly Australian beer production from 1992.
-  * Test if the residuals are white noise. What do you conclude?
+3. Plot the residuals from the most appropriate benchmark using `gg_tsresiduals()`. What do you see?
 
- * Create a training set for household wealth (`hh_budget`) by withholding the last four years as a test set.
- * Fit all the appropriate benchmark methods to the training set and forecast the periods covered by the test set.
- * Compute the accuracy of your forecasts. Which method does best?
- * Repeat the exercise using the Australian takeaway food turnover data (`aus_retail`) with a test set of four years.
+4. Test if the residuals are white noise. What do you conclude?
+
+5. Use `accuracy()` to evaluate Which benchmark fits the data best.
+
+6. Plot point and interval forecasts from the most appropriate benchmark.
+
+7. Now try a decomposition forecasting model.
+
+8. Use a test set of last 3 years to check forecast accuracy.
+
+9. Now use time series cross-validation to check forecast accuracy.
+
