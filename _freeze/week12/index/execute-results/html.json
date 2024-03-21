@@ -1,10 +1,8 @@
 {
-  "hash": "0e0c1907a5b087c9d8164605e5b0b9c9",
+  "hash": "3659967d4eef8db6f6706dc83e820fa2",
   "result": {
-    "markdown": "---\ntitle: \"Week 12: Review\"\n---\n\n::: {.cell}\n\n:::\n\n\n## What you will learn this week\n\n* Review Assignment 1\n* Review initial case studies\n* Discuss exam\n\n## Exercises (on your own or in tutorial)\n\nComplete Exercises 1-7 from [Section 10.7 of the book](https://otexts.com/fpp3/dynamic-exercises.html).\n\n## Pre-seminar activities\n\nCatch up on any exercises not yet done\n\n## Post-class activities\n\n* Do any exercises not yet finished.\n* Complete past exams\n* Re-read the textbook\n* Listen again to all lectures\n\n\n\n\n\n\n## Assignments\n\n* [GA4](../assignments/G4.qmd) is due on Wednesday 22 May.\n",
-    "supporting": [
-      "index_files"
-    ],
+    "markdown": "---\ntitle: \"Week 12: Review\"\n---\n\n::: {.cell}\n\n:::\n\n\n## What you will learn this week\n\n* Review Assignment 1\n* Review initial case studies\n* Discuss exam\n\n## Exercises (on your own or in tutorial)\n\nComplete Exercises 1-7 from [Section 10.7 of the book](https://otexts.com/fpp3/dynamic-exercises.html).\n\n## Pre-seminar activities\n\nCatch up on any exercises not yet done\n\n## Post-class activities\n\n## Post-class activities\n\n* Do any exercises not yet finished.\n* Complete past exams: [[2021](/exams/exam2021.pdf)] [[2022](/exams/exam2022.pdf)] [[2023](/exams/exam2023.pdf)]\n* Re-read the textbook\n* Listen again to all lectures\n\n\n\n\n\n\n## Assignments\n\n* [GA4](../assignments/G4.qmd) is due on Wednesday 22 May.\n",
+    "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],
