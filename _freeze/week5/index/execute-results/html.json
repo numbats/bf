@@ -1,10 +1,8 @@
 {
-  "hash": "6ca3b7d5c189a02db147bb2dff9eeec5",
+  "hash": "26bc45775f8a00a3e20edc109886e324",
   "result": {
-    "markdown": "---\ntitle: \"Week 5: Exponential smoothing\"\n---\n\n::: {.cell}\n\n:::\n\n\n## What you will learn this week\n\n* Simple exponential smoothing\n* Corresponding ETS models\n\n## Exercises (on your own or in tutorial)\n\nComplete Exercises 1-5, 8, 11-12 from [Section 5.11 of the book](https://otexts.com/fpp3/toolbox-exercises.html).\n\n## Pre-class activities\n\nRead [Sections 8.1-8.4 of the textbook](https://otexts.com/fpp3/expsmooth.html) and watch all embedded videos\n\n\n\n\n\n## Assignments\n\n* [GA2](../assignments/G2.qmd) is due on Wednesday 10 April.\n",
-    "supporting": [
-      "index_files"
-    ],
+    "markdown": "---\ntitle: \"Week 5: Exponential smoothing\"\n---\n\n::: {.cell}\n\n:::\n\n\n## What you will learn this week\n\n* Simple exponential smoothing\n* Corresponding ETS models\n\n## Exercises (on your own or in tutorial)\n\nComplete Exercises 1-5, 8, 11-12 from [Section 5.11 of the book](https://otexts.com/fpp3/toolbox-exercises.html).\n\n## Pre-class activities\n\nRead [Sections 8.1-8.4 of the textbook](https://otexts.com/fpp3/expsmooth.html) and watch all embedded videos\n\n\n## Slides for seminar\n\n<embed src='/week5/week5.pdf' type='application/pdf' width='100%' height=465></embed>\n<a href=/week5/week5.pdf class='badge badge-small badge-red'>Download pdf</a>\n\n\n## Seminar activities\n\n\n\n1. Use the tsibble created from `tourism` for holiday travel in Victoria and Queensland. Plot the series to remind yourself what these look like.\n\n2. Use the `ETS()` function to fit models to both series. Explore the resulting `mable` using `report()`, `glance()` and `tidy()`\n\n3. Plot the estimated components of each model.\n\n4. Generate forecasts using `forecast()`.\n\n5. Plot the exports data for Algeria from the `global_economy` tsibble. Is this time series white noise? What ETS model would be appropriate?\n\n6. Use the `ETS()` function to fit appropriate models with both additive and multiplicative errors. What model is chosen automatically? Explore the estimated models.\n\n7. Plot the components of the two models. What do you see?\n\n8. Explore the residuals of the two models. What do you see?\n\n9. Generate and plot forecasts.\n\n\n\n## Seminar code\n\n::: {.callout appearance=\"minimal\"}\n<i class=\"bi bi-download\"></i> [Seminar_code_week5.R](Seminar_code_week5.R){download=\"Seminar_code_week5.R\"}\n:::\n\n\n\n\n\n## Assignments\n\n* [IA2](../assignments/A2.qmd) is due on Wednesday 10 April.\n* [GA2](../assignments/G2.qmd) is due on Wednesday 17 April.\n",
+    "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

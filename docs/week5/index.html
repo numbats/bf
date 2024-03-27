@@ -178,6 +178,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#what-you-will-learn-this-week" id="toc-what-you-will-learn-this-week" class="nav-link active" data-scroll-target="#what-you-will-learn-this-week">What you will learn this week</a></li>
   <li><a href="#exercises-on-your-own-or-in-tutorial" id="toc-exercises-on-your-own-or-in-tutorial" class="nav-link" data-scroll-target="#exercises-on-your-own-or-in-tutorial">Exercises (on your own or in tutorial)</a></li>
   <li><a href="#pre-class-activities" id="toc-pre-class-activities" class="nav-link" data-scroll-target="#pre-class-activities">Pre-class activities</a></li>
+  <li><a href="#slides-for-seminar" id="toc-slides-for-seminar" class="nav-link" data-scroll-target="#slides-for-seminar">Slides for seminar</a></li>
+  <li><a href="#seminar-activities" id="toc-seminar-activities" class="nav-link" data-scroll-target="#seminar-activities">Seminar activities</a></li>
+  <li><a href="#seminar-code" id="toc-seminar-code" class="nav-link" data-scroll-target="#seminar-code">Seminar code</a></li>
   <li><a href="#assignments" id="toc-assignments" class="nav-link" data-scroll-target="#assignments">Assignments</a></li>
   </ul>
 </nav>
@@ -217,10 +220,44 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="pre-class-activities">Pre-class activities</h2>
 <p>Read <a href="https://otexts.com/fpp3/expsmooth.html">Sections 8.1-8.4 of the textbook</a> and watch all embedded videos</p>
 </section>
+<section id="slides-for-seminar" class="level2">
+<h2 class="anchored" data-anchor-id="slides-for-seminar">Slides for seminar</h2>
+<embed src="../week5/week5.pdf" type="application/pdf" width="100%" height="465">
+
+<p><a href="../week5/week5.pdf" class="badge badge-small badge-red">Download pdf</a></p>
+</section>
+<section id="seminar-activities" class="level2">
+<h2 class="anchored" data-anchor-id="seminar-activities">Seminar activities</h2>
+<ol type="1">
+<li><p>Use the tsibble created from <code>tourism</code> for holiday travel in Victoria and Queensland. Plot the series to remind yourself what these look like.</p></li>
+<li><p>Use the <code>ETS()</code> function to fit models to both series. Explore the resulting <code>mable</code> using <code>report()</code>, <code>glance()</code> and <code>tidy()</code></p></li>
+<li><p>Plot the estimated components of each model.</p></li>
+<li><p>Generate forecasts using <code>forecast()</code>.</p></li>
+<li><p>Plot the exports data for Algeria from the <code>global_economy</code> tsibble. Is this time series white noise? What ETS model would be appropriate?</p></li>
+<li><p>Use the <code>ETS()</code> function to fit appropriate models with both additive and multiplicative errors. What model is chosen automatically? Explore the estimated models.</p></li>
+<li><p>Plot the components of the two models. What do you see?</p></li>
+<li><p>Explore the residuals of the two models. What do you see?</p></li>
+<li><p>Generate and plot forecasts.</p></li>
+</ol>
+</section>
+<section id="seminar-code" class="level2">
+<h2 class="anchored" data-anchor-id="seminar-code">Seminar code</h2>
+<div class="callout callout-style-simple callout-none no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><i class="bi bi-download"></i> <a href="Seminar_code_week5.R" download="Seminar_code_week5.R">Seminar_code_week5.R</a></p>
+</div>
+</div>
+</div>
+</section>
 <section id="assignments" class="level2">
 <h2 class="anchored" data-anchor-id="assignments">Assignments</h2>
 <ul>
-<li><a href="../assignments/G2.html">GA2</a> is due on Wednesday 10 April.</li>
+<li><a href="../assignments/A2.html">IA2</a> is due on Wednesday 10 April.</li>
+<li><a href="../assignments/G2.html">GA2</a> is due on Wednesday 17 April.</li>
 </ul>
 
 

@@ -1,5 +1,17 @@
-Try forecasting the Chinese GDP from the `global_economy` data set using an ETS model.
+1. Use the tsibble created from `tourism` for holiday travel in Victoria and Queensland. Plot the series to remind yourself what these look like.
 
-Experiment with the various options in the `ETS()` function to see how much the forecasts change with damped trend, or with a Box-Cox transformation. Try to develop an intuition of what each is doing to the forecasts.
+2. Use the `ETS()` function to fit models to both series. Explore the resulting `mable` using `report()`, `glance()` and `tidy()`
 
-[Hint: use `h=20` when forecasting, so you can clearly see the differences between the various options when plotting the forecasts.]
+3. Plot the estimated components of each model.
+
+4. Generate forecasts using `forecast()`.
+
+5. Plot the exports data for Algeria from the `global_economy` tsibble. Is this time series white noise? What ETS model would be appropriate?
+
+6. Use the `ETS()` function to fit appropriate models with both additive and multiplicative errors. What model is chosen automatically? Explore the estimated models.
+
+7. Plot the components of the two models. What do you see?
+
+8. Explore the residuals of the two models. What do you see?
+
+9. Generate and plot forecasts.
