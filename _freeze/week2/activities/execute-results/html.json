@@ -1,5 +1,5 @@
 {
-  "hash": "3ef2337f9386981d794a2c21a8c20ab4",
+  "hash": "b2e1cb4f3666f361ef376245bd6458a1",
   "result": {
     "markdown": "\n\n1. We have introduced various functions for time series graphics include `autoplot()`, `gg_season()`, `gg_subseries()`, `gg_lag()` and `ACF`. Use these functions to explore the quarterly tourism data for the Snowy Mountains.\n\n   ```r\n   snowy <- tourism |> filter(Region == \"Snowy Mountains\")\n   ```\n\n   What do you learn?\n\n2. Which time plot corresponds to which ACF plot?\n\n\n::: {.cell fig.asp='0.5'}\n::: {.cell-output-display}\n![](activities_files/figure-html/acf-quiz-1.png){width=100%}\n:::\n:::\n\n\n3.  You can compute the daily changes in the Google stock price in 2018 using the code below. Do the daily changes look like white noise?\n\n\\fontsize{11.5}{15}\\sf\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\ndgoog <- gafa_stock |>\n  filter(Symbol == \"GOOG\", year(Date) >= 2018) |>\n  mutate(trading_day = row_number()) |>\n  update_tsibble(index=trading_day, regular=TRUE) |>\n  mutate(diff = difference(Close))\n```\n:::\n\n\n\\fontsize{14}{16}\\sf\n\n    \n",
     "supporting": [
