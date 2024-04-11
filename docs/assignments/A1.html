@@ -71,6 +71,49 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.css">
 
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -184,8 +227,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#results" id="toc-results" class="nav-link active" data-scroll-target="#results">Results</a></li>
+  <li><a href="#submission" id="toc-submission" class="nav-link active" data-scroll-target="#submission">Submission</a></li>
+  <li><a href="#forecasting-competition" id="toc-forecasting-competition" class="nav-link" data-scroll-target="#forecasting-competition">Forecasting competition</a>
+  <ul class="collapse">
+  <li><a href="#scoring" id="toc-scoring" class="nav-link" data-scroll-target="#scoring">Scoring</a></li>
+  <li><a href="#submitted-forecasts" id="toc-submitted-forecasts" class="nav-link" data-scroll-target="#submitted-forecasts">Submitted forecasts</a></li>
   <li><a href="#leaderboard" id="toc-leaderboard" class="nav-link" data-scroll-target="#leaderboard">Leaderboard</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -224,31 +272,58 @@ ul.task-list li input[type="checkbox"] {
 <li>Prepare short justifications with your forecasts and forecast intervals explaining in no more than 50-70 words how these were obtained. Only a couple of sentences are required. There is no need to use any fancy models or sophisticated methods.</li>
 <li><strong>Full marks will be awarded</strong> if you submit the required information, and are able to meaningfully justify your results in a couple of sentences in each case.</li>
 </ul>
-<p><strong>Submission</strong></p>
+<section id="submission" class="level3">
+<h3 class="anchored" data-anchor-id="submission">Submission</h3>
 <p>Your forecasts should be submitted via <a href="https://forms.gle/oGtsTHCFRNuSQE7SA">google form</a> by <strong>11.55pm, on Wednesday, March 6</strong>.</p>
-<p><strong>Tips</strong></p>
+<section id="tips" class="level4">
+<h4 class="anchored" data-anchor-id="tips">Tips</h4>
 <ul>
 <li>The [Data] links give you possible data to start with, but you are free to use any data you like.</li>
 <li>There is no need to use any fancy models or sophisticated methods. Simple is better for this assignment. The methods you use should be understandable to any high school student.</li>
 </ul>
-<p><strong>Forecasting competition</strong></p>
-<ul>
-<li>Once the true values in each case are available, we will come back to this exercise and see who did the best using the scoring method described in class. The student with the best score will be the winner of our forecasting competition (something really nice to have on your CV), and will also win a $100 Amazon gift voucher.</li>
-</ul>
+</section>
+</section>
+<section id="forecasting-competition" class="level2">
+<h2 class="anchored" data-anchor-id="forecasting-competition">Forecasting competition</h2>
+<p>Once the true values in each case are available, we will come back to this exercise and see who did the best using the scoring method described in class. The student with the best score will be the winner of our forecasting competition (something really nice to have on your CV), and will also win a $100 Amazon gift voucher.</p>
 <p>Note: your assignment mark is not dependent at all on the score you obtain in the competition.</p>
-<section id="results" class="level2">
-<h2 class="anchored" data-anchor-id="results">Results</h2>
+<section id="scoring" class="level3">
+<h3 class="anchored" data-anchor-id="scoring">Scoring</h3>
+<p>Let <span class="math inline">y=</span> actual, <span class="math inline">\hat{y}=</span> point forecast, <span class="math inline">[\hat{\ell},\hat{u}]=</span> prediction interval</p>
+<section id="point-forecasts" class="level4">
+<h4 class="anchored" data-anchor-id="point-forecasts">Point forecasts:</h4>
+<p><span class="math display">\text{Absolute Error} = |y-\hat{y}|</span></p>
+<ul>
+<li>Rank results for all students in class</li>
+<li>Add ranks across all five items</li>
+</ul>
+</section>
+<section id="prediction-intervals" class="level4">
+<h4 class="anchored" data-anchor-id="prediction-intervals">Prediction intervals:</h4>
+<p><span class="math display">
+\text{Interval Score} = (\hat u - \hat\ell) + 10(\hat\ell - y)_+ + 10 (y-\hat u)_+
+</span></p>
+<ul>
+<li><span class="math inline">u_+=max(u,0)</span></li>
+<li>Rank results for all students</li>
+<li>Add ranks across all five items</li>
+</ul>
+</section>
+</section>
+<section id="submitted-forecasts" class="level3">
+<h3 class="anchored" data-anchor-id="submitted-forecasts">Submitted forecasts</h3>
 <ul>
 <li><a href="Q1.png">Q1</a>; <a href="Q1zoom.png">Q1-zoom</a>.</li>
 <li><a href="Q2.png">Q2</a>; <a href="Q2zoom.png">Q2-zoom</a>.</li>
 </ul>
 </section>
-<section id="leaderboard" class="level2">
-<h2 class="anchored" data-anchor-id="leaderboard">Leaderboard</h2>
+<section id="leaderboard" class="level3">
+<h3 class="anchored" data-anchor-id="leaderboard">Leaderboard</h3>
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSRfYQz7jMlzfV2y6FPoiMQYYPpV25tKGz85hdZbj8be9Fmub9OiBmOwhGTIm19Oe89JVVMWRAjVEoQ/pubhtml" width="110%" height="500">
 </iframe>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

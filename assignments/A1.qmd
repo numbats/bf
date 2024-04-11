@@ -15,28 +15,55 @@ For each of these, give a **point forecast** and an **80% prediction interval**,
 * Prepare short justifications with your forecasts and forecast intervals explaining in no more than 50-70 words how these were obtained. Only a couple of sentences are required. There is no need to use any fancy models or sophisticated methods. 
 * **Full marks will be awarded** if you submit the required information, and are able to meaningfully justify your results in a couple of sentences in each case. 
 
-**Submission**
+### Submission
 
 Your forecasts should be submitted via [google form](https://forms.gle/oGtsTHCFRNuSQE7SA) by **11.55pm, on Wednesday, March 6**.
 
-**Tips**
+#### Tips
 
 * The [Data] links give you possible data to start with, but you are free to use any data you like.
 * There is no need to use any fancy models or sophisticated methods. Simple is better for this assignment. The methods you use should be understandable to any high school student.
 
-**Forecasting competition**
+## Forecasting competition
 
-* Once the true values in each case are available, we will come back to this exercise and see who did the best using the scoring method described in class. The student with the best score will be the winner of our forecasting competition (something really nice to have on your CV), and will also win a $100 Amazon gift voucher.
+Once the true values in each case are available, we will come back to this exercise and see who did the best using the scoring method described in class. The student with the best score will be the winner of our forecasting competition (something really nice to have on your CV), and will also win a $100 Amazon gift voucher.
 
 Note: your assignment mark is not dependent at all on the score you obtain in the competition.
 
 
-## Results
+### Scoring 
+\small
+
+Let $y=$ actual, $\hat{y}=$ point forecast, $[\hat{\ell},\hat{u}]=$ prediction interval
+
+#### Point forecasts:
+
+$$\text{Absolute Error} = |y-\hat{y}|$$
+
+\vspace{-0.4cm}
+
+ * Rank results for all students in class
+ * Add ranks across all five items
+
+#### Prediction intervals:
+
+$$
+\text{Interval Score} = (\hat u - \hat\ell) + 10(\hat\ell - y)_+ + 10 (y-\hat u)_+
+$$
+
+\vspace{-0.5cm}
+
+* $u_+=max(u,0)$
+* Rank results for all students
+* Add ranks across all five items
+
+
+### Submitted forecasts
 
 * [Q1](Q1.png); [Q1-zoom](Q1zoom.png).
 * [Q2](Q2.png); [Q2-zoom](Q2zoom.png).
 
-## Leaderboard
+### Leaderboard
 
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSRfYQz7jMlzfV2y6FPoiMQYYPpV25tKGz85hdZbj8be9Fmub9OiBmOwhGTIm19Oe89JVVMWRAjVEoQ/pubhtml" width = "110%" height = 500></iframe>
 
