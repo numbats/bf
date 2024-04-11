@@ -29,3 +29,14 @@ Your forecasts should be submitted via [google form](https://forms.gle/oGtsTHCFR
 * Once the true values in each case are available, we will come back to this exercise and see who did the best using the scoring method described in class. The student with the best score will be the winner of our forecasting competition (something really nice to have on your CV), and will also win a $100 Amazon gift voucher.
 
 Note: your assignment mark is not dependent at all on the score you obtain in the competition.
+
+
+## Results
+
+* [Q1](Q1.png); [Q1-zoom](Q1zoom.png).
+* [Q2](Q2.png); [Q2-zoom](Q2zoom.png).
+
+## Leaderboard
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSRfYQz7jMlzfV2y6FPoiMQYYPpV25tKGz85hdZbj8be9Fmub9OiBmOwhGTIm19Oe89JVVMWRAjVEoQ/pubhtml" width = "110%" height = 500></iframe>
+
