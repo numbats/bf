@@ -18,13 +18,16 @@ fit <- holidays |>
     auto = ETS(Trips)
   )
 
+fit
+
 fit |>
   filter(State=="Victoria") |> 
   select(multiplicative) |>
   report()
 
-components(fit) |> 
+fit |> 
   filter(State=="Victoria") |> 
+  components() |> 
   autoplot()
 
 fit |>
@@ -47,16 +50,18 @@ fit |>
   filter(State=="Victoria") |> 
   select(multiplicative) |> 
   residuals()
-
-fit |>
-  filter(State=="Victoria") |> 
-  select(multiplicative) |>
-  gg_tsresiduals()
+  # This is a bit confusing but be aware of it
 
 fit |> 
   filter(State=="Victoria") |> 
   select(multiplicative) |> 
   residuals(type = "response")
+
+fit |>
+  filter(State=="Victoria") |> 
+  select(additive) |>
+  gg_tsresiduals()
+
 
 fit
 fit |> glance()
@@ -99,8 +104,8 @@ h02 |>
   report()
 
 h02 |>
-  model(ETS(Cost)) |>
-  forecast() |>
+  model(ETS(Cost~ trend("A"))) |>
+  forecast(h=200) |>
   autoplot(h02)
 
 
