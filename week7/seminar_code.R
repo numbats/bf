@@ -1,57 +1,134 @@
 library(fpp3)
 
-#### Amazon STOCK PRICE 2018 ----------------
+#1. Australia Cement production ------------
 
-amazon_2018 <- gafa_stock |>
-  filter(Symbol == "AMZN", year(Date) == 2018)
+aus_production |>
+  autoplot(Cement) +
+  labs(title = "Cement production in Australia")
+  #Fails stationarity in all three possible ways
 
-amazon_2018 |> autoplot(Close)
-amazon_2018 |>
-  ACF(Close) |>
-  autoplot()
+aus_production |>
+  autoplot(
+    log(Cement)
+  ) +
+  labs(title = "Cement production in Australia")
 
-amazon_2018 |> autoplot(difference(Close)) +
-  ylab("Google closing stock price") + xlab("Day")
+aus_production |>
+  autoplot(
+    log(Cement) |> difference(lag=12)
+  ) +
+  labs(title = "Cement production in Australia")
 
-amazon_2018 |>
-  ACF(difference(Close)) |>
-  autoplot()
+# Let's get some help from gg_tsdisplay
+aus_production |>
+  gg_tsdisplay(
+    log(Cement) |> difference(lag=12)
+  )
+#Needs another difference
 
-amazon_2018 |>
-  features(Close, unitroot_kpss)
-amazon_2018 |>
-  features(difference(Close), unitroot_kpss)
-amazon_2018 |>
-  features(Close, unitroot_ndiffs)
+aus_production |>
+  autoplot(
+    log(Cement) |> difference(12) |> difference(1)
+  ) +
+  labs(title = "Cement production in Australia")
 
-## A10 drugs
+aus_production |>
+  gg_tsdisplay(
+    log(Cement) |> difference(12) |> difference(1)
+  )
+
+# Let's verify through more official
+aus_production |>
+  features(log(Cement), feat_stl)
+
+aus_production |>
+  features(log(Cement),
+           unitroot_nsdiffs)
+
+aus_production |>
+  features(log(Cement) |> difference(12),
+           unitroot_ndiffs)
+
+
+#2. Australia Gas production ------------
+
+aus_production |>
+  autoplot(Gas)
+
+aus_production |>
+  autoplot(log(Gas))
+
+aus_production |>
+  features(Gas, guerrero)
+
+aus_production |>
+  autoplot(box_cox(Gas,0.11))
+
+aus_production |>
+  gg_tsdisplay(
+    box_cox(Gas,0.11) |> difference(lag = 4)
+  )
+
+aus_production |>
+  gg_tsdisplay(
+    box_cox(Gas,0.11) |> difference(lag = 4) |> difference()
+  )
+
+aus_production |>
+  features(
+    box_cox(Gas,0.11),
+    feat_stl
+  )
+
+aus_production  |>
+  features(
+    box_cox(Gas,0.11),
+    unitroot_nsdiffs
+  )
+
+aus_production  |>
+  features(
+    box_cox(Gas,0.11)|> difference(lag=4),
+    unitroot_ndiffs
+  )
+
+#3. A10 drugs --------------
 
 a10 <- PBS |>
   filter(ATC2 == "A10") |>
   summarise(Cost = sum(Cost) / 1e6)
+# Fails stationarity in all three ways
+
 
 a10 |> autoplot(Cost)
 
-a10 |> autoplot(log(Cost))
+a10 |>
+  autoplot(log(Cost))
 
-a10 |> autoplot(
-  log(Cost) |> difference(lag = 12)
-)
+a10 |>
+  gg_tsdisplay(log(Cost),lag_max = 48)
 
 a10 |>
   features(log(Cost), feat_stl)
 
 a10 |>
-  features(log(Cost) |> difference(lag=12), feat_stl)
+  features(log(Cost), unitroot_nsdiffs)
 
 a10 |>
-  features(log(Cost), unitroot_nsdiffs)
+  autoplot(
+  log(Cost) |> difference(lag = 12)
+  )
+
+a10 |>
+  gg_tsdisplay(log(Cost) |> difference(lag=12))
+
+a10 |>
+  features(log(Cost) |> difference(lag=12), feat_stl)
 
 a10 |>
   features(log(Cost) |> difference(lag=12), unitroot_ndiffs)
 
-
-## H02 drugs
+##3. H02 drugs -------
 
 h02 <- PBS |>
   filter(ATC2 == "H02") |>
@@ -61,23 +138,68 @@ h02 |> autoplot(Cost)
 
 h02 |> autoplot(log(Cost))
 
-h02 |> autoplot(
-  log(Cost) |> difference(12)
-)
-
-h02 |> autoplot(
-  log(Cost) |> difference(12) |> difference(1)
-)
+h02 |>
+  autoplot(
+    log(Cost) |> difference(12)
+    )
 
 h02 |>
-  mutate(log_sales = log(Cost)) |>
-  features(log_sales, feat_stl)
+  features(difference(log(Cost), 12), unitroot_ndiffs)
 
 h02 |>
-  mutate(log_sales = log(Cost)) |>
-  features(log_sales, unitroot_nsdiffs)
-h02 |>
-  mutate(d_log_sales = difference(log(Cost), 12)) |>
-  features(d_log_sales, unitroot_ndiffs)
+  autoplot(
+    log(Cost) |> difference(12) |> difference()
+    )
 
+
+
+
+#4. ALGERIAN EXPORTS -----------------------------------
+
+algeria <-global_economy %>%
+  filter(Country == "Algeria")
+
+algeria %>% autoplot(Exports) +
+  labs(y = "% of GDP", title = "Algerian Exports")
+
+# Data is stationary - tested
+algeria %>%
+  features(Exports,unitroot_ndiffs)
+
+# But data is not WN
+algeria %>% ACF(Exports) %>% autoplot()
+
+# Clearly not WN
+# This is what we will be modelling
+
+
+
+# Unit root tests
+fb  |> features(Close, unitroot_kpss)
+fb  |> features(Close |> difference(), unitroot_kpss)
+fb  |> features(Close, unitroot_ndiffs)
+
+## Seasonal strength
+aus_production  |>
+  features(
+    box_cox(Bricks, lambda = 0.3),
+    feat_stl
+  )
+aus_production  |>
+  features(
+    box_cox(Bricks, lambda = 0.3),
+    unitroot_nsdiffs
+  )
+
+## Unit root
+aus_production  |>
+  features(
+    box_cox(Bricks, lambda = 0.3) |> difference(lag = 4),
+    unitroot_kpss
+  )
+aus_production  |>
+  features(
+    box_cox(Bricks, lambda = 0.3) |> difference(lag = 4),
+    unitroot_ndiffs
+  )
 

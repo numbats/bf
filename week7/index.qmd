@@ -10,7 +10,7 @@ source(here::here("course_info.R"))
 ## What you will learn this week
 
 * Stationarity and differencing
-* Autoregressive and moving average models
+* Random Walk Models
 
 ## Exercises (on your own or in tutorial)
 
@@ -18,16 +18,30 @@ Complete Exercises 5-7, 10-15 from [Section 8.8 of the book](https://otexts.com/
 
 ## Pre-seminar activities
 
-Read [Sections 9.1-9.4 of the textbook](https://otexts.com/fpp3/arima.html) and watch all embedded videos
+Read [Sections 9.1-9.2 of the textbook](https://otexts.com/fpp3/arima.html) and watch all embedded videos.
 
-
-```{r, eval=FALSE}
-#| output: asis
-show_slides(week)
-show_activity(week)
-```
 
 ```{r}
+#| output: asis
+show_slides(week)
+```
+
+## Seminar activities
+
+```{r}
+#| child: activities.md
+```
+
+
+## Seminar code
+
+::: {.callout appearance="minimal"}
+<i class="bi bi-download"></i> [Seminar_code_week7.R](Seminar_code_week7.R){download="Seminar_code_week7.R"}
+:::
+
+
+
+```{r, echo=FALSE}
 #| output: asis
 show_assignments(week)
 ```

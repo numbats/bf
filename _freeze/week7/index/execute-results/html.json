@@ -1,10 +1,9 @@
 {
-  "hash": "c2bb98733fa6274d5d80b8a68f0f5971",
+  "hash": "b3edcc7995aec27b14edd373a43a72d0",
   "result": {
-    "markdown": "---\ntitle: \"Week 7: ARIMA models\"\n---\n\n::: {.cell}\n\n:::\n\n\n## What you will learn this week\n\n* Stationarity and differencing\n* Autoregressive and moving average models\n\n## Exercises (on your own or in tutorial)\n\nComplete Exercises 5-7, 10-15 from [Section 8.8 of the book](https://otexts.com/fpp3/expsmooth-exercises.html).\n\n## Pre-seminar activities\n\nRead [Sections 9.1-9.4 of the textbook](https://otexts.com/fpp3/arima.html) and watch all embedded videos\n\n\n\n\n\n\n## Assignments\n\n* [GA2](../assignments/G2.qmd) is due on Wednesday 17 April.\n* [IA3](../assignments/A3.qmd) is due on Wednesday 24 April.\n* [GA3](../assignments/G3.qmd) is due on Wednesday 01 May.\n",
-    "supporting": [
-      "index_files"
-    ],
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Week 7: ARIMA models\"\n---\n\n::: {.cell}\n\n:::\n\n\n## What you will learn this week\n\n* Stationarity and differencing\n* Random Walk Models\n\n## Exercises (on your own or in tutorial)\n\nComplete Exercises 5-7, 10-15 from [Section 8.8 of the book](https://otexts.com/fpp3/expsmooth-exercises.html).\n\n## Pre-seminar activities\n\nRead [Sections 9.1-9.2 of the textbook](https://otexts.com/fpp3/arima.html) and watch all embedded videos.\n\n\n\n## Slides for seminar\n\n<embed src='/week7/week7.pdf' type='application/pdf' width='100%' height=465></embed>\n<a href=/week7/week7.pdf class='badge badge-small badge-red'>Download pdf</a>\n\n\n## Seminar activities\n\n\n\n1. What sorts of transformations and differencing are needed to make the `Cement` series from `aus_production` stationary? Do the tests agree with your decisions? \n\n2. Repeat the exercise for the `Gas` series. \n\n3. Generate the `a10` and the `h02` series from the `PBS` tsibble we explored earlier using the code below.\n\n    ```r\n    a10 <- PBS |>\n      filter(ATC2 == \"A10\") |>\n      summarise(Cost = sum(Cost))\n      \n    h02 <- PBS |>\n      filter(ATC2 == \"H02\") |>\n      summarise(Cost = sum(Cost))\n\n    ```\nWhat are the features of these series in terms of stationarity and what operations do you need to take to turn them into stationary series. \n\n4. Explore the the Algerian exports series from the `global_economy` tsibble. Is the series stationary? Is the series white noise?\n\n\n\n## Seminar code\n\n::: {.callout appearance=\"minimal\"}\n<i class=\"bi bi-download\"></i> [Seminar_code_week7.R](Seminar_code_week7.R){download=\"Seminar_code_week7.R\"}\n:::\n\n\n\n\n\n## Assignments\n\n* [GA2](../assignments/G2.qmd) is due on Wednesday 17 April.\n* [IA3](../assignments/A3.qmd) is due on Wednesday 24 April.\n* [GA3](../assignments/G3.qmd) is due on Wednesday 01 May.\n",
+    "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],
