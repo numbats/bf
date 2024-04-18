@@ -147,7 +147,7 @@ h02 |>
   features(difference(log(Cost), 12), unitroot_ndiffs)
 
 h02 |>
-  autoplot(
+  gg_tsdisplay(
     log(Cost) |> difference(12) |> difference()
     )
 
@@ -169,7 +169,6 @@ algeria %>%
 # But data is not WN
 algeria %>% ACF(Exports) %>% autoplot()
 
-# Clearly not WN
 # This is what we will be modelling
 
 
