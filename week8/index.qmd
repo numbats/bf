@@ -16,18 +16,40 @@ source(here::here("course_info.R"))
 
 Complete Exercise 1-4 from [Section 9.11 of the book](https://otexts.com/fpp3/arima-exercises.html)
 
+## Exercise solutions
+
+::: {.callout appearance="minimal"}
+<i class="bi bi-download"></i> [Week 8 Tutorial Solution.html](Week8.html){download="Week 8 Tutorial Solution.html"}
+:::
+
+
 ## Pre-seminar activities
 
 Read [Sections 9.3-9.8 of the textbook](https://otexts.com/fpp3/arima.html) and watch all embedded videos
 
 
-```{r, eval=FALSE}
-#| output: asis
-show_slides(week)
-show_activity(week)
-```
 
 ```{r}
+#| output: asis
+show_slides(week)
+```
+
+## Seminar activities
+
+```{r}
+#| child: activities.md
+```
+
+
+## Seminar code
+
+::: {.callout appearance="minimal"}
+<i class="bi bi-download"></i> [Seminar_code_week8.R](Seminar_code_week8.R){download="Seminar_code_week8.R"}
+:::
+
+
+
+```{r, echo=FALSE}
 #| output: asis
 show_assignments(week)
 ```
