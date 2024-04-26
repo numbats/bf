@@ -84,30 +84,25 @@ library(fpp3)
 
 *You have now considered several modelling frameworks and built several models for your data set. In this part of the assignment you will evaluate these.*
 
-*Update your data from the ABS website (https://www.abs.gov.au/statistics/industry/retail-and-wholesale-trade/retail-trade-australia Table 11). Explore your updated time series and comment on the series movement through the COVID-19 pandemic. Provide any necessary plots to support your analysis. Some States and Industries are unfortunately affected more than others. (6 marks)*
+*Use the last two years of your data as a test set. Generate forecasts for this period, from the models considered "best" in all assignments. More specifically, generate forecasts from the best benchmark, the best ETS and best ARIMA model. Plot the forecasts (both point forecasts and prediction intervals) together with the observed data and comment on these. (Make sure you can clearly visualise these. You may choose to plot on multiple graphs.) (6 marks)* 
+
+```{r}
+
+```
 
 \newpage
 ## Question 9
 
-*Generate forecasts for the period post 2020 until the end of your sample, from the models considered "best" in all assignments. More specifically, generate forecasts from the best benchmark, the best ETS and best ARIMA model. Plot the forecasts (both point forecasts and prediction intervals) together with the observed data and comment on these. (Make sure you can clearly visualise these. You may choose to plot on multiple graphs.) (6 marks)* 
-
+*Evaluate the accuracy of the point forecasts over the test set. A table with accuracy measures will be necessary to be presented here. Comment on which forecasts are the most accurate. (4 marks)*
 ```{r}
 
 ```
+
 
 \newpage
 ## Question 10
 
-*Evaluate the accuracy of the point forecasts over the period post 2020. A table with accuracy measures will be necessary to be presented here. Comment on which forecasts are the most accurate. (4 marks)*
-```{r}
-
-```
-
-
-\newpage
-## Question 11
-
-*Use all three models to forecast the next 24-months of your updated series. Generate the necessary plots and comment on the forecasts. Make sure you can clearly visualise these. How have your models faired amidst the effects of COVID-19? (9 marks)*
+*Use all three models to forecast the next 24-months (after the test set). Generate the necessary plots and comment on the forecasts. Make sure you can clearly visualise these. How have your models fared amidst the effects of COVID-19? (9 marks)*
 
 ```{r}
 
