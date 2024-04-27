@@ -42,18 +42,9 @@ knitr::opts_chunk$set(echo = TRUE, eval=TRUE, error=TRUE, cache=TRUE)
 ```
 
 \newpage
-## Question 4
-
-*Update and plot your data. Do you see a COVID-19 effect? If your series has not been updated yet comment on what you expect the effect of COVID-19 will be. (3 marks)*
-
-```{r}
-
-```
-
-\newpage
 ## Question 5
 
-*Use the best two models and generate forecasts for your series based on the end of your updated sample (or end of sample if your data has not been updated). Plot these on the same graph, together with prediction intervals. Think about visualisation. Comment on these. (No more than 100 words). (6 marks)*
+*Use the best two models and generate forecasts beyond the end of your your series. Plot these on the same graph, together with prediction intervals. Think about visualisation. Comment on these. (No more than 100 words). (6 marks)*
 
 ```{r}
 
