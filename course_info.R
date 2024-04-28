@@ -143,13 +143,13 @@ submit <- function(schedule, assignment) {
   url <- ass$Moodle
   button1 <- paste0("<br><br><hr><b>Due: ", due, "</b><br>",
                    "<a href=",url," class = 'badge badge-large badge-blue'>",
-                   "<font size='+2'>&nbsp;&nbsp;<b>Submit (ETF3231)</b>&nbsp;&nbsp;</font><br></a>")
+                   "<font size='+2'>&nbsp;&nbsp;<b>Submit (ETF5231)</b>&nbsp;&nbsp;</font><br></a>")
   cat(button1)
   if (str_detect(ass$Assignment, "IA")) {
   url <- php_url[as.numeric(str_sub(assignment, 3))]
   button2 <- paste0("<br><br><hr><b>Due: ", due, "</b><br>",
                     "<a href=",url," class = 'badge badge-large badge-blue'>",
-                    "<font size='+2'>&nbsp;&nbsp;<b>Submit (ETF5231)</b>&nbsp;&nbsp;</font><br></a>")
+                    "<font size='+2'>&nbsp;&nbsp;<b>Submit (ETF3231)</b>&nbsp;&nbsp;</font><br></a>")
   cat(button2)
   }
 }
