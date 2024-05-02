@@ -17,6 +17,15 @@ source(here::here("course_info.R"))
 
 Complete Exercises 6-8, 15-16 from [Section 9.11 of the book](https://otexts.com/fpp3/arima-exercises.html).
 
+
+## Exercise solutions
+
+::: {.callout appearance="minimal"}
+<i class="bi bi-download"></i> [Week 9 Tutorial Solution.html](Week9.html){download="Week 9 Tutorial Solution.html"}
+:::
+
+
+
 ## Pre-seminar activities
 
 Read [Sections 9.8-9.10 of the textbook](https://otexts.com/fpp3/arima.html) and watch all embedded videos
