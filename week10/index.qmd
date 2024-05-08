@@ -22,13 +22,27 @@ Complete Exercises 9-13 from [Section 9.11 of the book](https://otexts.com/fpp3/
 Read [Chapter 7 of the textbook](https://otexts.com/fpp3/regression.html) and watch all embedded videos
 
 
-```{r, eval=FALSE}
+```{r}
 #| output: asis
 show_slides(week)
-show_activity(week)
 ```
 
+## Seminar activities
+
 ```{r}
+#| child: activities.md
+```
+
+
+## Seminar code
+
+::: {.callout appearance="minimal"}
+<i class="bi bi-download"></i> [Seminar_code_week10.R](Seminar_code_week10.R){download="Seminar_code_week10.R"}
+:::
+
+
+
+```{r, echo=FALSE}
 #| output: asis
 show_assignments(week)
 ```
