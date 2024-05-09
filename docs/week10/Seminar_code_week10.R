@@ -73,7 +73,6 @@ fit_consBest <- us_change %>%
     TSLM(Consumption ~ Income + Savings + Production + Unemployment)
   )
 
-
 report(fit_consBest)
 
 augment(fit_consBest) |>
@@ -116,12 +115,15 @@ us_change |>
 
 # Scenario based forecasting
 
-future_scenarios <- scenarios(
-  Increase = new_data(us_change, 4) %>%
-    mutate(Income=1, Savings=0.5, Unemployment=0, Production=0),
-  Decrease = new_data(us_change, 4) %>%
-    mutate(Income=-1, Savings=-0.5, Unemployment=0, Production=0),
-  names_to = "Scenario")
+future_scenarios <- 
+  scenarios(
+    Increase = 
+      new_data(us_change, 4) |> 
+      mutate(Income=1, Savings=0.5, Unemployment=0, Production=0),
+    Decrease = 
+      new_data(us_change, 4) |> 
+      mutate(Income=-1, Savings=-0.5, Unemployment=0, Production=0),
+    names_to = "Scenario")
 
 fc <- forecast(fit_consBest, new_data = future_scenarios)
 
@@ -136,10 +138,10 @@ us_change %>% autoplot(Consumption) +
 
 us_gasoline  |>
   autoplot(Barrels) +
-  labs(y = "Weekly US finished motor gasoline product supplied (million barrels)")
+  labs(title = "Weekly US finished motor gasoline product supplied (million barrels)")
 
 us_gasoline |> 
-  gg_season(period = "year")
+  gg_season(Barrels)
 
 us_gasoline |> 
   model(STL()) |> 
@@ -150,7 +152,7 @@ fit <- us_gasoline |>
   model(
     K01 = TSLM(log(Barrels) ~ trend(knots = yearweek(c("2006 W1", "2011 W1"))) + fourier(K = 1)),
     K05 = TSLM(log(Barrels) ~ trend(knots = yearweek(c("2006 W1", "2011 W1"))) + fourier(K = 5)),
-    K06 = TSLM(log(Barrels) ~ trend(knots = yearweek(c("2006 W1", "2013 W1"))) + fourier(K = 6)),
+    K06 = TSLM(log(Barrels) ~ trend(knots = yearweek(c("2006 W1", "2011 W1"))) + fourier(K = 6)),
     K07 = TSLM(log(Barrels) ~ trend(knots = yearweek(c("2006 W1", "2011 W1"))) + fourier(K = 7)),
     K08 = TSLM(log(Barrels) ~ trend(knots = yearweek(c("2006 W1", "2011 W1"))) + fourier(K = 8)),
     K09 = TSLM(log(Barrels) ~ trend(knots = yearweek(c("2006 W1", "2011 W1"))) + fourier(K = 9)),
