@@ -42,7 +42,7 @@ knitr::opts_chunk$set(echo = TRUE, eval=TRUE, error=TRUE, cache=TRUE)
 ```
 
 \newpage
-## Question 5
+## Question 4
 
 *Use the best two models and generate forecasts beyond the end of your your series. Plot these on the same graph, together with prediction intervals. Think about visualisation. Comment on these. (No more than 100 words). (6 marks)*
 
@@ -51,7 +51,7 @@ knitr::opts_chunk$set(echo = TRUE, eval=TRUE, error=TRUE, cache=TRUE)
 ```
 
 \newpage
-## Question 6
+## Question 5
 
 *You have now implemented all the modelling frameworks you have learnt about throughout the semester and forecasted multiple series. Write between 300-500 words on your thoughts of these frameworks. What has worked best for the series you have considered? Which one did you find the easiest to work with understand and implement? What are the highlights or disadvantages of the frameworks? Would a regression based model work better for the retail data given the COVID-19 situation? How would you implement this? (15 marks)*
 
