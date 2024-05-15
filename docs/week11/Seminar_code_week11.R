@@ -219,15 +219,6 @@ fit_better <- vic_elec_daily |>
 fit_better |> report()
 fit_better |> gg_tsresiduals()
 
-
-# Let's forecast the next day
-vic_next_day <- new_data(vic_elec_daily, 1) |>
-  mutate(Temperature = 26, Day_Type = "Holiday")
-
-forecast(elec_fit, new_data = vic_next_day) |>
-  autoplot(vic_elec_daily |> tail(50), level = 80) +
-  labs(y = "Electricity demand (GW)")
-
 # Let's forecast a few days ahead
 # In practice you would use many more scenarios
 # BOM forecasts are very accurate 4-5 days ahead
