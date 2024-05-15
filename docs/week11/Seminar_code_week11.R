@@ -1,8 +1,68 @@
 library(fpp3)
 library(lubridate)
 
+## US GASOLINE ---------------------------------------------------
+# Weekly data
+us_gasoline |> autoplot(Barrels)
 
-## Daily data with annual and weekly seasonality ------
+# The ugly way
+# Assuming 52 weeks in the year
+# What can K go up to?
+
+# ARIMA deals with change in trends
+gas_fit <- us_gasoline |>
+  model(
+    F1 = ARIMA(Barrels ~ fourier(K = 1) + PDQ(0,0,0)),
+    F2 = ARIMA(Barrels ~ fourier(K = 2) + PDQ(0,0,0)),
+    F3 = ARIMA(Barrels ~ fourier(K = 3) + PDQ(0,0,0)),
+    F4 = ARIMA(Barrels ~ fourier(K = 4) + PDQ(0,0,0)),
+    F5 = ARIMA(Barrels ~ fourier(K = 5) + PDQ(0,0,0)),
+    F6 = ARIMA(Barrels ~ fourier(K = 6) + PDQ(0,0,0)),
+    F7 = ARIMA(Barrels ~ fourier(K = 7) + PDQ(0,0,0)),
+    F8 = ARIMA(Barrels ~ fourier(K = 8) + PDQ(0,0,0)),
+    F9 = ARIMA(Barrels ~ fourier(K = 9) + PDQ(0,0,0)),
+    F10 = ARIMA(Barrels ~ fourier(K = 10) + PDQ(0,0,0)),
+    F11 = ARIMA(Barrels ~ fourier(K = 11) + PDQ(0,0,0)),
+    F12 = ARIMA(Barrels ~ fourier(K = 12) + PDQ(0,0,0)),
+    F13 = ARIMA(Barrels ~ fourier(K = 13) + PDQ(0,0,0)),
+    F14 = ARIMA(Barrels ~ fourier(K = 14) + PDQ(0,0,0)),
+    best_lm = TSLM(Barrels ~ trend(knots = yearweek(c("2006 W1", "2013 W1"))) + fourier(K = 6)), #these are identical
+    best_lm2 = ARIMA(Barrels ~ trend(knots = yearweek(c("2006 W1", "2013 W1"))) + fourier(K = 6)
+                     + pdq(0,0,0) + PDQ(0,0,0)),
+    best_lm3 = ARIMA(Barrels ~ trend(knots = yearweek(c("2006 W1", "2013 W1"))) + fourier(K = 6)
+                     + PDQ(0,0,0))
+  )
+
+glance(gas_fit) |> arrange(AICc)
+
+gas_fit |>
+  select(F6) |>
+  report()
+
+gas_fit |>
+  select(F6) |>
+  gg_tsresiduals()
+
+gas_fit |>
+  select(best_lm3) |>
+  report()
+
+gas_fit |>
+  select(best_lm3) |>
+  gg_tsresiduals()
+
+gas_fit |>
+  select(F6, best_lm3) |>
+  forecast(h = "3 years") |>
+  autoplot(us_gasoline)
+
+# Prediction intervals much better - although a bit of  hetero left over
+# This is the only way to handle weekly data
+
+
+
+## VICTORIAN ELECTRICITY ---------------------------------------------
+# Daily data with annual and weekly seasonality
 
 vic_elec
 vic_elec |> tail()
@@ -226,65 +286,6 @@ forecast(elec_fit, new_data = vic_elec_future) |>
 # each day of the week - days are very different
 # separate models for seasons. But this gives you a good
 # starting point.
-
-
-## US GASOLINE ---------------------------------------------------
-# Weekly data
-us_gasoline |> autoplot(Barrels)
-
-# The ugly way
-# Assuming 52 weeks in the year
-# What can K go up to?
-
-# ARIMA deals with change in trends
-gas_fit <- us_gasoline |>
-  model(
-    F1 = ARIMA(Barrels ~ fourier(K = 1) + PDQ(0,0,0)),
-    F2 = ARIMA(Barrels ~ fourier(K = 2) + PDQ(0,0,0)),
-    F3 = ARIMA(Barrels ~ fourier(K = 3) + PDQ(0,0,0)),
-    F4 = ARIMA(Barrels ~ fourier(K = 4) + PDQ(0,0,0)),
-    F5 = ARIMA(Barrels ~ fourier(K = 5) + PDQ(0,0,0)),
-    F6 = ARIMA(Barrels ~ fourier(K = 6) + PDQ(0,0,0)),
-    F7 = ARIMA(Barrels ~ fourier(K = 7) + PDQ(0,0,0)),
-    F8 = ARIMA(Barrels ~ fourier(K = 8) + PDQ(0,0,0)),
-    F9 = ARIMA(Barrels ~ fourier(K = 9) + PDQ(0,0,0)),
-    F10 = ARIMA(Barrels ~ fourier(K = 10) + PDQ(0,0,0)),
-    F11 = ARIMA(Barrels ~ fourier(K = 11) + PDQ(0,0,0)),
-    F12 = ARIMA(Barrels ~ fourier(K = 12) + PDQ(0,0,0)),
-    F13 = ARIMA(Barrels ~ fourier(K = 13) + PDQ(0,0,0)),
-    F14 = ARIMA(Barrels ~ fourier(K = 14) + PDQ(0,0,0)),
-    best_lm = TSLM(Barrels ~ trend(knots = yearweek(c("2006 W1", "2013 W1"))) + fourier(K = 6)), #these are identical
-    best_lm2 = ARIMA(Barrels ~ trend(knots = yearweek(c("2006 W1", "2013 W1"))) + fourier(K = 6)
-                     + pdq(0,0,0) + PDQ(0,0,0)),
-    best_lm3 = ARIMA(Barrels ~ trend(knots = yearweek(c("2006 W1", "2013 W1"))) + fourier(K = 6)
-                     + PDQ(0,0,0))
-    )
-
-glance(gas_fit) |> arrange(AICc)
-
-gas_fit |>
-  select(F6) |>
-  report()
-
-gas_fit |>
-  select(F6) |>
-  gg_tsresiduals()
-
-gas_fit |>
-  select(best_lm3) |>
-  report()
-
-gas_fit |>
-  select(best_lm3) |>
-  gg_tsresiduals()
-
-gas_fit |>
-  select(F6, best_lm3) |>
-  forecast(h = "3 years") |>
-  autoplot(us_gasoline)
-
-# Prediction intervals much better - although a bit of  hetero left over
-# This is the only way to handle weekly data
 
 
 

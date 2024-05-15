@@ -276,7 +276,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="seminar-activities">Seminar activities</h2>
 <ol type="1">
 <li><p>Review the model for US gasoline data from last week to now be a dynamic harmonic regression model.</p></li>
-<li><p>Turn the half hourly electricity data into weekly data using the following code. Try and understand what each line does.</p>
+<li><p>Turn the half hourly electricity data into daily data using the following code. Try and understand what each line does.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>vic_elec_daily <span class="ot">&lt;-</span> vic_elec <span class="sc">|&gt;</span>   </span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">index_by</span>(<span class="at">Date =</span> <span class="fu">date</span>(Time)) <span class="sc">|&gt;</span> </span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(                        </span>

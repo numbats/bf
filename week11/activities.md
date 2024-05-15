@@ -1,7 +1,7 @@
 1. Review the model for US gasoline data from last week to now be a dynamic harmonic regression model. 
 
 
-2. Turn the half hourly electricity data into weekly data using the following code. Try and understand what each line does.
+2. Turn the half hourly electricity data into daily data using the following code. Try and understand what each line does.
 
     ```r
     vic_elec_daily <- vic_elec |>   
