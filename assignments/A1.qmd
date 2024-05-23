@@ -67,5 +67,5 @@ $$
 
 ### Leaderboard
 
-<iframe src="https://docs.google.com/spreadsheets/d/1_3RcdspMIL7TIaD7566bEbUEe8LHcg4UNQS1-ex-NZg/edit#gid=185527398" width = "110%" height = 500></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/1_3RcdspMIL7TIaD7566bEbUEe8LHcg4UNQS1-ex-NZg/edit?usp=sharing" width = "110%" height = 500></iframe>
 
