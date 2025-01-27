@@ -40,22 +40,23 @@ Email: [George.Athanasopoulos@monash.edu](mailto:George.Athanasopoulos@monash.ed
 <!-- * Thursday, 3.30-4.30pm, Room H5.83, George Athanasopoulos.  -->
 <!-- * Friday 12-1pm, [Joan Tan (Head Tutor) ](mailto:joan.tan@monash.edu),  [zoom](https://monash.zoom.us/j/84833570459?pwd=M1M2Y0xscmhnQjE3N2hXSSszWWdYQT09). -->
 
-## Pre-exam Consultation
+<!-- ## Pre-exam Consultation -->
 
-* 31st May: 1-3pm, [Joan Tan](mailto:joan.tan@monash.edu),  [zoom](https://monash.zoom.us/j/84833570459?pwd=M1M2Y0xscmhnQjE3N2hXSSszWWdYQT09).  
-* 3th June: 4.30-6.30pm, [Nadeeka Dilini Basnayake](mailto:Nadeeka.Basnayake@monash.edu), [zoom](https://monash.zoom.us/j/84833570459?pwd=M1M2Y0xscmhnQjE3N2hXSSszWWdYQT09). 
-* 4th June: 1-2pm, [Ari Handayani](mailto:ari.handayani@monash.edu),  [zoom](https://monash.zoom.us/j/84833570459?pwd=M1M2Y0xscmhnQjE3N2hXSSszWWdYQT09).  
-* 4th June: 3-4pm, George Athanasopoulos, [zoom](https://monash.zoom.us/j/88066768160?pwd=c1VvUSswTE44TWZsRnBjR3hReHFVdz09).     
-* 5th June: 1-2pm, [Ari Handayani](mailto:ari.handayani@monash.edu),  [zoom](https://monash.zoom.us/j/84833570459?pwd=M1M2Y0xscmhnQjE3N2hXSSszWWdYQT09).  
-* 5th June: 3-4pm,  George Athanasopoulos, [zoom](https://monash.zoom.us/j/85187874295?pwd=KzJuaklwRDh6MlI5YmJZbC9zbUpLZz09).     
-* 5th June: 4-6pm,  [Kulan Ranasinghe](mailto:kulan.ranasinghearachchige@monash.edu), [zoom](https://monash.zoom.us/j/84833570459?pwd=M1M2Y0xscmhnQjE3N2hXSSszWWdYQT09).  
+<!-- * 31st May: 1-3pm, [Joan Tan](mailto:joan.tan@monash.edu),  [zoom](https://monash.zoom.us/j/84833570459?pwd=M1M2Y0xscmhnQjE3N2hXSSszWWdYQT09).   -->
+<!-- * 3th June: 4.30-6.30pm, [Nadeeka Dilini Basnayake](mailto:Nadeeka.Basnayake@monash.edu), [zoom](https://monash.zoom.us/j/84833570459?pwd=M1M2Y0xscmhnQjE3N2hXSSszWWdYQT09).  -->
+<!-- * 4th June: 1-2pm, [Ari Handayani](mailto:ari.handayani@monash.edu),  [zoom](https://monash.zoom.us/j/84833570459?pwd=M1M2Y0xscmhnQjE3N2hXSSszWWdYQT09).   -->
+<!-- * 4th June: 3-4pm, George Athanasopoulos, [zoom](https://monash.zoom.us/j/88066768160?pwd=c1VvUSswTE44TWZsRnBjR3hReHFVdz09).      -->
+<!-- * 5th June: 1-2pm, [Ari Handayani](mailto:ari.handayani@monash.edu),  [zoom](https://monash.zoom.us/j/84833570459?pwd=M1M2Y0xscmhnQjE3N2hXSSszWWdYQT09).   -->
+<!-- * 5th June: 3-4pm,  George Athanasopoulos, [zoom](https://monash.zoom.us/j/85187874295?pwd=KzJuaklwRDh6MlI5YmJZbC9zbUpLZz09).      -->
+<!-- * 5th June: 4-6pm,  [Kulan Ranasinghe](mailto:kulan.ranasinghearachchige@monash.edu), [zoom](https://monash.zoom.us/j/84833570459?pwd=M1M2Y0xscmhnQjE3N2hXSSszWWdYQT09).   -->
 
 
 ## Weekly schedule
 
 * Pre-recorded videos: approximately 1 hour per week
-* Tutorials: 1.5 hours in class per week
-* Seminars: 2-3pm Thursday, [Building K Level 3, K321, CA_K_K321](https://www.monash.edu/__data/assets/pdf_file/0010/2658961/Caulfield-campus-map.pdf).
+* Tutorials: 1 hour in class per week
+* Meet with George: 1 hour per week 
+* Seminars: 10-11am Tuesday, [Building K Level 3, K321, CA_K_K321](https://www.monash.edu/__data/assets/pdf_file/0010/2658961/Caulfield-campus-map.pdf).
 
 
 ```{r}
