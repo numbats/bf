@@ -1,0 +1,13 @@
+---
+title: "R Playground"
+filters:
+  - webr
+---
+
+This is the web version of R. 
+
+```{webr-r}
+fit = lm(mpg ~ am, data = mtcars)
+
+summary(fit)
+```

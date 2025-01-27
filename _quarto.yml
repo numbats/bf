@@ -40,6 +40,9 @@ website:
       - text: Textbook
         icon: book
         href: https://OTexts.com/fpp3
+      - text: R Playground
+        icon: terminal-fill
+        href: playground/index.qmd
 
 date-format: "D MMMM YYYY"
 
