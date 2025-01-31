@@ -4,11 +4,11 @@ title: Individual Assignment 1 (5%)
 
 **You must provide forecasts for the following items:**
 
-  1. Google closing stock price on 20 March 2024 [[Data](https://finance.yahoo.com/quote/GOOG/)].
-  2. Maximum temperature at Melbourne airport on 10 April 2024 [[Data](http://www.bom.gov.au/climate/dwo/IDCJDW3049.latest.shtml)].
-  3. The difference in points (Collingwood minus Essendon) scored in the AFL match between Collingwood and Essendon for the Anzac Day clash. 25 April 2024 [[Data](https://en.wikipedia.org/wiki/Anzac_Day_match)].
-  4. The seasonally adjusted estimate of total employment for April 2024 in ('000). ABS CAT 6202, to be released around mid May 2024 [[Data](https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/latest-release)].
-  5. Google closing stock price on 22 May 2024 [[Data](https://finance.yahoo.com/quote/GOOG/)].
+  1. Google closing stock price on 21 March 2025 [[Data](https://finance.yahoo.com/quote/GOOG/)].
+  2. Maximum temperature at Melbourne airport on 11 April 2025 [[Data](http://www.bom.gov.au/climate/dwo/IDCJDW3049.latest.shtml)].
+  3. The difference in points (Collingwood minus Essendon) scored in the AFL match between Collingwood and Essendon for the Anzac Day clash. 25 April 2025 [[Data](https://en.wikipedia.org/wiki/Anzac_Day_match)].
+  4. The seasonally adjusted estimate of total employment for April 2025 in ('000). ABS CAT 6202, to be released around mid May 2025 [[Data](https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/latest-release)].
+  5. Google closing stock price on 23 May 2025 [[Data](https://finance.yahoo.com/quote/GOOG/)].
 
 For each of these, give a **point forecast** and an **80% prediction interval**, and **explain in a couple of sentences** how each was obtained.
 
@@ -58,14 +58,14 @@ $$
 * Add ranks across all five items
 
 
-### Submitted forecasts
+<!-- ### Submitted forecasts -->
 
-* [Q1](Q1.png); [Q1-zoom](Q1zoom.png).
-* [Q2](Q2.png); [Q2-zoom](Q2zoom.png).
-* [Q3](Q3.png); [Q3-zoom](Q3zoom.png).
-* [Q4](Q4.png); [Q4-zoom](Q4zoom.png).
+<!-- * [Q1](Q1.png); [Q1-zoom](Q1zoom.png). -->
+<!-- * [Q2](Q2.png); [Q2-zoom](Q2zoom.png). -->
+<!-- * [Q3](Q3.png); [Q3-zoom](Q3zoom.png). -->
+<!-- * [Q4](Q4.png); [Q4-zoom](Q4zoom.png). -->
 
-### Leaderboard
+<!-- ### Leaderboard -->
 
-<iframe src="https://docs.google.com/spreadsheets/d/1_3RcdspMIL7TIaD7566bEbUEe8LHcg4UNQS1-ex-NZg/edit?usp=sharing" width = "110%" height = 500></iframe>
+<!-- <iframe src="https://docs.google.com/spreadsheets/d/1_3RcdspMIL7TIaD7566bEbUEe8LHcg4UNQS1-ex-NZg/edit?usp=sharing" width = "110%" height = 500></iframe> -->
 
