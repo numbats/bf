@@ -94,7 +94,7 @@ _Please note: In these assessments, you must not use generative artificial intel
 |Weeks	| Assessment Task	| Weight|
 |:---|:---|:---|
 |2	|IA1	|5%|
-|3	|GA1	|5%|
+|4	|GA1	|5%|
 |6	|IA2	|7%|
 |7	|GA2	|7%|
 |8	|IA3	|10%|
@@ -134,6 +134,6 @@ install.packages(c("tidyverse","fpp3", "GGally"), dependencies = TRUE)
 ![](https://otexts.com/fpp3/figs/fpp3_front_cover.jpg){width="200px" height="250px"}
 :::
 ::: {.column width="60%"}
-[Hyndman, R. J., & Athanasopoulos, G. (2018). Forecasting: principles and practice. OTexts.](https://otexts.com/fpp3/)
+[Hyndman, R. J., & Athanasopoulos, G. (2021). Forecasting: principles and practice. OTexts.](https://otexts.com/fpp3/)
 :::
 :::

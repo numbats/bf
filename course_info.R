@@ -2,10 +2,10 @@
 library(tidyverse)
 
 # Start of semester
-start_semester <- "2024-03-04"
+start_semester <- "2025-03-03"
 
 # Week of mid-semester break
-mid_semester_break <- "2024-04-22"
+mid_semester_break <- "2025-04-21"
 
 # List of php id for undergrad submission
 php_url <- paste0("https://learning.monash.edu/mod/assign/view.php?id=",
