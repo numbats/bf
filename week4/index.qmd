@@ -19,9 +19,9 @@ Complete Exercise 2-3, 5, 7, 9-10 from [Section 3.7 of the book](https://otexts.
 
 ## Exercise solutions
 
-::: {.callout appearance="minimal"}
-<i class="bi bi-download"></i> [Week 4 Tutorial Solution.html](Week4.html){download="Week 4 Tutorial Solution.html"}
-:::
+<!-- ::: {.callout appearance="minimal"} -->
+<!-- <i class="bi bi-download"></i> [Week 4 Tutorial Solution.html](Week4.html){download="Week 4 Tutorial Solution.html"} -->
+<!-- ::: -->
 
 
 ## Pre-seminar activities

@@ -20,9 +20,9 @@ Complete Exercises 6, 8-11 from [Section 2.10 of the book](https://otexts.com/fp
 
 ## Exercise solutions
 
-::: {.callout appearance="minimal"}
-<i class="bi bi-download"></i> [Week 3 Tutorial Solution.html](Week3.html){download="Week 3 Tutorial Solution.html"}
-:::
+<!-- ::: {.callout appearance="minimal"} -->
+<!-- <i class="bi bi-download"></i> [Week 3 Tutorial Solution.html](Week3.html){download="Week 3 Tutorial Solution.html"} -->
+<!-- ::: -->
 
 
 ## Pre-seminar activities

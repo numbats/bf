@@ -19,9 +19,9 @@ Complete Exercises 1-4, 16, 17 from [Section 8.8](https://otexts.com/fpp3/expsmo
 
 ## Exercise solutions
 
-::: {.callout appearance="minimal"}
-<i class="bi bi-download"></i> [Week 6 Tutorial Solution.html](Week6.html){download="Week 6 Tutorial Solution.html"}
-:::
+<!-- ::: {.callout appearance="minimal"} -->
+<!-- <i class="bi bi-download"></i> [Week 6 Tutorial Solution.html](Week6.html){download="Week 6 Tutorial Solution.html"} -->
+<!-- ::: -->
 
 ## Pre-seminar activities
 

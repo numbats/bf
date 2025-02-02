@@ -20,9 +20,9 @@ Complete Exercises 6-8, 15-16 from [Section 9.11 of the book](https://otexts.com
 
 ## Exercise solutions
 
-::: {.callout appearance="minimal"}
-<i class="bi bi-download"></i> [Week 9 Tutorial Solution.html](Week9.html){download="Week 9 Tutorial Solution.html"}
-:::
+<!-- ::: {.callout appearance="minimal"} -->
+<!-- <i class="bi bi-download"></i> [Week 9 Tutorial Solution.html](Week9.html){download="Week 9 Tutorial Solution.html"} -->
+<!-- ::: -->
 
 
 

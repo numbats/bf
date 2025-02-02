@@ -18,9 +18,9 @@ Complete Exercises 1-5, 8, 11-12 from [Section 5.11 of the book](https://otexts.
 
 ## Exercise solutions
 
-::: {.callout appearance="minimal"}
-<i class="bi bi-download"></i> [Week 5 Tutorial Solution.html](Week5.html){download="Week 5 Tutorial Solution.html"}
-:::
+<!-- ::: {.callout appearance="minimal"} -->
+<!-- <i class="bi bi-download"></i> [Week 5 Tutorial Solution.html](Week5.html){download="Week 5 Tutorial Solution.html"} -->
+<!-- ::: -->
 
 
 ## Pre-class activities

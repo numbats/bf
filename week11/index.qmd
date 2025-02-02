@@ -19,9 +19,9 @@ Complete Exercises 1-7 from [Section 7.10 of the book](https://otexts.com/fpp3/r
 
 ## Exercise solutions
 
-::: {.callout appearance="minimal"}
-<i class="bi bi-download"></i> [Week 11 Tutorial Solution.html](Week11.html){download="Week 11 Tutorial Solution.html"}
-:::
+<!-- ::: {.callout appearance="minimal"} -->
+<!-- <i class="bi bi-download"></i> [Week 11 Tutorial Solution.html](Week11.html){download="Week 11 Tutorial Solution.html"} -->
+<!-- ::: -->
 
 ## Pre-class seminar
 

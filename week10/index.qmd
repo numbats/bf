@@ -19,9 +19,9 @@ Complete Exercises 9-13 from [Section 9.11 of the book](https://otexts.com/fpp3/
 
 ## Exercise solutions
 
-::: {.callout appearance="minimal"}
-<i class="bi bi-download"></i> [Week 10 Tutorial Solution.html](Week10.html){download="Week 10 Tutorial Solution.html"}
-:::
+<!-- ::: {.callout appearance="minimal"} -->
+<!-- <i class="bi bi-download"></i> [Week 10 Tutorial Solution.html](Week10.html){download="Week 10 Tutorial Solution.html"} -->
+<!-- ::: -->
 
 
 ## Pre-seminar activities

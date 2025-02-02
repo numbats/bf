@@ -18,9 +18,9 @@ Complete Exercise 1-4 from [Section 9.11 of the book](https://otexts.com/fpp3/ar
 
 ## Exercise solutions
 
-::: {.callout appearance="minimal"}
-<i class="bi bi-download"></i> [Week 8 Tutorial Solution.html](Week8.html){download="Week 8 Tutorial Solution.html"}
-:::
+<!-- ::: {.callout appearance="minimal"} -->
+<!-- <i class="bi bi-download"></i> [Week 8 Tutorial Solution.html](Week8.html){download="Week 8 Tutorial Solution.html"} -->
+<!-- ::: -->
 
 
 ## Pre-seminar activities
