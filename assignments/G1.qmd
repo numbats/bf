@@ -16,5 +16,10 @@ The aim of this assignment is to meet your group members and begin interacting. 
 
 **Submission**
 
-Fill in the [google form](https://forms.gle/DSDypquUCyuyDd686) by **11.55 pm, on Monday, 24 March**.
+Moodle by **9.30am, on Monday, 24 March**.
 
+```{r}
+#| output: asis
+source(here::here("course_info.R"))
+submit(schedule, "GA1")
+```

@@ -17,7 +17,19 @@ For each of these, give a **point forecast** and an **80% prediction interval**,
 
 ### Submission
 
-Your forecasts should be submitted via [google form](https://forms.gle/G92fhhbMWbnWaWND7) by **11.55pm, on Monday, March 10**.
+Your forecasts should be submitted in moodle by **9.30am, on Monday, March 10**.
+
+
+
+```{r}
+#| output: asis
+source(here::here("course_info.R"))
+submit(schedule, "IA1")
+```
+
+
+
+
 
 #### Tips
 

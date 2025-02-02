@@ -7,9 +7,9 @@ start_semester <- "2025-03-03"
 # Week of mid-semester break
 mid_semester_break <- "2025-04-21"
 
-# List of php id for undergrad submission
+# List of php id for postgrad submission
 php_url <- paste0("https://learning.monash.edu/mod/assign/view.php?id=",
-                          c("1450536", "1450545","1450552", "1450558"))
+                          c("3877918", "3444669","3444684", "3444685"))
 
 # Schedule
 schedule <- tibble(
@@ -87,9 +87,13 @@ lastmon <- function(x) {
 assignments <- read_csv(here::here("assignments.csv")) |>
   mutate(
     Date = lastmon(Due),
-    Moodle = paste0("https://learning.monash.edu/mod/assign/view.php?id=", Moodle),
+    Moodle = paste0(
+      "https://learning.monash.edu/mod/",
+      c("quiz", rep("assign", 3)), "/view.php?id=", Moodle
+    ),
     File = paste0("assignments/", File)
   )
+
 
 schedule <- schedule |>
   left_join(assignments, by = "Date")
