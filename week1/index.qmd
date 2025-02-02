@@ -19,7 +19,7 @@ Your task this week is to make sure you are familiar with R, RStudio and the tid
 
 - To get started first look through the Appendix in the [textbook](https://otexts.com/fpp3/appendix-using-r.html).
 
-- During the tutorials you will work your way through chapters 1-5 and 8 of [learnr.numbat.space](https://learnr.numbat.space/). This is material we have prepared for you and other Monash students working in R. 
+- Try to work through all courses in [startr.numbat.space](https://startr.numbat.space/). This is material we have prepared for you and other Monash students working in R. 
 
 - There are lots of online resources available to help you cover the necessary material. Here are my suggestions:
 
