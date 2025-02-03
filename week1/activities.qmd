@@ -7,7 +7,7 @@ filters:
   - quiz-teachr
 webr:
   packages: ["fpp3", "urca"]
-  autoload-packages: false
+  autoload-packages: true
 ---
 
 # Time series data and patterns

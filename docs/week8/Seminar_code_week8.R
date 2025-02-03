@@ -284,7 +284,7 @@ dcmp <- elecequip |>
   model(STL(value ~ season(window = "periodic"))) |>
   components() |>
   select(-.model)
-dcmp |> as_tsibble |>
+dcmp |> as_tsibble() |>
   autoplot(season_adjust) + xlab("Year") +
   ylab("Seasonally adjusted new orders index")
 
@@ -326,7 +326,7 @@ gg_tsresiduals(fit)
 augment(fit) |>
   features(.innov, ljung_box, lag = 24, dof = 4)
 
-fit |> forecast |> autoplot(dcmp)
+fit |> forecast() |> autoplot(dcmp)
 
 # GDP --------------------------------------------------------------------------
 

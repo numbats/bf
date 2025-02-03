@@ -13,28 +13,6 @@ source(here::here("course_info.R"))
 * What makes something easy or hard to forecast?
 * Using the `tsibble` package in R
 
-<<<<<<< Updated upstream
-## Exercises (on your own or in tutorial)
-
-Your task this week is to make sure you are familiar with R, RStudio and the tidyverse packages. If you've already done one of ETX2250/ETC1010 or something equivalent you should be fairly familiar with these concepts and probably will not need much help. But if you're new to R and the tidyverse, then you will need to get yourself up-to-speed. 
-
-- To get started first look through the Appendix in the [textbook](https://otexts.com/fpp3/appendix-using-r.html).
-
-- Try to work through all courses in [startr.numbat.space](https://startr.numbat.space/). This is material we have prepared for you and other Monash students working in R. 
-
-- There are lots of online resources available to help you cover the necessary material. Here are my suggestions:
-
-  - Read the first four chapters of ["ModernDive"](https://moderndive.netlify.app/).  
-  - Work through the ["RYouWithMe"](https://rladiessydney.org/courses/ryouwithme/) course.
-  
-- You don't need to do everything in these links, but work on the parts where you are weakest. If you spend about 3-4 hours on this, you should cover enough of the relevant background to be ready for the rest of the unit.
-
-Your tutors will be in your tutorial class to assist you should you need it but you should do these at your own pace to understand the concepts.
-
-[**Check your understanding quiz**](https://learning.monash.edu/mod/quiz/view.php?id=2327331)
-
-=======
->>>>>>> Stashed changes
 ## Pre-class activities
 
 - Before we start classes, make sure you are familiar with R, RStudio and the tidyverse packages. If you've already done one of ETX2250/ETC1010 or something equivalent you should be fairly familiar with these concepts and probably will not need much help. If you're new to R and the tidyverse, then you will need to get yourself up-to-speed. Work through the first five modules of the **StartR** tutorial at [startr.numbat.space](https://startr.numbat.space). Do as much of it as you think you need. For those students new to R, it is strongly recommended that you do all five modules. For those who have previously used R, concentrate on the parts where you feel you are weakest.
