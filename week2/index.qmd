@@ -18,7 +18,7 @@ source(here::here("course_info.R"))
 
 Complete Exercises 1-5 from [Section 2.10 of the book](https://otexts.com/fpp3/graphics-exercises.html).
 
-## Exercise solutions
+<!-- ## Exercise solutions -->
 
 <!-- ::: {.callout appearance="minimal"} -->
 <!-- <i class="bi bi-download"></i> [Week 2 Tutorial Solution.html](Week2.html){download="Week 2 Tutorial Solution.html"} -->
@@ -30,23 +30,24 @@ Complete Exercises 1-5 from [Section 2.10 of the book](https://otexts.com/fpp3/g
 
 Read [Chapter 2 of the textbook](https://otexts.com/fpp3/graphics.html) and watch all embedded videos
 
-```{r}
-#| output: asis
-show_slides(week)
-```
 
-## Seminar activities
+<!-- ```{r} -->
+<!-- #| output: asis -->
+<!-- show_slides(week) -->
+<!-- ``` -->
 
-```{r}
-#| child: activities.qmd
-```
+<!-- ## Seminar activities -->
+
+<!-- ```{r} -->
+<!-- #| child: activities.qmd -->
+<!-- ``` -->
 
 
-## Seminar code
+<!-- ## Seminar code -->
 
-::: {.callout appearance="minimal"}
-<i class="bi bi-download"></i> [Seminar_code_week2.R](Seminar_code_week2.R){download="Seminar_code_week2.R"}
-:::
+<!-- ::: {.callout appearance="minimal"} -->
+<!-- <i class="bi bi-download"></i> [Seminar_code_week2.R](Seminar_code_week2.R){download="Seminar_code_week2.R"} -->
+<!-- ::: -->
 
 
 

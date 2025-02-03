@@ -126,19 +126,35 @@ show_slides <- function(week) {
   cat(paste0("## Slides for seminar\n\n", embed,"\n", button))
 }
 
-
-show_activity <- function(week, title = TRUE) {
-  file <- here::here(paste0("week",week,"/activities.qmd"))
-  if(!fs::file_exists(file)) {
-    file <- here::here(paste0("week",week,"/activities.md"))
+show_activity <- function(week, title = TRUE, show_solutions = TRUE) {
+  today <- Sys.Date()
+  monday <- monday <- schedule |>
+    filter(Week == week) |>
+    pull(Date) |>
+    as.Date()
+  # Show slides one week ahead
+  if ((monday - today) <= 7 | week <= 1) {
+    file <- here::here(paste0("week", week, "/activities.qmd"))
+    if (fs::file_exists(file)) {
+      cat("\n\n## [Workshop activities](activities.qmd)\n\n")
+    }
   }
-  activities <- read_file(file)
-  if(title) {
-    cat("\n\n## Seminar activities\n\n")
-  }
-  cat(activities)
-  cat("\n")
 }
+
+#
+#
+# show_activity <- function(week, title = TRUE) {
+#   file <- here::here(paste0("week",week,"/activities.qmd"))
+#   if(!fs::file_exists(file)) {
+#     file <- here::here(paste0("week",week,"/activities.md"))
+#   }
+#   activities <- read_file(file)
+#   if(title) {
+#     cat("\n\n## Seminar activities\n\n")
+#   }
+#   cat(activities)
+#   cat("\n")
+# }
 
 submit <- function(schedule, assignment) {
   ass <- schedule  |>
