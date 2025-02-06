@@ -6,11 +6,11 @@ The data you are to forecast is the same series you used in IA2.
 
 **Files for download**:
 
-* Download the template
+<!-- * Download the template -->
 
-::: {.callout appearance="minimal"}
-<i class="bi bi-download"></i> [Download template](../assignment_data/IA3_template.Rmd.zip){download="IA3_template.Rmd.zip"}
-:::
+<!-- ::: {.callout appearance="minimal"} -->
+<!-- <i class="bi bi-download"></i> [Download template](../assignment_data/IA3_template.Rmd.zip){download="IA3_template.Rmd.zip"} -->
+<!-- ::: -->
 
 
 You are to submit both an `IA3_NameSurname.Rmd` file and a compiled `IA3_NameSurname.pdf` file for your assignment.

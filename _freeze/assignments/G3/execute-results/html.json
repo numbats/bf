@@ -1,8 +1,8 @@
 {
-  "hash": "d75a84b7902bd6c92ba0f322a570e9ee",
+  "hash": "c69dc62228bbd85f7d3892fe7b3a3260",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: Group Assignment 3 (10%)\n---\n\n\n\n**Files for download**:\n\n* Download the template\n\n::: {.callout appearance=\"minimal\"}\n<i class=\"bi bi-download\"></i> [Download template](../assignment_data/GA3_template.Rmd.zip){download=\"GA3_template.Rmd.zip\"}\n:::\n\n\n\n\n<br><br><hr><b>Due: 5 May 2025</b><br><a href=https://learning.monash.edu/mod/assign/view.php?id=3444684 class = 'badge badge-large badge-blue'><font size='+2'>&nbsp;&nbsp;<b>Submit (ETF5231)</b>&nbsp;&nbsp;</font><br></a>\n",
+    "markdown": "---\ntitle: Group Assignment 3 (10%)\n---\n\n\n\n**Files for download**:\n\n<!-- * Download the template -->\n\n<!-- ::: {.callout appearance=\"minimal\"} -->\n<!-- <i class=\"bi bi-download\"></i> [Download template](../assignment_data/GA3_template.Rmd.zip){download=\"GA3_template.Rmd.zip\"} -->\n<!-- ::: -->\n\n\n\n\n<br><br><hr><b>Due: 5 May 2025</b><br><a href=https://learning.monash.edu/mod/assign/view.php?id=3444684 class = 'badge badge-large badge-blue'><font size='+2'>&nbsp;&nbsp;<b>Submit (ETF5231)</b>&nbsp;&nbsp;</font><br></a>\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

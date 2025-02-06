@@ -27,23 +27,23 @@ Complete Exercises 1-4, 16, 17 from [Section 8.8](https://otexts.com/fpp3/expsmo
 
 Read [Sections 8.4-8.7 of the textbook](https://otexts.com/fpp3/expsmooth.html) and watch all embedded videos.
 
-```{r}
-#| output: asis
-show_slides(week)
-```
+<!-- ```{r} -->
+<!-- #| output: asis -->
+<!-- show_slides(week) -->
+<!-- ``` -->
 
-## Seminar activities
+<!-- ## Seminar activities -->
 
-```{r}
-#| child: activities.md
-```
+<!-- ```{r} -->
+<!-- #| child: activities.md -->
+<!-- ``` -->
 
 
-## Seminar code
+<!-- ## Seminar code -->
 
-::: {.callout appearance="minimal"}
-<i class="bi bi-download"></i> [Seminar_code_week6.R](Seminar_code_week6.R){download="Seminar_code_week6.R"}
-:::
+<!-- ::: {.callout appearance="minimal"} -->
+<!-- <i class="bi bi-download"></i> [Seminar_code_week6.R](Seminar_code_week6.R){download="Seminar_code_week6.R"} -->
+<!-- ::: -->
 
 
 

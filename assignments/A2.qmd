@@ -10,17 +10,17 @@ You will be using this data in future assignments as you will build on the analy
 
 **Files for download**:
 
-* Download the template
+<!-- * Download the template -->
 
-::: {.callout appearance="minimal"}
-<i class="bi bi-download"></i> [Download template](../assignment_data/IA2_template.Rmd.zip){download="IA2_template.qmd.zip"}
-:::
+<!-- ::: {.callout appearance="minimal"} -->
+<!-- <i class="bi bi-download"></i> [Download template](../assignment_data/IA2_template.Rmd.zip){download="IA2_template.qmd.zip"} -->
+<!-- ::: -->
 
-* Download the data 
+<!-- * Download the data  -->
 
-::: {.callout appearance="minimal"}
-<i class="bi bi-download"></i> [Download IA_data.csv](../assignment_data/IA_data.csv){download="IA_data.csv"}
-:::
+<!-- ::: {.callout appearance="minimal"} -->
+<!-- <i class="bi bi-download"></i> [Download IA_data.csv](../assignment_data/IA_data.csv){download="IA_data.csv"} -->
+<!-- ::: -->
 
 
 

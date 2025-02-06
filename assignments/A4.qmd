@@ -6,11 +6,11 @@ The data you are to forecast is the same series you used in IA2.
 
 **Files for download**:
 
-* Download the template
+<!-- * Download the template -->
 
-::: {.callout appearance="minimal"}
-<i class="bi bi-download"></i> [Download template](../assignment_data/IA4_template.Rmd){download="IA4_template.Rmd"}
-:::
+<!-- ::: {.callout appearance="minimal"} -->
+<!-- <i class="bi bi-download"></i> [Download template](../assignment_data/IA4_template.Rmd){download="IA4_template.Rmd"} -->
+<!-- ::: -->
 
 
 

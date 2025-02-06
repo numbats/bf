@@ -1,0 +1,15 @@
+{
+  "hash": "e79c7db63fa09db5a5b3d42dd146a323",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Week 6: Exponential smoothing\"\n---\n\n::: {.cell}\n\n:::\n\n\n\n\n## What you will learn this week\n\n* Exponential smoothing methods with trend and seasonality\n* ETS models\n* Automatic model selection using the AICc\n\n## Exercises (on your own or in tutorial)\n\nComplete Exercises 1-4, 16, 17 from [Section 8.8](https://otexts.com/fpp3/expsmooth-exercises.html).\n\n## Exercise solutions\n\n<!-- ::: {.callout appearance=\"minimal\"} -->\n<!-- <i class=\"bi bi-download\"></i> [Week 6 Tutorial Solution.html](Week6.html){download=\"Week 6 Tutorial Solution.html\"} -->\n<!-- ::: -->\n\n## Pre-seminar activities\n\nRead [Sections 8.4-8.7 of the textbook](https://otexts.com/fpp3/expsmooth.html) and watch all embedded videos.\n\n<!-- ```{r} -->\n<!-- #| output: asis -->\n<!-- show_slides(week) -->\n<!-- ``` -->\n\n<!-- ## Seminar activities -->\n\n<!-- ```{r} -->\n<!-- #| child: activities.md -->\n<!-- ``` -->\n\n\n<!-- ## Seminar code -->\n\n<!-- ::: {.callout appearance=\"minimal\"} -->\n<!-- <i class=\"bi bi-download\"></i> [Seminar_code_week6.R](Seminar_code_week6.R){download=\"Seminar_code_week6.R\"} -->\n<!-- ::: -->\n\n\n\n\n\n\n\n## Assignments\n\n* [IA2](../assignments/A2.qmd) is due on Monday 07 April.\n* [GA2](../assignments/G2.qmd) is due on Monday 14 April.\n* [IA3](../assignments/A3.qmd) is due on Monday 28 April.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

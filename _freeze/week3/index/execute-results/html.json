@@ -1,0 +1,15 @@
+{
+  "hash": "bba89ef23ef3fe6a7816b34de4928ee4",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Week 3: Time series decomposition\"\n---\n\n::: {.cell}\n\n:::\n\n\n\n\n## What you will learn this week\n\n* Transforming data to remove some sources of variation\n* Decomposing a time series into trend-cycle, seasonal and remainder components\n* Seasonal adjustment\n\n## Exercises (on your own or in tutorial)\n\nComplete Exercises 6, 8-11 from [Section 2.10 of the book](https://otexts.com/fpp3/graphics-exercises.html).\n\n\n## Exercise solutions\n\n<!-- ::: {.callout appearance=\"minimal\"} -->\n<!-- <i class=\"bi bi-download\"></i> [Week 3 Tutorial Solution.html](Week3.html){download=\"Week 3 Tutorial Solution.html\"} -->\n<!-- ::: -->\n\n\n<!-- ## Pre-seminar activities -->\n\n<!-- Read [Chapter 3 of the textbook](https://otexts.com/fpp3/decomposition.html) and watch all embedded videos -->\n\n<!-- ```{r} -->\n<!-- #| output: asis -->\n<!-- show_slides(week) -->\n<!-- ``` -->\n\n<!-- ## Seminar activities -->\n\n<!-- ```{r} -->\n<!-- #| child: activities.md -->\n<!-- ``` -->\n\n\n<!-- ## Seminar code -->\n\n<!-- ::: {.callout appearance=\"minimal\"} -->\n<!-- <i class=\"bi bi-download\"></i> [Seminar_code_week3.R](Seminar_code_week3.R){download=\"Seminar_code_week3.R\"} -->\n<!-- ::: -->\n\n\n\n\n\n\n\n## Assignments\n\n* [GA1](../assignments/G1.qmd) is due on Monday 24 March.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

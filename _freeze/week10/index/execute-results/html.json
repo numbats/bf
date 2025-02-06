@@ -1,0 +1,15 @@
+{
+  "hash": "ac376a9c78bf6a9a3415cc2ea971fc74",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Week 10: Multiple regression and forecasting\"\n---\n\n::: {.cell}\n\n:::\n\n\n\n\n## What you will learn this week\n\n* Useful predictors for time series forecasting using regression\n* Selecting predictors\n* Ex ante and ex post forecasting\n\n## Exercises (on your own or in tutorial)\n\nComplete Exercises 9-13 from [Section 9.11 of the book](https://otexts.com/fpp3/arima-exercises.html).\n\n## Exercise solutions\n\n<!-- ::: {.callout appearance=\"minimal\"} -->\n<!-- <i class=\"bi bi-download\"></i> [Week 10 Tutorial Solution.html](Week10.html){download=\"Week 10 Tutorial Solution.html\"} -->\n<!-- ::: -->\n\n\n## Pre-seminar activities\n\nRead [Chapter 7 of the textbook](https://otexts.com/fpp3/regression.html) and watch all embedded videos\n\n\n<!-- ```{r} -->\n<!-- #| output: asis -->\n<!-- show_slides(week) -->\n<!-- ``` -->\n\n<!-- ## Seminar activities -->\n\n<!-- ```{r} -->\n<!-- #| child: activities.md -->\n<!-- ``` -->\n\n\n<!-- ## Seminar code -->\n\n<!-- ::: {.callout appearance=\"minimal\"} -->\n<!-- <i class=\"bi bi-download\"></i> [Seminar_code_week10.R](Seminar_code_week10.R){download=\"Seminar_code_week10.R\"} -->\n<!-- ::: -->\n\n\n\n\n\n\n\n## Assignments\n\n* [IA4](../assignments/A4.qmd) is due on Monday 19 May.\n* [GA4](../assignments/G4.qmd) is due on Monday 26 May.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

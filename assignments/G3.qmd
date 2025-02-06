@@ -4,11 +4,11 @@ title: Group Assignment 3 (10%)
 
 **Files for download**:
 
-* Download the template
+<!-- * Download the template -->
 
-::: {.callout appearance="minimal"}
-<i class="bi bi-download"></i> [Download template](../assignment_data/GA3_template.Rmd.zip){download="GA3_template.Rmd.zip"}
-:::
+<!-- ::: {.callout appearance="minimal"} -->
+<!-- <i class="bi bi-download"></i> [Download template](../assignment_data/GA3_template.Rmd.zip){download="GA3_template.Rmd.zip"} -->
+<!-- ::: -->
 
 
 ```{r}
