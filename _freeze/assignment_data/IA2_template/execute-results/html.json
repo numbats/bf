@@ -1,0 +1,15 @@
+{
+  "hash": "82db9aaf73bfef8cfadd9f7409164b8d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"ETF3231/5231 Individual Assignment 2\"\nauthor: \"Your name and Student ID\"\nformat: pdf\n---\n\n\n\n::: {.cell}\n\n:::\n\n\n\n\n\n\n## Question 1\n\n*What is your data about (no more than 50 words)? Produce appropriate plots in order to become familiar with your data. Make sure you label your axes and plots appropriately. Comment on these. What do you see? (no more than 50 words per plot). (14 marks)*\n\n\n\n\n\n\n::: {.cell}\n\n:::\n\n\n\n\n\n\n\\newpage\n## Question 2\n\n*Would transforming your data be useful (no more than 50 words)? Compare different transformations graphically. Choose the best transformation if you think a transformation is needed. Justify your choice (no more than 50 words). (5 marks)*\n\n\n\n\n\n\n::: {.cell}\n\n:::\n\n\n\n\n\n\n\n\\newpage\n## Question 3\n\n*Split your data into training and test sets. Leave the last two years’ worth of observations as the test set. Plot these on the same graph to make sure you have done this properly. (3 marks)*\n\n\n\n\n\n\n::: {.cell}\n\n:::\n\n\n\n\n\n\\newpage\n## Question 4\n\n*Apply the two most appropriate benchmark methods on the training set. Generate forecasts for the test set and plot them on the same graph. Compare their forecasting performance on the test set. Which method would you choose as the appropriate benchmark? Justify your answer (no more 100 words). (Hint: it will be useful to tabulate your results.) (12 marks)*\n\n\n\n\n\n\n::: {.cell}\n\n:::\n\n\n\n\n\n\\newpage\n## Question 5\n\n*For the best method, do a residual analysis. Comment on these. What did your forecasting method miss?  (no more than 150 words) (8 marks)*\n\n\n\n\n\n\n::: {.cell}\n\n:::\n\n\n\n\n\n\\newpage\n## Question 6\n\n*Generate point forecasts for the next 2 years (future) from the benchmark method you considered best and plot them. Comment on the point and prediction intervals (no more than 50 words).(4 marks)*\n\n\n\n\n\n\n::: {.cell}\n\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

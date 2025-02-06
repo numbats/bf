@@ -1,18 +1,22 @@
 ---
 title: "ETF3231/5231 Individual Assignment 2"
 author: "Your name and Student ID"
-output: pdf_document
-editor_options: 
-  chunk_output_type: console
+format: pdf
 ---
 
-```{r setup, include=FALSE}
+```{r}
+#| label: setup
+#| include: false
+
 knitr::opts_chunk$set(echo = TRUE, eval=TRUE, error=TRUE, cache=FALSE)
 library(fpp3)
 library(readr)
 ```
 
-```{r echo=FALSE, message=FALSE}
+```{r}
+#| echo: false
+#| message: false
+
 # Read in and tidy up your data
 
 # First three rows contain metadata, read them in separately
