@@ -7,10 +7,6 @@ start_semester <- "2025-03-03"
 # Week of mid-semester break
 mid_semester_break <- "2025-04-21"
 
-# List of php id for postgrad submission
-php_url <- paste0("https://learning.monash.edu/mod/assign/view.php?id=",
-                          c("3877918", "3444669","3444684", "3444685"))
-
 # Schedule
 schedule <- tibble(
   Week = seq(12),
@@ -91,6 +87,10 @@ assignments <- read_csv(here::here("assignments.csv")) |>
       "https://learning.monash.edu/mod/",
       c("quiz", rep("assign", 3)), "/view.php?id=", Moodle
     ),
+    Moodle3231 = paste0(
+      "https://learning.monash.edu/mod/",
+      c("quiz", rep("assign", 3)), "/view.php?id=", Moodle3231
+    ),
     File = paste0("assignments/", File)
   )
 
@@ -166,7 +166,7 @@ submit <- function(schedule, assignment) {
                    "<font size='+2'>&nbsp;&nbsp;<b>Submit (ETF5231)</b>&nbsp;&nbsp;</font><br></a>")
   cat(button1)
   if (str_detect(ass$Assignment, "IA")) {
-  url <- php_url[as.numeric(str_sub(assignment, 3))]
+  url <- ass$Moodle3231
   button2 <- paste0("<br><br><hr><b>Due: ", due, "</b><br>",
                     "<a href=",url," class = 'badge badge-large badge-blue'>",
                     "<font size='+2'>&nbsp;&nbsp;<b>Submit (ETF3231)</b>&nbsp;&nbsp;</font><br></a>")
