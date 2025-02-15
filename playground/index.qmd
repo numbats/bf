@@ -2,6 +2,8 @@
 title: "R Playground"
 filters:
   - webr
+webr:
+  packages: ['fpp3', 'ggplot2', 'tidyverse', 'glue']
 ---
 
 This is the web version of R. 
