@@ -3,13 +3,14 @@ title: "R Playground"
 filters:
   - webr
 webr:
-  packages: ['fpp3', 'ggplot2', 'tidyverse', 'glue']
+  packages: 
+  - 'fpp3'
+  - 'ggplot2'
+  - 'tidyverse'
 ---
 
 This is the web version of R. 
 
 ```{webr-r}
-fit = lm(mpg ~ am, data = mtcars)
-
-summary(fit)
+# write your code here
 ```
