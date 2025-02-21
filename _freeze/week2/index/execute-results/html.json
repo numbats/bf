@@ -1,0 +1,15 @@
+{
+  "hash": "80d3392f31b8a83308273a149c6802c3",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Week 2: Time series graphics\"\n---\n\n::: {.cell}\n\n:::\n\n\n\n## What you will learn this week\n\n* Different types of plots for time series including time plots, season plots, subseries plots, lag plots and ACF plots\n* The difference between seasonal patterns and cyclic patterns in time series\n* What is \"white noise\" and how to identify it.\n\n## Exercises (on your own or in tutorial)\n\nComplete Exercises 1-5 from [Section 2.10 of the book](https://otexts.com/fpp3/graphics-exercises.html).\n\n<!-- ## Exercise solutions -->\n\n<!-- ::: {.callout appearance=\"minimal\"} -->\n<!-- <i class=\"bi bi-download\"></i> [Week 2 Tutorial Solution.html](Week2.html){download=\"Week 2 Tutorial Solution.html\"} -->\n<!-- ::: -->\n\n<!-- [**Check your understanding quiz**](https://learning.monash.edu/mod/quiz/view.php?id=2336392) -->\n\n## Pre-seminar activities\n\nRead [Chapter 2 of the textbook](https://otexts.com/fpp3/graphics.html) and watch all embedded videos\n\n\n<!-- ```{r} -->\n<!-- #| output: asis -->\n<!-- show_slides(week) -->\n<!-- ``` -->\n\n<!-- ## Seminar activities -->\n\n<!-- ```{r} -->\n<!-- #| child: activities.qmd -->\n<!-- ``` -->\n\n\n<!-- ## Seminar code -->\n\n<!-- ::: {.callout appearance=\"minimal\"} -->\n<!-- <i class=\"bi bi-download\"></i> [Seminar_code_week2.R](Seminar_code_week2.R){download=\"Seminar_code_week2.R\"} -->\n<!-- ::: -->\n\n\n\n\n\n\n## Assignments\n\n* [IA1](../assignments/A1.qmd) is due on Monday 10 March.\n* [GA1](../assignments/G1.qmd) is due on Monday 24 March.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
