@@ -36,7 +36,8 @@ Catch up on any exercises not yet done
 ## Post-class activities
 
 * Do any exercises not yet finished.
-* Complete past exams: [[2021](/exams/exam2021.pdf)] [[2022](/exams/exam2022.pdf)] [[2023](/exams/exam2023.pdf)]
+* Complete past exams: [[2022](/exams/exam2022.pdf)] [[2023](/exams/exam2023.pdf)] [[2024](/exams/exam2024.pdf)]
+
 <!-- * Exam solutions: [[2021](/exams/exam2021_solutions.pdf)] [[2022](/exams/exam2022_solutions.pdf)] [[2023](/exams/exam2023_solutions.pdf)] -->
 
 * Re-read the textbook

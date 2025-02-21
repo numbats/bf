@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Individual Assignment 1 (5%) – ETF3231/ETF5231 Business Forecasting</title>
+<title>Week 10: Multiple regression and forecasting – ETF3231/ETF5231 Business Forecasting</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -38,11 +38,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-b2f8afcda82e75b4f9c16caf792b826c.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<<<<<<< Updated upstream
-<link href="../site_libs/bootstrap/bootstrap-674ee09fbb4a19215f75bb57e6219d92.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-=======
 <link href="../site_libs/bootstrap/bootstrap-3b0215d32ad9bce1ddb94225ed8f1889.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
->>>>>>> Stashed changes
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,49 +71,6 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.css">
 
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -236,11 +189,11 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#submission" id="toc-submission" class="nav-link active" data-scroll-target="#submission">Submission</a></li>
-  <li><a href="#forecasting-competition" id="toc-forecasting-competition" class="nav-link" data-scroll-target="#forecasting-competition">Forecasting competition</a>
-  <ul class="collapse">
-  <li><a href="#scoring" id="toc-scoring" class="nav-link" data-scroll-target="#scoring">Scoring</a></li>
-  </ul></li>
+  <li><a href="#what-you-will-learn-this-week" id="toc-what-you-will-learn-this-week" class="nav-link active" data-scroll-target="#what-you-will-learn-this-week">What you will learn this week</a></li>
+  <li><a href="#exercises-on-your-own-or-in-tutorial" id="toc-exercises-on-your-own-or-in-tutorial" class="nav-link" data-scroll-target="#exercises-on-your-own-or-in-tutorial">Exercises (on your own or in tutorial)</a></li>
+  <li><a href="#exercise-solutions" id="toc-exercise-solutions" class="nav-link" data-scroll-target="#exercise-solutions">Exercise solutions</a></li>
+  <li><a href="#pre-seminar-activities" id="toc-pre-seminar-activities" class="nav-link" data-scroll-target="#pre-seminar-activities">Pre-seminar activities</a></li>
+  <li><a href="#assignments" id="toc-assignments" class="nav-link" data-scroll-target="#assignments">Assignments</a></li>
   </ul>
 </nav>
     </div>
@@ -249,7 +202,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Individual Assignment 1 (5%)</h1>
+<h1 class="title">Week 10: Multiple regression and forecasting</h1>
 </div>
 
 
@@ -266,71 +219,48 @@ window.Quarto = {
 </header>
 
 
-<p><strong>You must provide forecasts for the following items:</strong></p>
-<ol type="1">
-<li>Google closing stock price on 21 March 2025 [<a href="https://finance.yahoo.com/quote/GOOG/">Data</a>].</li>
-<li>Maximum temperature at Melbourne airport on 11 April 2025 [<a href="http://www.bom.gov.au/climate/dwo/IDCJDW3049.latest.shtml">Data</a>].</li>
-<li>The difference in points (Collingwood minus Essendon) scored in the AFL match between Collingwood and Essendon for the Anzac Day clash. 25 April 2025 [<a href="https://en.wikipedia.org/wiki/Anzac_Day_match">Data</a>].</li>
-<li>The seasonally adjusted estimate of total employment for April 2025 in (’000). ABS CAT 6202, to be released around mid May 2025 [<a href="https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/latest-release">Data</a>].</li>
-<li>Google closing stock price on 23 May 2025 [<a href="https://finance.yahoo.com/quote/GOOG/">Data</a>].</li>
-</ol>
-<p>For each of these, give a <strong>point forecast</strong> and an <strong>80% prediction interval</strong>, and <strong>explain in a couple of sentences</strong> how each was obtained.</p>
+<section id="what-you-will-learn-this-week" class="level2">
+<h2 class="anchored" data-anchor-id="what-you-will-learn-this-week">What you will learn this week</h2>
 <ul>
-<li>Prepare short justifications with your forecasts and forecast intervals explaining in no more than 50-70 words how these were obtained. Only a couple of sentences are required. There is no need to use any fancy models or sophisticated methods.</li>
-<li><strong>Full marks will be awarded</strong> if you submit the required information, and are able to meaningfully justify your results in a couple of sentences in each case.</li>
-</ul>
-<section id="submission" class="level3">
-<h3 class="anchored" data-anchor-id="submission">Submission</h3>
-<p>Your forecasts should be submitted in moodle by <strong>9.30am, on Monday, March 10</strong>.</p>
-<br><br>
-<hr>
-<b>Due: 10 March 2025</b><br><a href="https://learning.monash.edu/mod/quiz/view.php?id=3877940" class="badge badge-large badge-blue"><font size="+2">&nbsp;&nbsp;<b>Submit (ETF5231)</b>&nbsp;&nbsp;</font><br></a><br><br>
-<hr>
-<p><b>Due: 10 March 2025</b><br><a href="https://learning.monash.edu/mod/quiz/view.php?id=3877918" class="badge badge-large badge-blue"><font size="+2">&nbsp;&nbsp;<b>Submit (ETF3231)</b>&nbsp;&nbsp;</font><br></a></p>
-<section id="tips" class="level4">
-<h4 class="anchored" data-anchor-id="tips">Tips</h4>
-<ul>
-<li>The [Data] links give you possible data to start with, but you are free to use any data you like.</li>
-<li>There is no need to use any fancy models or sophisticated methods. Simple is better for this assignment. The methods you use should be understandable to any high school student.</li>
+<li>Useful predictors for time series forecasting using regression</li>
+<li>Selecting predictors</li>
+<li>Ex ante and ex post forecasting</li>
 </ul>
 </section>
+<section id="exercises-on-your-own-or-in-tutorial" class="level2">
+<h2 class="anchored" data-anchor-id="exercises-on-your-own-or-in-tutorial">Exercises (on your own or in tutorial)</h2>
+<p>Complete Exercises 9-13 from <a href="https://otexts.com/fpp3/arima-exercises.html">Section 9.11 of the book</a>.</p>
 </section>
-<section id="forecasting-competition" class="level2">
-<h2 class="anchored" data-anchor-id="forecasting-competition">Forecasting competition</h2>
-<p>Once the true values in each case are available, we will come back to this exercise and see who did the best using the scoring method described in class. The student with the best score will be the winner of our forecasting competition (something really nice to have on your CV), and will also win a $100 Amazon gift voucher.</p>
-<p>Note: your assignment mark is not dependent at all on the score you obtain in the competition.</p>
-<section id="scoring" class="level3">
-<h3 class="anchored" data-anchor-id="scoring">Scoring</h3>
-<p>Let <span class="math inline">y=</span> actual, <span class="math inline">\hat{y}=</span> point forecast, <span class="math inline">[\hat{\ell},\hat{u}]=</span> prediction interval</p>
-<section id="point-forecasts" class="level4">
-<h4 class="anchored" data-anchor-id="point-forecasts">Point forecasts:</h4>
-<p><span class="math display">\text{Absolute Error} = |y-\hat{y}|</span></p>
-<ul>
-<li>Rank results for all students in class</li>
-<li>Add ranks across all five items</li>
-</ul>
+<section id="exercise-solutions" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-solutions">Exercise solutions</h2>
+<!-- ::: {.callout appearance="minimal"} -->
+<!-- <i class="bi bi-download"></i> [Week 10 Tutorial Solution.html](Week10.html){download="Week 10 Tutorial Solution.html"} -->
+<!-- ::: -->
 </section>
-<section id="prediction-intervals" class="level4">
-<h4 class="anchored" data-anchor-id="prediction-intervals">Prediction intervals:</h4>
-<p><span class="math display">
-\text{Interval Score} = (\hat u - \hat\ell) + 10(\hat\ell - y)_+ + 10 (y-\hat u)_+
-</span></p>
+<section id="pre-seminar-activities" class="level2">
+<h2 class="anchored" data-anchor-id="pre-seminar-activities">Pre-seminar activities</h2>
+<p>Read <a href="https://otexts.com/fpp3/regression.html">Chapter 7 of the textbook</a> and watch all embedded videos</p>
+<!-- ```{r} -->
+<!-- #| output: asis -->
+<!-- show_slides(week) -->
+<!-- ``` -->
+<!-- ## Seminar activities -->
+<!-- ```{r} -->
+<!-- #| child: activities.md -->
+<!-- ``` -->
+<!-- ## Seminar code -->
+<!-- ::: {.callout appearance="minimal"} -->
+<!-- <i class="bi bi-download"></i> [Seminar_code_week10.R](Seminar_code_week10.R){download="Seminar_code_week10.R"} -->
+<!-- ::: -->
+</section>
+<section id="assignments" class="level2">
+<h2 class="anchored" data-anchor-id="assignments">Assignments</h2>
 <ul>
-<li><span class="math inline">u_+=max(u,0)</span></li>
-<li>Rank results for all students</li>
-<li>Add ranks across all five items</li>
+<li><a href="../assignments/A4.html">IA4</a> is due on Monday 19 May.</li>
+<li><a href="../assignments/G4.html">GA4</a> is due on Monday 26 May.</li>
 </ul>
-<!-- ### Submitted forecasts -->
-<!-- * [Q1](Q1.png); [Q1-zoom](Q1zoom.png). -->
-<!-- * [Q2](Q2.png); [Q2-zoom](Q2zoom.png). -->
-<!-- * [Q3](Q3.png); [Q3-zoom](Q3zoom.png). -->
-<!-- * [Q4](Q4.png); [Q4-zoom](Q4zoom.png). -->
-<!-- ### Leaderboard -->
-<!-- <iframe src="https://docs.google.com/spreadsheets/d/1_3RcdspMIL7TIaD7566bEbUEe8LHcg4UNQS1-ex-NZg/edit?usp=sharing" width = "110%" height = 500></iframe> -->
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->
