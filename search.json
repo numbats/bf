@@ -1,0 +1,660 @@
+[
+  {
+    "objectID": "week9/index.html",
+    "href": "week9/index.html",
+    "title": "Week 9: ARIMA models",
+    "section": "",
+    "text": "Seasonal ARIMA models\nComputing forecasts for ARIMA models\nARIMA vs ETS models"
+  },
+  {
+    "objectID": "week9/index.html#what-you-will-learn-this-week",
+    "href": "week9/index.html#what-you-will-learn-this-week",
+    "title": "Week 9: ARIMA models",
+    "section": "",
+    "text": "Seasonal ARIMA models\nComputing forecasts for ARIMA models\nARIMA vs ETS models"
+  },
+  {
+    "objectID": "week9/index.html#exercises-on-your-own-or-in-tutorial",
+    "href": "week9/index.html#exercises-on-your-own-or-in-tutorial",
+    "title": "Week 9: ARIMA models",
+    "section": "Exercises (on your own or in tutorial)",
+    "text": "Exercises (on your own or in tutorial)\nComplete Exercises 6-8, 15-16 from Section 9.11 of the book."
+  },
+  {
+    "objectID": "week9/index.html#exercise-solutions",
+    "href": "week9/index.html#exercise-solutions",
+    "title": "Week 9: ARIMA models",
+    "section": "Exercise solutions",
+    "text": "Exercise solutions"
+  },
+  {
+    "objectID": "week9/index.html#pre-seminar-activities",
+    "href": "week9/index.html#pre-seminar-activities",
+    "title": "Week 9: ARIMA models",
+    "section": "Pre-seminar activities",
+    "text": "Pre-seminar activities\nRead Sections 9.8-9.10 of the textbook and watch all embedded videos"
+  },
+  {
+    "objectID": "week9/index.html#assignments",
+    "href": "week9/index.html#assignments",
+    "title": "Week 9: ARIMA models",
+    "section": "Assignments",
+    "text": "Assignments\n\nGA3 is due on Monday 05 May.\nIA4 is due on Monday 19 May."
+  },
+  {
+    "objectID": "week7/index.html",
+    "href": "week7/index.html",
+    "title": "Week 7: ARIMA models",
+    "section": "",
+    "text": "Stationarity and differencing\nRandom Walk Models"
+  },
+  {
+    "objectID": "week7/index.html#what-you-will-learn-this-week",
+    "href": "week7/index.html#what-you-will-learn-this-week",
+    "title": "Week 7: ARIMA models",
+    "section": "",
+    "text": "Stationarity and differencing\nRandom Walk Models"
+  },
+  {
+    "objectID": "week7/index.html#exercises-on-your-own-or-in-tutorial",
+    "href": "week7/index.html#exercises-on-your-own-or-in-tutorial",
+    "title": "Week 7: ARIMA models",
+    "section": "Exercises (on your own or in tutorial)",
+    "text": "Exercises (on your own or in tutorial)\nComplete Exercises 5-7, 10-15 from Section 8.8 of the book."
+  },
+  {
+    "objectID": "week7/index.html#exercise-solutions",
+    "href": "week7/index.html#exercise-solutions",
+    "title": "Week 7: ARIMA models",
+    "section": "Exercise solutions",
+    "text": "Exercise solutions"
+  },
+  {
+    "objectID": "week7/index.html#pre-seminar-activities",
+    "href": "week7/index.html#pre-seminar-activities",
+    "title": "Week 7: ARIMA models",
+    "section": "Pre-seminar activities",
+    "text": "Pre-seminar activities\nRead Sections 9.1-9.2 of the textbook and watch all embedded videos."
+  },
+  {
+    "objectID": "week7/index.html#assignments",
+    "href": "week7/index.html#assignments",
+    "title": "Week 7: ARIMA models",
+    "section": "Assignments",
+    "text": "Assignments\n\nGA2 is due on Monday 14 April.\nIA3 is due on Monday 28 April.\nGA3 is due on Monday 05 May."
+  },
+  {
+    "objectID": "week5/index.html",
+    "href": "week5/index.html",
+    "title": "Week 5: Exponential smoothing",
+    "section": "",
+    "text": "Simple exponential smoothing\nCorresponding ETS models"
+  },
+  {
+    "objectID": "week5/index.html#what-you-will-learn-this-week",
+    "href": "week5/index.html#what-you-will-learn-this-week",
+    "title": "Week 5: Exponential smoothing",
+    "section": "",
+    "text": "Simple exponential smoothing\nCorresponding ETS models"
+  },
+  {
+    "objectID": "week5/index.html#exercises-on-your-own-or-in-tutorial",
+    "href": "week5/index.html#exercises-on-your-own-or-in-tutorial",
+    "title": "Week 5: Exponential smoothing",
+    "section": "Exercises (on your own or in tutorial)",
+    "text": "Exercises (on your own or in tutorial)\nComplete Exercises 1-5, 8, 11-12 from Section 5.11 of the book."
+  },
+  {
+    "objectID": "week5/index.html#exercise-solutions",
+    "href": "week5/index.html#exercise-solutions",
+    "title": "Week 5: Exponential smoothing",
+    "section": "Exercise solutions",
+    "text": "Exercise solutions"
+  },
+  {
+    "objectID": "week5/index.html#pre-class-activities",
+    "href": "week5/index.html#pre-class-activities",
+    "title": "Week 5: Exponential smoothing",
+    "section": "Pre-class activities",
+    "text": "Pre-class activities\nRead Sections 8.1-8.4 of the textbook and watch all embedded videos"
+  },
+  {
+    "objectID": "week5/index.html#assignments",
+    "href": "week5/index.html#assignments",
+    "title": "Week 5: Exponential smoothing",
+    "section": "Assignments",
+    "text": "Assignments\n\nIA2 is due on Monday 07 April.\nGA2 is due on Monday 14 April."
+  },
+  {
+    "objectID": "week3/index.html",
+    "href": "week3/index.html",
+    "title": "Week 3: Time series decomposition",
+    "section": "",
+    "text": "Transforming data to remove some sources of variation\nDecomposing a time series into trend-cycle, seasonal and remainder components\nSeasonal adjustment"
+  },
+  {
+    "objectID": "week3/index.html#what-you-will-learn-this-week",
+    "href": "week3/index.html#what-you-will-learn-this-week",
+    "title": "Week 3: Time series decomposition",
+    "section": "",
+    "text": "Transforming data to remove some sources of variation\nDecomposing a time series into trend-cycle, seasonal and remainder components\nSeasonal adjustment"
+  },
+  {
+    "objectID": "week3/index.html#exercises-on-your-own-or-in-tutorial",
+    "href": "week3/index.html#exercises-on-your-own-or-in-tutorial",
+    "title": "Week 3: Time series decomposition",
+    "section": "Exercises (on your own or in tutorial)",
+    "text": "Exercises (on your own or in tutorial)\nComplete Exercises 6, 8-11 from Section 2.10 of the book."
+  },
+  {
+    "objectID": "week3/index.html#exercise-solutions",
+    "href": "week3/index.html#exercise-solutions",
+    "title": "Week 3: Time series decomposition",
+    "section": "Exercise solutions",
+    "text": "Exercise solutions"
+  },
+  {
+    "objectID": "week3/index.html#assignments",
+    "href": "week3/index.html#assignments",
+    "title": "Week 3: Time series decomposition",
+    "section": "Assignments",
+    "text": "Assignments\n\nGA1 is due on Monday 24 March."
+  },
+  {
+    "objectID": "week2/activities.html",
+    "href": "week2/activities.html",
+    "title": "ETF3231/ETF5231 Business Forecasting",
+    "section": "",
+    "text": "We have introduced various functions for time series graphics include autoplot(), gg_season(), gg_subseries(), gg_lag() and ACF. Use these functions to explore the quarterly tourism data for the Snowy Mountains.\nsnowy &lt;- tourism |&gt; filter(Region == \"Snowy Mountains\")\nWhat do you learn?\nWhich time plot corresponds to which ACF plot?\n\n\n\n\n\n\n\n\n\n\n\nYou can compute the daily changes in the Google stock price in 2018 using the code below. Do the daily changes look like white noise?\n\n\ndgoog &lt;- gafa_stock |&gt;\n  filter(Symbol == \"GOOG\", year(Date) &gt;= 2018) |&gt;\n  mutate(trading_day = row_number()) |&gt;\n  update_tsibble(index=trading_day, regular=TRUE) |&gt;\n  mutate(diff = difference(Close))"
+  },
+  {
+    "objectID": "week11/index.html",
+    "href": "week11/index.html",
+    "title": "Week 11: Dynamic regression",
+    "section": "",
+    "text": "How to combine regression models with ARIMA models to form dynamic regression models\nDynamic harmonic regression to handle complex seasonality\nLagged predictors"
+  },
+  {
+    "objectID": "week11/index.html#what-you-will-learn-this-week",
+    "href": "week11/index.html#what-you-will-learn-this-week",
+    "title": "Week 11: Dynamic regression",
+    "section": "",
+    "text": "How to combine regression models with ARIMA models to form dynamic regression models\nDynamic harmonic regression to handle complex seasonality\nLagged predictors"
+  },
+  {
+    "objectID": "week11/index.html#exercises-on-your-own-or-in-tutorial",
+    "href": "week11/index.html#exercises-on-your-own-or-in-tutorial",
+    "title": "Week 11: Dynamic regression",
+    "section": "Exercises (on your own or in tutorial)",
+    "text": "Exercises (on your own or in tutorial)\nComplete Exercises 1-7 from Section 7.10 of the book."
+  },
+  {
+    "objectID": "week11/index.html#exercise-solutions",
+    "href": "week11/index.html#exercise-solutions",
+    "title": "Week 11: Dynamic regression",
+    "section": "Exercise solutions",
+    "text": "Exercise solutions"
+  },
+  {
+    "objectID": "week11/index.html#pre-class-seminar",
+    "href": "week11/index.html#pre-class-seminar",
+    "title": "Week 11: Dynamic regression",
+    "section": "Pre-class seminar",
+    "text": "Pre-class seminar\nRead Chapter 10 of the textbook and watch all embedded videos"
+  },
+  {
+    "objectID": "week11/index.html#assignments",
+    "href": "week11/index.html#assignments",
+    "title": "Week 11: Dynamic regression",
+    "section": "Assignments",
+    "text": "Assignments\n\nIA4 is due on Monday 19 May.\nGA4 is due on Monday 26 May."
+  },
+  {
+    "objectID": "week1/index.html",
+    "href": "week1/index.html",
+    "title": "Week 1: What is forecasting?",
+    "section": "",
+    "text": "How to think about forecasting from a statistical perspective\nWhat makes something easy or hard to forecast?\nUsing the tsibble package in R"
+  },
+  {
+    "objectID": "week1/index.html#what-you-will-learn-this-week",
+    "href": "week1/index.html#what-you-will-learn-this-week",
+    "title": "Week 1: What is forecasting?",
+    "section": "",
+    "text": "How to think about forecasting from a statistical perspective\nWhat makes something easy or hard to forecast?\nUsing the tsibble package in R"
+  },
+  {
+    "objectID": "week1/index.html#pre-class-activities",
+    "href": "week1/index.html#pre-class-activities",
+    "title": "Week 1: What is forecasting?",
+    "section": "Pre-class activities",
+    "text": "Pre-class activities\nBefore we start classes, make sure you are familiar with R, RStudio and the tidyverse packages. If you’ve already done one of ETX2250/ETC1010 or something equivalent you should be fairly familiar with these concepts and probably will not need much help. If you’re new to R and the tidyverse, then you will need to get yourself up-to-speed.\n\nInstall/update R, RStudio. See https://otexts.com/fpp3/appendix-using-r.html\nInstall required packages install.packages(c(\"tidyverse\",\"fpp3\", \"GGally\"), dependencies = TRUE)\nExplore StartR: https://startr.numbat.space/. Work through Getting started (5 modules) and Writing documents (1 module). Do as much of it as you think you need. For those students new to R, it is strongly recommended that you do all these. For those who have previously used R, concentrate on the parts where you feel you are weakest.\nRead Chapter 1 of the textbook and watch all embedded videos. Pay particular attention to Section 1.7.\nRead Section 2.1 of the textbook and watch the embedded video."
+  },
+  {
+    "objectID": "week1/index.html#workshop-activities",
+    "href": "week1/index.html#workshop-activities",
+    "title": "Week 1: What is forecasting?",
+    "section": "Workshop activities",
+    "text": "Workshop activities"
+  },
+  {
+    "objectID": "week1/index.html#tutorial-exercises",
+    "href": "week1/index.html#tutorial-exercises",
+    "title": "Week 1: What is forecasting?",
+    "section": "Tutorial exercises",
+    "text": "Tutorial exercises\nThe main tasks for Week 1 tutorials will be:\n\nTo ensure that you have successfully installed R and RStudio on your own laptop.\nWork your way through Getting started (5 modules) and Writing documents (1 module). This is material we have prepared for you and other Monash students working in R. You should do these at your own pace to understand the concepts.\nDiscuss IA1 in class. How do you go about forecasting at the moment that you are untrained?\n\nYour tutors will be in your tutorial class to assist you."
+  },
+  {
+    "objectID": "week1/index.html#assignments",
+    "href": "week1/index.html#assignments",
+    "title": "Week 1: What is forecasting?",
+    "section": "Assignments",
+    "text": "Assignments\n\nIA1 is due on Monday 10 March."
+  },
+  {
+    "objectID": "playground/index.html",
+    "href": "playground/index.html",
+    "title": "R Playground",
+    "section": "",
+    "text": "This is the web version of R.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "assignments/G4.html",
+    "href": "assignments/G4.html",
+    "title": "Group Assignment 4 (18%)",
+    "section": "",
+    "text": "Files for download:\n\n\n\n\n\n\nDue: 26 May 2025  Submit (ETF5231)"
+  },
+  {
+    "objectID": "assignments/G2.html",
+    "href": "assignments/G2.html",
+    "title": "Group Assignment 2 (7%)",
+    "section": "",
+    "text": "Use the “GA2_template.Rmd to get started. Leave the”## Questions” and the pagebreaks “” as they are (do not remove these - these will help with marking the assignment). You are to submit both an “GA2_GroupNo.Rmd” file and a compiled “GA2_GroupNo.pdf” file for your assignment.\nFollow the assignment questions/instructions to complete some specific tasks. Add code were necessary (you can add more R chunks if and where you need to) and text to answer the questions where necessary. Keep within the suggested word restrictions in order to get full marks (marks will be deducted for grossly going over the word limit). This is to encourage you to be concise in your writing.\nYou will be using this data in future assignments as you will build on the analysis you perform in this assignment. Furthermore, in the final assignment you will need to submit an .Rmd file that you will develop for all the assignment tasks throughout the semester. Marks will be allocated for code that runs without errors and produces the correct output. Make sure that every time your code works without errors. If you need help with this, please ask during consultation times. Keeping detailed comments in your program is always good practice (see for example the programs we are using in the lectures). This will help you remember in week 12 why you did certain things in week 4.\nFiles for download:\n\n\n\n\n\n\n\n\n\n\nDue: 14 April 2025  Submit (ETF5231)"
+  },
+  {
+    "objectID": "assignments/A4.html",
+    "href": "assignments/A4.html",
+    "title": "Individual Assignment 4 (18%)",
+    "section": "",
+    "text": "The data you are to forecast is the same series you used in IA2.\nFiles for download:\n\n\n\n\nYou are to submit both an IA4_NameSurname.Rmd file and a compiled IA4_NameSurname.pdf file for your assignment.\n\n\nDue: 19 May 2025  Submit (ETF5231)  \n\nDue: 19 May 2025  Submit (ETF3231)"
+  },
+  {
+    "objectID": "assignments/A2.html",
+    "href": "assignments/A2.html",
+    "title": "Individual Assignment 2 (7%)",
+    "section": "",
+    "text": "Use the IA2_template.qmd to get started. Leave the “## Questions” and the pagebreaks “” as they are (do not remove these - these will help with marking the assignment). You are to submit both an “IA2_NameSurname.qmd” file and a compiled IA2_NameSurname.pdf file for your assignment.\nFollow the assignment questions/instructions to complete some specific tasks. Add code where necessary (you can add more R chunks if and where you need to) and text to answer the questions where necessary. Keep within the suggested word restrictions in order to get full marks (marks will be deducted for grossly going over the word limit). This is to encourage you to be concise in your writing.\nYou will be using this data in future assignments as you will build on the analysis you perform in this assignment. Furthermore, in the final assignment you will need to submit an .qmd file that you will develop for all the assignment tasks throughout the semester. Marks will be allocated for code that runs without errors and produces the correct output. Make sure that every time your code works without errors. If you need help with this, please ask during consultation times. Keeping detailed comments in your program is always good practice (see for example the programs we are using in the lectures). This will help you remember in week 12 why you did certain things in week 4.\nFiles for download:\n\n\n\n\n\n\n\n\n\n\nDue: 7 April 2025  Submit (ETF5231)  \n\nDue: 7 April 2025  Submit (ETF3231)"
+  },
+  {
+    "objectID": "assignments/A1.html",
+    "href": "assignments/A1.html",
+    "title": "Individual Assignment 1 (5%)",
+    "section": "",
+    "text": "You must provide forecasts for the following items:\nFor each of these, give a point forecast and an 80% prediction interval, and explain in a couple of sentences how each was obtained."
+  },
+  {
+    "objectID": "assignments/A1.html#forecasting-competition",
+    "href": "assignments/A1.html#forecasting-competition",
+    "title": "Individual Assignment 1 (5%)",
+    "section": "Forecasting competition",
+    "text": "Forecasting competition\nOnce the true values in each case are available, we will come back to this exercise and see who did the best using the scoring method described in class. The student with the best score will be the winner of our forecasting competition (something really nice to have on your CV), and will also win a $100 Amazon gift voucher.\nNote: your assignment mark is not dependent at all on the score you obtain in the competition.\n\nScoring\nLet y= actual, \\hat{y}= point forecast, [\\hat{\\ell},\\hat{u}]= prediction interval\n\nPoint forecasts:\n\\text{Absolute Error} = |y-\\hat{y}|\n\nRank results for all students in class\nAdd ranks across all five items\n\n\n\nPrediction intervals:\n\n\\text{Interval Score} = (\\hat u - \\hat\\ell) + 10(\\hat\\ell - y)_+ + 10 (y-\\hat u)_+\n\n\nu_+=max(u,0)\nRank results for all students\nAdd ranks across all five items"
+  },
+  {
+    "objectID": "assignments/A3.html",
+    "href": "assignments/A3.html",
+    "title": "Individual Assignment 3 (10%)",
+    "section": "",
+    "text": "The data you are to forecast is the same series you used in IA2.\nFiles for download:\n\n\n\n\nYou are to submit both an IA3_NameSurname.Rmd file and a compiled IA3_NameSurname.pdf file for your assignment.\n\n\nDue: 28 April 2025  Submit (ETF5231)  \n\nDue: 28 April 2025  Submit (ETF3231)"
+  },
+  {
+    "objectID": "assignments/G1.html",
+    "href": "assignments/G1.html",
+    "title": "Group Assignments",
+    "section": "",
+    "text": "It is expected that all group members participate equally to the group assignments. It sometimes helps to keep a log of the tasks each member is to complete. This may assist in keeping some balance throughout the semester. To ensure that all group members are contributing the following rules will apply for all the group assignments throughout the semester.\nEvery group member has the right to express concern/dislike in terms of a group member being absent from group activities. This has to be expressed directly to me (and only me) via a formal email stating facts that have hindered the operations of the group (saying I do not like George because he is tall is not a reason for expressing concern). If at least two such complaints are submitted during the completion of an assignment, the group member concerned will receive a warning. If the situation is not improved during the next assignment and another two complaints are again submitted, the group member will be immediately removed from the group and will be expected to complete the rest of the group assignments alone.\nIn my involvement with group assignments we have rarely needed to enforce such rule so I do no expect any major problems here. However they will be enforced if need be. I hope this is clear.\nWe need only one submission per group for each group assignment."
+  },
+  {
+    "objectID": "assignments/G1.html#group-assignment-1",
+    "href": "assignments/G1.html#group-assignment-1",
+    "title": "Group Assignments",
+    "section": "Group Assignment 1",
+    "text": "Group Assignment 1\nThe aim of this assignment is to meet your group members and begin interacting. Full marks will be allocated to the group by completing the tasks in the google form. Please try and be as efficient as possible in your writing (we are looking for short, sharp responses).\nSubmission\nMoodle by 9.30am, on Monday, 24 March.\n\n\nDue: 24 March 2025  Submit (ETF5231)"
+  },
+  {
+    "objectID": "assignments/G3.html",
+    "href": "assignments/G3.html",
+    "title": "Group Assignment 3 (10%)",
+    "section": "",
+    "text": "Files for download:\n\n\n\n\n\n\nDue: 5 May 2025  Submit (ETF5231)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ETF3231/5231 Business Forecasting",
+    "section": "",
+    "text": "George Athanasopoulos.\nEmail: George.Athanasopoulos@monash.edu"
+  },
+  {
+    "objectID": "index.html#lecturerchief-examiner",
+    "href": "index.html#lecturerchief-examiner",
+    "title": "ETF3231/5231 Business Forecasting",
+    "section": "",
+    "text": "George Athanasopoulos.\nEmail: George.Athanasopoulos@monash.edu"
+  },
+  {
+    "objectID": "index.html#consultations",
+    "href": "index.html#consultations",
+    "title": "ETF3231/5231 Business Forecasting",
+    "section": "Consultations",
+    "text": "Consultations\n\nMonday 3-4pm, Ari Handayani, Room XXX and zoom.\nTuesday, 1-2pm, Ari Handayani, Room XXX and zoom.\nTuesday, 3-4pm, Room H5.83, George Athanasopoulos, zoom.\nWednesday, 1.30-2pm, Kulan Ranasinghe, zoom\nThursday, 9.30-10.30pm, Yuru Sun, zoom.\nFriday 12-1pm, Joan Tan (Head Tutor), Room XXX and zoom."
+  },
+  {
+    "objectID": "index.html#weekly-schedule",
+    "href": "index.html#weekly-schedule",
+    "title": "ETF3231/5231 Business Forecasting",
+    "section": "Weekly schedule",
+    "text": "Weekly schedule\n\nPre-class preparation, pre-recorded videos, approximately 60 minutes.\nSeminars, 10-11 Tuesday, Building K Level 3, K321, CA_K_K321.\nLectorials, 11-12 Tuesday, Building K Level 3, K321, CA_K_K321.\nTutorials, 50 minutes in class per week.\n\n\n\n\nWeek\nTopic\nChapter\nAssessments\n\n\n\n\n03 Mar\nIntroduction to forecasting and R\n1. Getting started\n\n\n\n10 Mar\nTime series graphics\n2. Time series graphics\nIA1\n\n\n17 Mar\nTime series decomposition\n3. Time series decomposition\n\n\n\n24 Mar\nThe forecaster’s toolbox\n5. The forecaster’s toolbox\nGA1\n\n\n31 Mar\nExponential smoothing\n8. Exponential smoothing\n\n\n\n07 Apr\nExponential smoothing\n8. Exponential smoothing\nIA2\n\n\n14 Apr\nARIMA models\n9. ARIMA models\nGA2\n\n\n21 Apr\nMid-semester break\n\n\n\n\n28 Apr\nARIMA models\n9. ARIMA models\nIA3\n\n\n05 May\nARIMA models\n9. ARIMA models\nGA3\n\n\n12 May\nMultiple regression and forecasting\n7. Time series regression models\n\n\n\n19 May\nDynamic regression\n10. Dynamic regression models\nIA4\n\n\n26 May\nRevision\nRevision\nGA4"
+  },
+  {
+    "objectID": "index.html#assessments",
+    "href": "index.html#assessments",
+    "title": "ETF3231/5231 Business Forecasting",
+    "section": "Assessments",
+    "text": "Assessments\n\n\n\n\n\n\nNote\n\n\n\nFinal exam 60%, 4x (ETF3231)/8x (ETF5231) assignments 40%\n\n\nIA: denotes an individual assignment to be completed by all students.\nGA: denotes a group assignment to be completed only by ETF5231 students\nThe due dates will be confirmed throughout the semester as our speed in covering topics will vary depending on student needs.\nPlease note: In these assessments, you must not use generative artificial intelligence (AI) to generate any materials or content in relation to the assessment tasks.\n\n\n\nWeeks\nAssessment Task\nWeight\n\n\n\n\n2\nIA1\n5%\n\n\n4\nGA1\n5%\n\n\n6\nIA2\n7%\n\n\n7\nGA2\n7%\n\n\n8\nIA3\n10%\n\n\n9\nGA3\n10%\n\n\n11\nIA4\n18%\n\n\n12\nGA4\n18%\n\n\n\nETF5231 students: marks allocated to Assignments will be a combination between Individual Assignments and Group Assignments with a weights 0.7 and 0.3. So if you score 8/10 for IA3 and 5/10 for GA3 your mark for Assignment 3 will be 8*0.7+5*0.3=7.1 out of 10. Hence, it is important to make sure that groups are performing at the highest standard.\nPresentation requirements: using Rmarkdown, and should converted the assignment into pdf output file unless otherwise specified.\nCriteria for marking: Provided the task has been completed and your code runs without errors, full marks will be awarded. Marks will be deducted for incomplete tasks or if there are errors.\nPenalties for late lodgement: The University has a standard penalty for late submission. See the Marking and Feedback Procedure for more information\nAdditional information: Additional information regarding this assessment will be provided during the scheduled class time and on Moodle.\n\n\n\n\n\n\nGroup Participation - ETF5231 Students ONLY\n\n\n\nGroup participation rules for group assignments (GAs): It is expected that all group members participate equally to the group assignments. It sometimes helps to keep a log of the tasks each member is to complete. This may assist in keeping some balance throughout the semester. To ensure that all group members are contributing the following rules will apply for all the group assignments throughout the semester.\nEvery group member has the right to express concern/dislike in terms of a group member being absent from group activities. This has to be expressed directly to me (and only me) via a formal email stating facts that have hindered the operations of the group (saying I do not like George because he is tall is not a reason for expressing concern). If at least two such complaints are submitted during the completion of an assignment, the group member concerned will receive a warning. If the situation is not improved during the next assignment and another two complaints are again submitted, the group member will be immediately removed from the group and will be expected to complete the rest of the group assignments alone."
+  },
+  {
+    "objectID": "index.html#r-package-installation",
+    "href": "index.html#r-package-installation",
+    "title": "ETF3231/5231 Business Forecasting",
+    "section": "R package installation",
+    "text": "R package installation\nHere is the code to install the R packages we will be using in this unit.\ninstall.packages(c(\"tidyverse\",\"fpp3\", \"GGally\"), dependencies = TRUE)"
+  },
+  {
+    "objectID": "index.html#textbook",
+    "href": "index.html#textbook",
+    "title": "ETF3231/5231 Business Forecasting",
+    "section": "Textbook",
+    "text": "Textbook\n\n\n\n\nHyndman, R. J., & Athanasopoulos, G. (2021). Forecasting: principles and practice. OTexts."
+  },
+  {
+    "objectID": "week1/activities.html",
+    "href": "week1/activities.html",
+    "title": "Activities: Week 1",
+    "section": "",
+    "text": "The pedestrian dataset contains hourly pedestrian counts from 2015-01-01 to 2016-12-31 at 4 sensors in the city of Melbourne.\nThe data is shown below:\n\n\n# A tibble: 66,037 × 5\n   Sensor         Date_Time           Date        Time Count\n   &lt;chr&gt;          &lt;dttm&gt;              &lt;date&gt;     &lt;int&gt; &lt;int&gt;\n 1 Birrarung Marr 2015-01-01 00:00:00 2015-01-01     0  1630\n 2 Birrarung Marr 2015-01-01 01:00:00 2015-01-01     1   826\n 3 Birrarung Marr 2015-01-01 02:00:00 2015-01-01     2   567\n 4 Birrarung Marr 2015-01-01 03:00:00 2015-01-01     3   264\n 5 Birrarung Marr 2015-01-01 04:00:00 2015-01-01     4   139\n 6 Birrarung Marr 2015-01-01 05:00:00 2015-01-01     5    77\n 7 Birrarung Marr 2015-01-01 06:00:00 2015-01-01     6    44\n 8 Birrarung Marr 2015-01-01 07:00:00 2015-01-01     7    56\n 9 Birrarung Marr 2015-01-01 08:00:00 2015-01-01     8   113\n10 Birrarung Marr 2015-01-01 09:00:00 2015-01-01     9   166\n# ℹ 66,027 more rows\n\n\n\n\n\n\n\n\nYour turn!\n\n\n\nIdentify the index variable, key variable(s), and measured variable(s) of this dataset.\n\n\n\n\n\n\n\n\nHint\n\n\n\n\nThe index variable contains the complete time information\nThe key variable(s) identify each time series\nThe measured variable(s) are what you want to explore/forecast.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe aus_accommodation dataset contains quarterly data on Australian tourist accommodation from short-term non-residential accommodation with 15 or more rooms, 1998 Q1 - 2016 Q2. The first few lines are shown below.\n\nThe units of the measured variables are as follows:\n\nTakings are in millions of Australian dollars\nOccupancy is a percentage of rooms occupied\nCPI is an index with value 100 in 2012 Q1.\n\n\n\n\n\n\n\nYour turn!\n\n\n\nComplete the code to convert this dataset into a tsibble.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHint\n\n\n\n\n\nBegin by loading the fpp3 library to use its time series functions.\nlibrary(fpp3)\n\n\n\n\n\n\n\n\n\n\n\nHint\n\n\n\n\n\nAfter loading the fpp3 package, convert the data frame into a tsibble.\nlibrary(fpp3)\naus_accommodation &lt;- read.csv(\n  \"https://workshop.nectric.com.au/user2024/data/aus_accommodation.csv\"\n) |&gt; mutate(Date = as.Date(Date))\n\n\n\n\n\n\n\n\n\n\n\nHint\n\n\n\n\n\nRemember to specify the time index and key for as_tsibble() to function correctly.\nlibrary(fpp3)\naus_accommodation &lt;- read.csv(\n  \"https://workshop.nectric.com.au/user2024/data/aus_accommodation.csv\"\n) |&gt;\n  mutate(Date = as.Date(Date)) |&gt;\n  as_tsibble(key = State, index = Date)\n\n\n\n\n\n\n\n\n\n\n\n\n\nTemporal granularity\n\n\n\nThe previous exercise produced a dataset with daily frequency - although clearly the data is quarterly! This is because we are using a daily granularity which is inappropriate for this data.\n\n\nCommon temporal granularities can be created with these functions:\n\n\n\n\n\nGranularity\nFunction\n\n\n\n\nAnnual\nas.integer()\n\n\nQuarterly\nyearquarter()\n\n\nMonthly\nyearmonth()\n\n\nWeekly\nyearweek()\n\n\nDaily\nas_date(), ymd()\n\n\nSub-daily\nas_datetime()\n\n\n\n\n\n\n\n\n\n\n\nYour turn!\n\n\n\nUse the appropriate granularity for the aus_accommodation dataset, and verify that the frequency is now quarterly.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHint\n\n\n\n\n\nStart by reading the CSV file and transform the data using mutate() and yearquarter() for the Date column.\naus_accommodation &lt;- read.csv(\n  \"https://workshop.nectric.com.au/user2024/data/aus_accommodation.csv\"\n) |&gt;\n  mutate(Quarter = yearquarter(Date))\n\n\n\n\n\n\n\n\n\n\n\nHint\n\n\n\n\n\nAfter transforming the Date column, make sure you convert the data frame to a tsibble.\naus_accommodation &lt;- read.csv(\n  \"https://workshop.nectric.com.au/user2024/data/aus_accommodation.csv\"\n) |&gt;\n  mutate(Quarter = yearquarter(Date)) |&gt;\n  as_tsibble(key = State, index = Quarter)\n\n\n\n\n\n\n\nThe tourism dataset contains the quarterly overnight trips from 1998 Q1 to 2016 Q4 across Australia.\nIt is disaggregated by 3 key variables:\n\nState: States and territories of Australia\nRegion: The tourism regions are formed through the aggregation of Statistical Local Areas (SLAs) which are defined by the various State and Territory tourism authorities according to their research and marketing needs\nPurpose: Stopover purpose of visit: “Holiday”, “Visiting friends and relatives”, “Business”, “Other reason”.\n\nCalculate the total quarterly tourists visiting Victoria from the tourism dataset.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHint\n\n\n\n\n\nTo start off, filter the tourism dataset for only Victoria.\ntourism |&gt;\n  filter(State == \"Victoria\")\n\n\n\n\n\n\n\n\n\n\n\nHint\n\n\n\n\n\nAfter filtering, summarise the total trips for Victoria.\ntourism |&gt;\n  filter(State == \"Victoria\") |&gt;\n  summarise(Trips = sum(Trips))\n\n\n\n\nFind what combination of Region and Purpose had the maximum number of overnight trips on average.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHint\n\n\n\n\n\nStart by using as_tibble() to convert tourism back to a tibble and group it by Region and Purpose.\ntourism |&gt;\n  as_tibble() |&gt;\n  group_by(Region, Purpose)\n\n\n\n\n\n\n\n\n\n\n\nHint\n\n\n\n\n\nAfter grouping, summarise the mean number of trips and filter for maximum trips.\ntourism |&gt;\n  as_tibble() |&gt;\n  group_by(Region, Purpose) |&gt;\n  summarise(Trips = mean(Trips), .groups = \"drop\") |&gt;\n  filter(Trips == max(Trips))\n\n\n\n\nCreate a new tsibble which combines the Purposes and Regions, and just has total trips by State.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHint\n\n\n\n\n\nTo summarise the number of trips by each State, start by grouping the data by State.\ntourism |&gt;\n  group_by(State)\n\n\n\n\n\n\n\n\n\n\n\nHint\n\n\n\n\n\nAfter grouping, use the summarise() function to sum the trips.\ntourism |&gt;\n  group_by(State) |&gt;\n  summarise(Trips = sum(Trips))"
+  },
+  {
+    "objectID": "week1/activities.html#exercise-1",
+    "href": "week1/activities.html#exercise-1",
+    "title": "Activities: Week 1",
+    "section": "",
+    "text": "The pedestrian dataset contains hourly pedestrian counts from 2015-01-01 to 2016-12-31 at 4 sensors in the city of Melbourne.\nThe data is shown below:\n\n\n# A tibble: 66,037 × 5\n   Sensor         Date_Time           Date        Time Count\n   &lt;chr&gt;          &lt;dttm&gt;              &lt;date&gt;     &lt;int&gt; &lt;int&gt;\n 1 Birrarung Marr 2015-01-01 00:00:00 2015-01-01     0  1630\n 2 Birrarung Marr 2015-01-01 01:00:00 2015-01-01     1   826\n 3 Birrarung Marr 2015-01-01 02:00:00 2015-01-01     2   567\n 4 Birrarung Marr 2015-01-01 03:00:00 2015-01-01     3   264\n 5 Birrarung Marr 2015-01-01 04:00:00 2015-01-01     4   139\n 6 Birrarung Marr 2015-01-01 05:00:00 2015-01-01     5    77\n 7 Birrarung Marr 2015-01-01 06:00:00 2015-01-01     6    44\n 8 Birrarung Marr 2015-01-01 07:00:00 2015-01-01     7    56\n 9 Birrarung Marr 2015-01-01 08:00:00 2015-01-01     8   113\n10 Birrarung Marr 2015-01-01 09:00:00 2015-01-01     9   166\n# ℹ 66,027 more rows\n\n\n\n\n\n\n\n\nYour turn!\n\n\n\nIdentify the index variable, key variable(s), and measured variable(s) of this dataset.\n\n\n\n\n\n\n\n\nHint\n\n\n\n\nThe index variable contains the complete time information\nThe key variable(s) identify each time series\nThe measured variable(s) are what you want to explore/forecast."
+  },
+  {
+    "objectID": "week1/activities.html#exercise-2",
+    "href": "week1/activities.html#exercise-2",
+    "title": "Activities: Week 1",
+    "section": "",
+    "text": "The aus_accommodation dataset contains quarterly data on Australian tourist accommodation from short-term non-residential accommodation with 15 or more rooms, 1998 Q1 - 2016 Q2. The first few lines are shown below.\n\nThe units of the measured variables are as follows:\n\nTakings are in millions of Australian dollars\nOccupancy is a percentage of rooms occupied\nCPI is an index with value 100 in 2012 Q1.\n\n\n\n\n\n\n\nYour turn!\n\n\n\nComplete the code to convert this dataset into a tsibble.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHint\n\n\n\n\n\nBegin by loading the fpp3 library to use its time series functions.\nlibrary(fpp3)\n\n\n\n\n\n\n\n\n\n\n\nHint\n\n\n\n\n\nAfter loading the fpp3 package, convert the data frame into a tsibble.\nlibrary(fpp3)\naus_accommodation &lt;- read.csv(\n  \"https://workshop.nectric.com.au/user2024/data/aus_accommodation.csv\"\n) |&gt; mutate(Date = as.Date(Date))\n\n\n\n\n\n\n\n\n\n\n\nHint\n\n\n\n\n\nRemember to specify the time index and key for as_tsibble() to function correctly.\nlibrary(fpp3)\naus_accommodation &lt;- read.csv(\n  \"https://workshop.nectric.com.au/user2024/data/aus_accommodation.csv\"\n) |&gt;\n  mutate(Date = as.Date(Date)) |&gt;\n  as_tsibble(key = State, index = Date)"
+  },
+  {
+    "objectID": "week1/activities.html#exercise-3",
+    "href": "week1/activities.html#exercise-3",
+    "title": "Activities: Week 1",
+    "section": "",
+    "text": "Temporal granularity\n\n\n\nThe previous exercise produced a dataset with daily frequency - although clearly the data is quarterly! This is because we are using a daily granularity which is inappropriate for this data.\n\n\nCommon temporal granularities can be created with these functions:\n\n\n\n\n\nGranularity\nFunction\n\n\n\n\nAnnual\nas.integer()\n\n\nQuarterly\nyearquarter()\n\n\nMonthly\nyearmonth()\n\n\nWeekly\nyearweek()\n\n\nDaily\nas_date(), ymd()\n\n\nSub-daily\nas_datetime()\n\n\n\n\n\n\n\n\n\n\n\nYour turn!\n\n\n\nUse the appropriate granularity for the aus_accommodation dataset, and verify that the frequency is now quarterly.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHint\n\n\n\n\n\nStart by reading the CSV file and transform the data using mutate() and yearquarter() for the Date column.\naus_accommodation &lt;- read.csv(\n  \"https://workshop.nectric.com.au/user2024/data/aus_accommodation.csv\"\n) |&gt;\n  mutate(Quarter = yearquarter(Date))\n\n\n\n\n\n\n\n\n\n\n\nHint\n\n\n\n\n\nAfter transforming the Date column, make sure you convert the data frame to a tsibble.\naus_accommodation &lt;- read.csv(\n  \"https://workshop.nectric.com.au/user2024/data/aus_accommodation.csv\"\n) |&gt;\n  mutate(Quarter = yearquarter(Date)) |&gt;\n  as_tsibble(key = State, index = Quarter)"
+  },
+  {
+    "objectID": "week1/activities.html#exercise-4",
+    "href": "week1/activities.html#exercise-4",
+    "title": "Activities: Week 1",
+    "section": "",
+    "text": "The tourism dataset contains the quarterly overnight trips from 1998 Q1 to 2016 Q4 across Australia.\nIt is disaggregated by 3 key variables:\n\nState: States and territories of Australia\nRegion: The tourism regions are formed through the aggregation of Statistical Local Areas (SLAs) which are defined by the various State and Territory tourism authorities according to their research and marketing needs\nPurpose: Stopover purpose of visit: “Holiday”, “Visiting friends and relatives”, “Business”, “Other reason”.\n\nCalculate the total quarterly tourists visiting Victoria from the tourism dataset.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHint\n\n\n\n\n\nTo start off, filter the tourism dataset for only Victoria.\ntourism |&gt;\n  filter(State == \"Victoria\")\n\n\n\n\n\n\n\n\n\n\n\nHint\n\n\n\n\n\nAfter filtering, summarise the total trips for Victoria.\ntourism |&gt;\n  filter(State == \"Victoria\") |&gt;\n  summarise(Trips = sum(Trips))\n\n\n\n\nFind what combination of Region and Purpose had the maximum number of overnight trips on average.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHint\n\n\n\n\n\nStart by using as_tibble() to convert tourism back to a tibble and group it by Region and Purpose.\ntourism |&gt;\n  as_tibble() |&gt;\n  group_by(Region, Purpose)\n\n\n\n\n\n\n\n\n\n\n\nHint\n\n\n\n\n\nAfter grouping, summarise the mean number of trips and filter for maximum trips.\ntourism |&gt;\n  as_tibble() |&gt;\n  group_by(Region, Purpose) |&gt;\n  summarise(Trips = mean(Trips), .groups = \"drop\") |&gt;\n  filter(Trips == max(Trips))\n\n\n\n\nCreate a new tsibble which combines the Purposes and Regions, and just has total trips by State.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHint\n\n\n\n\n\nTo summarise the number of trips by each State, start by grouping the data by State.\ntourism |&gt;\n  group_by(State)\n\n\n\n\n\n\n\n\n\n\n\nHint\n\n\n\n\n\nAfter grouping, use the summarise() function to sum the trips.\ntourism |&gt;\n  group_by(State) |&gt;\n  summarise(Trips = sum(Trips))"
+  },
+  {
+    "objectID": "week10/index.html",
+    "href": "week10/index.html",
+    "title": "Week 10: Multiple regression and forecasting",
+    "section": "",
+    "text": "Useful predictors for time series forecasting using regression\nSelecting predictors\nEx ante and ex post forecasting"
+  },
+  {
+    "objectID": "week10/index.html#what-you-will-learn-this-week",
+    "href": "week10/index.html#what-you-will-learn-this-week",
+    "title": "Week 10: Multiple regression and forecasting",
+    "section": "",
+    "text": "Useful predictors for time series forecasting using regression\nSelecting predictors\nEx ante and ex post forecasting"
+  },
+  {
+    "objectID": "week10/index.html#exercises-on-your-own-or-in-tutorial",
+    "href": "week10/index.html#exercises-on-your-own-or-in-tutorial",
+    "title": "Week 10: Multiple regression and forecasting",
+    "section": "Exercises (on your own or in tutorial)",
+    "text": "Exercises (on your own or in tutorial)\nComplete Exercises 9-13 from Section 9.11 of the book."
+  },
+  {
+    "objectID": "week10/index.html#exercise-solutions",
+    "href": "week10/index.html#exercise-solutions",
+    "title": "Week 10: Multiple regression and forecasting",
+    "section": "Exercise solutions",
+    "text": "Exercise solutions"
+  },
+  {
+    "objectID": "week10/index.html#pre-seminar-activities",
+    "href": "week10/index.html#pre-seminar-activities",
+    "title": "Week 10: Multiple regression and forecasting",
+    "section": "Pre-seminar activities",
+    "text": "Pre-seminar activities\nRead Chapter 7 of the textbook and watch all embedded videos"
+  },
+  {
+    "objectID": "week10/index.html#assignments",
+    "href": "week10/index.html#assignments",
+    "title": "Week 10: Multiple regression and forecasting",
+    "section": "Assignments",
+    "text": "Assignments\n\nIA4 is due on Monday 19 May.\nGA4 is due on Monday 26 May."
+  },
+  {
+    "objectID": "week12/index.html",
+    "href": "week12/index.html",
+    "title": "Week 12: Review",
+    "section": "",
+    "text": "Review Assignment 1\nAnnounce winner of the forecasting competition\nDiscuss exam"
+  },
+  {
+    "objectID": "week12/index.html#what-you-will-learn-this-week",
+    "href": "week12/index.html#what-you-will-learn-this-week",
+    "title": "Week 12: Review",
+    "section": "",
+    "text": "Review Assignment 1\nAnnounce winner of the forecasting competition\nDiscuss exam"
+  },
+  {
+    "objectID": "week12/index.html#exercises-on-your-own-or-in-tutorial",
+    "href": "week12/index.html#exercises-on-your-own-or-in-tutorial",
+    "title": "Week 12: Review",
+    "section": "Exercises (on your own or in tutorial)",
+    "text": "Exercises (on your own or in tutorial)\nComplete Exercises 1-7 from Section 10.7 of the book."
+  },
+  {
+    "objectID": "week12/index.html#exercise-solutions",
+    "href": "week12/index.html#exercise-solutions",
+    "title": "Week 12: Review",
+    "section": "Exercise solutions",
+    "text": "Exercise solutions"
+  },
+  {
+    "objectID": "week12/index.html#pre-seminar-activities",
+    "href": "week12/index.html#pre-seminar-activities",
+    "title": "Week 12: Review",
+    "section": "Pre-seminar activities",
+    "text": "Pre-seminar activities\nCatch up on any exercises not yet done"
+  },
+  {
+    "objectID": "week12/index.html#post-class-activities",
+    "href": "week12/index.html#post-class-activities",
+    "title": "Week 12: Review",
+    "section": "Post-class activities",
+    "text": "Post-class activities\n\nDo any exercises not yet finished.\nComplete past exams: [2022] [2023] [2024]\n\n\n\nRe-read the textbook\nListen again to all lectures"
+  },
+  {
+    "objectID": "week2/index.html",
+    "href": "week2/index.html",
+    "title": "Week 2: Time series graphics",
+    "section": "",
+    "text": "Different types of plots for time series including time plots, season plots, subseries plots, lag plots and ACF plots\nThe difference between seasonal patterns and cyclic patterns in time series\nWhat is “white noise” and how to identify it."
+  },
+  {
+    "objectID": "week2/index.html#what-you-will-learn-this-week",
+    "href": "week2/index.html#what-you-will-learn-this-week",
+    "title": "Week 2: Time series graphics",
+    "section": "",
+    "text": "Different types of plots for time series including time plots, season plots, subseries plots, lag plots and ACF plots\nThe difference between seasonal patterns and cyclic patterns in time series\nWhat is “white noise” and how to identify it."
+  },
+  {
+    "objectID": "week2/index.html#exercises-on-your-own-or-in-tutorial",
+    "href": "week2/index.html#exercises-on-your-own-or-in-tutorial",
+    "title": "Week 2: Time series graphics",
+    "section": "Exercises (on your own or in tutorial)",
+    "text": "Exercises (on your own or in tutorial)\nComplete Exercises 1-5 from Section 2.10 of the book."
+  },
+  {
+    "objectID": "week2/index.html#pre-seminar-activities",
+    "href": "week2/index.html#pre-seminar-activities",
+    "title": "Week 2: Time series graphics",
+    "section": "Pre-seminar activities",
+    "text": "Pre-seminar activities\nRead Chapter 2 of the textbook and watch all embedded videos"
+  },
+  {
+    "objectID": "week2/index.html#assignments",
+    "href": "week2/index.html#assignments",
+    "title": "Week 2: Time series graphics",
+    "section": "Assignments",
+    "text": "Assignments\n\nIA1 is due on Monday 10 March.\nGA1 is due on Monday 24 March."
+  },
+  {
+    "objectID": "week4/index.html",
+    "href": "week4/index.html",
+    "title": "Week 4: The forecaster’s toolbox",
+    "section": "",
+    "text": "Four benchmark forecasting methods that we will use for comparison\nFitted values, residuals\nForecasting with transformations"
+  },
+  {
+    "objectID": "week4/index.html#what-you-will-learn-this-week",
+    "href": "week4/index.html#what-you-will-learn-this-week",
+    "title": "Week 4: The forecaster’s toolbox",
+    "section": "",
+    "text": "Four benchmark forecasting methods that we will use for comparison\nFitted values, residuals\nForecasting with transformations"
+  },
+  {
+    "objectID": "week4/index.html#exercises-on-your-own-or-in-tutorial",
+    "href": "week4/index.html#exercises-on-your-own-or-in-tutorial",
+    "title": "Week 4: The forecaster’s toolbox",
+    "section": "Exercises (on your own or in tutorial)",
+    "text": "Exercises (on your own or in tutorial)\nComplete Exercise 2-3, 5, 7, 9-10 from Section 3.7 of the book"
+  },
+  {
+    "objectID": "week4/index.html#exercise-solutions",
+    "href": "week4/index.html#exercise-solutions",
+    "title": "Week 4: The forecaster’s toolbox",
+    "section": "Exercise solutions",
+    "text": "Exercise solutions"
+  },
+  {
+    "objectID": "week4/index.html#pre-seminar-activities",
+    "href": "week4/index.html#pre-seminar-activities",
+    "title": "Week 4: The forecaster’s toolbox",
+    "section": "Pre-seminar activities",
+    "text": "Pre-seminar activities\nRead Chapter 5 of the textbook and watch all embedded videos"
+  },
+  {
+    "objectID": "week4/index.html#assignments",
+    "href": "week4/index.html#assignments",
+    "title": "Week 4: The forecaster’s toolbox",
+    "section": "Assignments",
+    "text": "Assignments\n\nGA1 is due on Monday 24 March.\nIA2 is due on Monday 07 April."
+  },
+  {
+    "objectID": "week6/index.html",
+    "href": "week6/index.html",
+    "title": "Week 6: Exponential smoothing",
+    "section": "",
+    "text": "Exponential smoothing methods with trend and seasonality\nETS models\nAutomatic model selection using the AICc"
+  },
+  {
+    "objectID": "week6/index.html#what-you-will-learn-this-week",
+    "href": "week6/index.html#what-you-will-learn-this-week",
+    "title": "Week 6: Exponential smoothing",
+    "section": "",
+    "text": "Exponential smoothing methods with trend and seasonality\nETS models\nAutomatic model selection using the AICc"
+  },
+  {
+    "objectID": "week6/index.html#exercises-on-your-own-or-in-tutorial",
+    "href": "week6/index.html#exercises-on-your-own-or-in-tutorial",
+    "title": "Week 6: Exponential smoothing",
+    "section": "Exercises (on your own or in tutorial)",
+    "text": "Exercises (on your own or in tutorial)\nComplete Exercises 1-4, 16, 17 from Section 8.8."
+  },
+  {
+    "objectID": "week6/index.html#exercise-solutions",
+    "href": "week6/index.html#exercise-solutions",
+    "title": "Week 6: Exponential smoothing",
+    "section": "Exercise solutions",
+    "text": "Exercise solutions"
+  },
+  {
+    "objectID": "week6/index.html#pre-seminar-activities",
+    "href": "week6/index.html#pre-seminar-activities",
+    "title": "Week 6: Exponential smoothing",
+    "section": "Pre-seminar activities",
+    "text": "Pre-seminar activities\nRead Sections 8.4-8.7 of the textbook and watch all embedded videos."
+  },
+  {
+    "objectID": "week6/index.html#assignments",
+    "href": "week6/index.html#assignments",
+    "title": "Week 6: Exponential smoothing",
+    "section": "Assignments",
+    "text": "Assignments\n\nIA2 is due on Monday 07 April.\nGA2 is due on Monday 14 April.\nIA3 is due on Monday 28 April."
+  },
+  {
+    "objectID": "week8/index.html",
+    "href": "week8/index.html",
+    "title": "Week 8: ARIMA models",
+    "section": "",
+    "text": "AR, MA, ARMA and ARIMA models\nSelecting model orders manually and automatically"
+  },
+  {
+    "objectID": "week8/index.html#what-you-will-learn-this-week",
+    "href": "week8/index.html#what-you-will-learn-this-week",
+    "title": "Week 8: ARIMA models",
+    "section": "",
+    "text": "AR, MA, ARMA and ARIMA models\nSelecting model orders manually and automatically"
+  },
+  {
+    "objectID": "week8/index.html#exercises-on-your-own-or-in-tutorial",
+    "href": "week8/index.html#exercises-on-your-own-or-in-tutorial",
+    "title": "Week 8: ARIMA models",
+    "section": "Exercises (on your own or in tutorial)",
+    "text": "Exercises (on your own or in tutorial)\nComplete Exercise 1-4 from Section 9.11 of the book"
+  },
+  {
+    "objectID": "week8/index.html#exercise-solutions",
+    "href": "week8/index.html#exercise-solutions",
+    "title": "Week 8: ARIMA models",
+    "section": "Exercise solutions",
+    "text": "Exercise solutions"
+  },
+  {
+    "objectID": "week8/index.html#pre-seminar-activities",
+    "href": "week8/index.html#pre-seminar-activities",
+    "title": "Week 8: ARIMA models",
+    "section": "Pre-seminar activities",
+    "text": "Pre-seminar activities\nRead Sections 9.3-9.8 of the textbook and watch all embedded videos"
+  },
+  {
+    "objectID": "week8/index.html#assignments",
+    "href": "week8/index.html#assignments",
+    "title": "Week 8: ARIMA models",
+    "section": "Assignments",
+    "text": "Assignments\n\nIA3 is due on Monday 28 April.\nGA3 is due on Monday 05 May."
+  }
+]
