@@ -158,7 +158,7 @@ show_activity <- function(week, title = TRUE, show_solutions = TRUE) {
 
 submit <- function(schedule, assignment) {
   ass <- schedule  |>
-    filter(Assignment == assignment)
+    filter(Assignment == !!assignment)
   due <- format(ass$Due, "%e %B %Y") |> stringr::str_trim()
   url <- ass$Moodle
   button1 <- paste0("<br><br><hr><b>Due: ", due, "</b><br>",

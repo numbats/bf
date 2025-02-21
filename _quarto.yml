@@ -6,6 +6,8 @@ project:
   - "!/slides"
   - "!/handouts"
   - "activities.qmd"
+  resources:
+    - "CNAME"
 
 website:
   title: "ETF3231/ETF5231 Business Forecasting"
