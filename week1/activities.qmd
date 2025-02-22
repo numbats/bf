@@ -278,6 +278,11 @@ It is disaggregated by 3 key variables:
 * `Region`: The tourism regions are formed through the aggregation of Statistical Local Areas (SLAs) which are defined by the various State and Territory tourism authorities according to their research and marketing needs
 * `Purpose`: Stopover purpose of visit: "Holiday", "Visiting friends and relatives", "Business", "Other reason".
 
+Below is a preview.
+
+![](figs/Tourism.png){width=450px}
+
+
 Calculate the total quarterly tourists visiting Victoria from the `tourism` dataset.
 
 ```{webr}
