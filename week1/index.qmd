@@ -44,8 +44,9 @@ show_activity(week, show_solutions = FALSE)
 The main tasks for Week 1 tutorials will be:
 
 1. To ensure that you have successfully installed R and RStudio on your own laptop.
-2. Work your way through **Getting started** (5 modules) and **Writing documents** (1 module). This is material we have prepared for you and other Monash students working in R. You should do these at your own pace to understand the concepts.
-3. Discuss [IA1](https://bf.numbat.space/assignments/A1.html) in class. How do you go about forecasting at the moment that you are untrained? 
+2. Walk through [IA_template](../week1/IA_template.qmd.zip). Make sure you understand the quarto (qmd) file structure and make sure you can knit the file successfully to pdf format.
+3. Work your way through **Getting started** (5 modules) and **Writing documents** (1 module) in [startR](startr.numbat.space). This is material we have prepared for you and other Monash students working in R. You should do these at your own pace to understand the concepts.
+4. Discuss [IA1](https://bf.numbat.space/assignments/A1.html) in class. How do you go about forecasting at the moment that you are untrained? 
 
 Your tutors will be in your tutorial class to assist you. 
 

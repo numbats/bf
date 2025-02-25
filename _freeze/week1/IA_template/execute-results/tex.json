@@ -1,0 +1,15 @@
+{
+  "hash": "a7a032ab5566f62cc40a94510b15f0c2",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"ETF3231/5231 Individual Assignment 2\"\nauthor: \"Your name and Student ID\"\nformat: pdf\n---\n\n\n\n\n\n## Example Question 1\n\n*What is your data about (no more than 50 words)? Produce appropriate plots in order to become familiar with your data. Make sure you label your axes and plots appropriately. Comment on these. What do you see? (no more than 50 words per plot). (14 marks)*\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# This is where you add your R code\n\n6+5\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 11\n```\n\n\n:::\n:::\n\n\n\nThis is where you answer with text.\n\nNote: each question will need to be answered on a different page. Hence not remove the `\\newpage` commands.\n\n\\newpage\n## Example Question 2\n\n*Would transforming your data be useful (no more than 50 words)? Compare different transformations graphically. Choose the best transformation if you think a transformation is needed. Justify your choice (no more than 50 words). (5 marks)*\n\n\n\n\n\n::: {.cell}\n\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": null,
+    "postProcess": false
+  }
+}
