@@ -1,0 +1,40 @@
+---
+title: "ETF3231/5231 Individual Assignment 2"
+author: "Your name and Student ID"
+format: pdf
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+knitr::opts_chunk$set(echo = TRUE, eval=TRUE, error=TRUE, cache=FALSE)
+library(fpp3)
+library(readr)
+```
+
+## Example Question 1
+
+*What is your data about (no more than 50 words)? Produce appropriate plots in order to become familiar with your data. Make sure you label your axes and plots appropriately. Comment on these. What do you see? (no more than 50 words per plot). (14 marks)*
+
+```{r}
+# This is where you add your R code
+
+6+5
+
+```
+
+This is where you answer with text.
+
+Note: each question will need to be answered on a different page. Hence not remove the `\newpage` commands.
+
+\newpage
+## Example Question 2
+
+*Would transforming your data be useful (no more than 50 words)? Compare different transformations graphically. Choose the best transformation if you think a transformation is needed. Justify your choice (no more than 50 words). (5 marks)*
+
+
+
+```{r}
+
+```
