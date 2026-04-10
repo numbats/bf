@@ -1,6 +1,6 @@
 library(fpp3)
 
-## 1. --------
+# Workshop Activity 1 -----------------------------------------
 # Use the tsibble created from `tourism` for holiday travel in Victoria and Queensland. 
 # Plot the series to remind yourself what these look like.
 # Australian holiday tourism 
@@ -15,18 +15,17 @@ holidays <- tourism |>
 
 holidays |> autoplot()
 
-## 2. ---------------------
+# Workshop Activity 2 -----------------------------------------
 # Use the `ETS()` function to fit models with additive and 
 # multiplicative errors to both series. Also let `ETS()` 
 # auto select models. Explore the fitted models and their residuals. 
 
-
 fit <- holidays |>
-  model(
-    additive = ETS(Trips ~ error("A") + trend("A") + season("A")),
-    multiplicative = ETS(Trips ~ error("M") + trend("A") + season("M")),
-    auto = ETS(Trips)
-  )
+   model(
+      additive = ETS(Trips ~ error("A")),
+      multiplicative = ETS(Trips ~ error("M")),
+      auto = ETS(Trips)
+   )
 
 fit
 
@@ -49,7 +48,8 @@ fit |>
 
 fit |>
   filter(State=="Victoria") |> 
-  select(additive) |> augment()
+  select(additive) |> 
+   augment()
 
 fit |>
   filter(State=="Victoria") |> 
@@ -63,9 +63,20 @@ fit |>
   # This is a bit confusing but be aware of it
 
 fit |> 
+   filter(State=="Victoria") |> 
+   select(multiplicative) |> 
+   residuals(type="innovation")
+
+fit |> 
   filter(State=="Victoria") |> 
   select(multiplicative) |> 
   residuals(type = "response")
+
+fit |>
+   filter(State=="Victoria") |> 
+   select(multiplicative) |>
+   gg_tsresiduals()
+
 
 fit |>
   filter(State=="Queensland") |> 
@@ -76,32 +87,33 @@ fit |>
 fit
 fit |> glance()
 
-## 3. ----------------------
+# Workshop Activity 3 -----------------------------------------
 # Generate forecasts from the fitted models. 
 # Why is the 
 # multiplicative model needed for Victoria? 
 
 
-fc <- fit |> forecast()
+fc <- fit |> 
+   forecast()
 
 fc |>
   autoplot(holidays) + 
-  labs(Title="Overnight trips (thousands)")
+  labs(title="Overnight trips (thousands)")
 
 fc |> 
   filter(State=="Victoria", !.model=="auto") |> 
-  autoplot(holidays) + 
-  labs(Title="Overnight trips (thousands)")+
-  facet_wrap(vars(.model), ncol = 1)
+   autoplot(holidays) + 
+   labs(title="Victoria: Overnight trips (thousands)")+
+   facet_wrap(vars(.model), ncol = 1)
 
 fc |> 
-  filter(State=="Queensland", .model=="auto") |> 
+  filter(State=="Queensland", !.model=="auto") |> 
   autoplot(holidays) + 
-  labs(Title="Overnight trips (thousands)")+
+  labs(title="Queensland: Overnight trips (thousands)")+
   facet_wrap(vars(.model), ncol = 1)
 
 
-## 4. ------------------------- 
+# Workshop Activity 4 -----------------------------------------
 # Generate the `h02` series from the `PBS` tsibble we explored earlier using the code below.
 # Plot the data and study it's features. What ETS model would be appropriate?
 
@@ -113,7 +125,7 @@ h02 <- PBS |>
 h02 |>
   autoplot(Cost)
 
-## 5. -------------------------
+# Workshop Activity 5 -----------------------------------------
 # Find an `ETS` model and study it. 
 
 h02 |>
@@ -121,20 +133,17 @@ h02 |>
   report()
 # Comment on the damped trend
 
-h02 |>
-  model(ETS(Cost ~ error("A") + trend("A") + season("A"))) |>
-  report()
 
-## 6. -------------------------
+# Workshop Activity 6 -----------------------------------------
 # Generate forecasts for the next few years. 
 
 h02 |>
-  model(ETS(Cost~ trend("Ad"))) |> # change to Ad
+  model(ETS(Cost~ trend("A"))) |> # change to Ad
   forecast(h="8 years") |> #increase to 20 years
   autoplot(h02)
 
 
-## 7. --------------------------
+# Workshop Activity 7 -----------------------------------------
 # Combine `STL` decomposition with `ETS` to forecast the `h02` series.
 
 h02 |> 
@@ -152,9 +161,9 @@ h02 |>
 stl_fit <- h02 |>
   model(
     decomposition_model(
-      STL(log(Cost)), #notice the selected ETS(M,Ad,N) - take log() - 
+      STL((Cost)), #notice the selected ETS(M,Ad,N) - take log() - 
       ETS(season_adjust),
-      ETS(season_year)  #Change to ETS
+      SNAIVE(season_year)  #Change to ETS
     )
   )
 stl_fit |> report()
