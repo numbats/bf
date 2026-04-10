@@ -13,7 +13,7 @@ source(here::here("course_info.R"))
 * ETS models
 * Automatic model selection using the AICc
 
-## Pre-seminar activities
+## Pre-class activities
 
 Read [Sections 8.3-8.7 of the textbook](https://otexts.com/fpp3/expsmooth.html) and watch all embedded videos.
 

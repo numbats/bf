@@ -13,7 +13,7 @@ source(here::here("course_info.R"))
 * Random Walk Models
 
 
-## Pre-seminar activities
+## Pre-class activities
 
 Read [Sections 9.1-9.2 of the textbook](https://otexts.com/fpp3/arima.html) and watch all embedded videos.
 

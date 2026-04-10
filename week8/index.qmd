@@ -13,7 +13,7 @@ source(here::here("course_info.R"))
 * AR, MA, ARMA and ARIMA models
 * Selecting model orders manually and automatically
 
-## Pre-seminar activities
+## Pre-class activities
 
 Read [Sections 9.3-9.8 of the textbook](https://otexts.com/fpp3/arima.html) and watch all embedded videos
 

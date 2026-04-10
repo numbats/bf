@@ -14,7 +14,7 @@ source(here::here("course_info.R"))
 * Computing forecasts for ARIMA models
 * ARIMA vs ETS models
 
-## Pre-seminar activities
+## Pre-class activities
 
 Read [Sections 9.8-9.10 of the textbook](https://otexts.com/fpp3/arima.html) and watch all embedded videos
 

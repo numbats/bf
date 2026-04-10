@@ -13,7 +13,7 @@ source(here::here("course_info.R"))
 * Selecting predictors
 * Ex ante and ex post forecasting
 
-## Pre-seminar activities
+## Pre-class activities
 
 Read [Chapter 7 of the textbook](https://otexts.com/fpp3/regression.html) and watch all embedded videos
 
