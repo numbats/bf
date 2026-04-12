@@ -53,7 +53,7 @@ show_activity(week, show_solutions = FALSE)
 
 -   Complete Exercises 1-4 from [Section 8.8](https://otexts.com/fpp3/expsmooth-exercises.html).
 
-<!-- -   <i class="bi bi-download"></i> [Week 5 Tutorial Solution.html](Week5.html){download="Week 5 Tutorial Solution.html"} -->
+-   <i class="bi bi-download"></i> [Week 5 Tutorial Solution.html](Tutorial5Solution.html){download="Tutorial5Solution.html"}
 
 
 
