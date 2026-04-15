@@ -19,8 +19,8 @@ Read [Sections 8.3-8.7 of the textbook](https://otexts.com/fpp3/expsmooth.html) 
 
 ```{r}
 #| output: asis
-show_slides(week)
-#show_slides_ann(week)
+#show_slides(week)
+show_slides_ann(week)
 show_activity(week, show_solutions = FALSE)
 ```
 
