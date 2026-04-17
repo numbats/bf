@@ -74,6 +74,7 @@ Friday: 8 - 9am (F607) Sombut/Weiben
 
 
 
+
 ```{r}
 #| label: schedule2
 #| message: false
