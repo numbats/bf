@@ -59,8 +59,6 @@ show_activity(week, show_solutions = FALSE)
 
 -   <i class="bi bi-download"></i> [Week 6 Tutorial Solution.html](Tutorial6Solution.html){download="Tutorial6Solution.html"}
 
-
-
 ```{r, echo=FALSE}
 #| output: asis
 show_assignments(week)
