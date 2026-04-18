@@ -1,6 +1,6 @@
 library(fpp3)
 
-## 1. -------------------------------------
+# Workshop Activity 1 -----------------------------------------
 # What sorts of transformations and differencing are needed 
 # to make the `Cement` series from `aus_production` stationary? 
 # Do the tests agree with your decisions? 
@@ -21,7 +21,7 @@ aus_production |>
     log(Cement)
     ) +
   labs(title = "Cement production in Australia")
-  # log is ood enough
+  # log is good enough
 
 # Account for seasonality
 aus_production |>
@@ -68,7 +68,7 @@ aus_production |>
   # Based on KPSS
 
 
-# 2. ------------------------------------
+# Workshop Activity 2 -----------------------------------------
 # Generate the a10 and the h02 series from the PBS tsibble we explored 
 # earlier using the code below.
 
@@ -120,7 +120,7 @@ h02 |>
     )
 
 
-## 3. -------------------------------------
+# Workshop Activity 3 -----------------------------------------
 # Explore the the Algerian exports series from the `global_economy` 
 # tsibble. Is the series stationary? Is the series white noise?
   

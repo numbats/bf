@@ -18,6 +18,21 @@ source(here::here("course_info.R"))
 Read [Sections 9.1-9.2 of the textbook](https://otexts.com/fpp3/arima.html) and watch all embedded videos.
 
 
+```{r}
+#| output: asis
+show_slides(week)
+#show_slides_ann(week)
+show_activity(week, show_solutions = FALSE)
+```
+
+## Seminar Code
+
+::: {.callout appearance="minimal"}
+<!-- <i class="bi bi-download"></i> [week4-code-incomplete.R](week4-code-incomplete.R){download="week4-code-incomplete.R"} -->
+<i class="bi bi-download"></i> [week7-code.R](week7-code.R){download="week7-code.R"}
+:::
+
+
 ## Tutorial exercises
 
 ::: {.callout-note}
