@@ -80,8 +80,9 @@ readRDS(here::here("assignments/leaders.rds")) |>
 ### Submitted forecasts
 
 * [Q1](Q1.png); [Q1-zoom](Q1zoom.png)
+* [Q2](Q2.png); [Q2-zoom](Q2zoom.png)
 
-<!-- * [Q2](Q2.png); [Q2-zoom](Q2zoom.png) -->
+<!--  -->
 <!-- * [Q3](Q3.png); [Q3-zoom](Q3zoom.png) -->
 <!-- * [Q4](Q4.png); [Q4-zoom](Q4zoom.png) -->
 
