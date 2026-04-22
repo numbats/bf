@@ -22,8 +22,8 @@ What are the features of these series in terms of stationarity and what operatio
 
 3. Explore the the Algerian exports series from the `global_economy` tsibble. Is the series stationary? Is the series white noise?
 
-<!-- 4. Exam 2023 -->
+4. Exam 2023
 
-<!--        - Section A: Q2, Q3 -->
-<!--        - Section B: Q1, Q2, Q3 (a-f)  -->
-<!--        - Section C: all questions -->
+       - Section A: Q2, Q3
+       - Section B: Q1, Q2, Q3 (a-f)
+       - Section C: all questions
