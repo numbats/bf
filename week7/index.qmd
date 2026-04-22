@@ -20,8 +20,8 @@ Read [Sections 9.1-9.2 of the textbook](https://otexts.com/fpp3/arima.html) and 
 
 ```{r}
 #| output: asis
-show_slides(week)
-#show_slides_ann(week)
+#show_slides(week)
+show_slides_ann(week)
 show_activity(week, show_solutions = FALSE)
 ```
 
