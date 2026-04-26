@@ -1,3 +1,9 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
 1. Explore the Egyptian exports series. Is data stationary? What ARIMA model should be used?
 
     ```

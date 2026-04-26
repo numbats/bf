@@ -1,16 +1,16 @@
 library(fpp3)
 
 # Workshop Activity 1 -----------------------------------------
-# What sorts of transformations and differencing are needed 
-# to make the `Cement` series from `aus_production` stationary? 
-# Do the tests agree with your decisions? 
-  
+# What sorts of transformations and differencing are needed
+# to make the `Cement` series from `aus_production` stationary?
+# Do the tests agree with your decisions?
+
 
 # Australia Cement production
 aus_production |>
   autoplot(Cement) +
   labs(title = "Cement production in Australia")
-  # Fails stationarity in all three ways 
+  # Fails stationarity in all three ways
   # - not horizontal - trending
   # - increasing variance - multiplicative seasonality
   # - seasonal component predictable in the long run
@@ -52,31 +52,31 @@ aus_production |>
   )
   # verified by the ACF - however notice it is definitely NOT WN
 
-# Let's verify through more official 
+# Let's verify through more official
 aus_production |>
   features(log(Cement), feat_stl)
   # Relevant feature is the seasonal_strength
 
 aus_production |>
-  features(log(Cement), 
+  features(log(Cement),
            unitroot_nsdiffs)
   # Based on seasonal_strength feature
 
 aus_production |>
-  features(log(Cement) |> difference(12), 
+  features(log(Cement) |> difference(12),
            unitroot_ndiffs)
   # Based on KPSS
 
 
 # Workshop Activity 2 -----------------------------------------
-# Generate the a10 and the h02 series from the PBS tsibble we explored 
+# Generate the a10 and the h02 series from the PBS tsibble we explored
 # earlier using the code below.
 
 a10 <- PBS |>
   filter(ATC2 == "A10") |>
   summarise(Cost = sum(Cost))
 
-a10 |> autoplot(Cost)
+a10 |> autoplot(log(Cost))
 
 # Difference without transformation - what do you see?
 a10 |> autoplot(
@@ -89,9 +89,9 @@ a10 |> autoplot(
   # Do I need another difference?
   # Possibly
 
-a10 |> 
+a10 |>
   features(
-    difference(log(Cost),12), 
+    difference(log(Cost),12),
     unitroot_ndiffs)
 
 ## h02
@@ -110,37 +110,37 @@ h02 |> autoplot(
   difference(log(Cost),12)
   )
 
-h02 |> 
+h02 |>
   features(
     difference(log(Cost),12), unitroot_ndiffs)
 
-h02 |> 
+h02 |>
   features(
     difference(log(Cost),12), unitroot_kpss
     )
 
 
 # Workshop Activity 3 -----------------------------------------
-# Explore the the Algerian exports series from the `global_economy` 
+# Explore the the Algerian exports series from the `global_economy`
 # tsibble. Is the series stationary? Is the series white noise?
-  
+
 algeria <-global_economy |>
   filter(Country == "Algeria")
 
-algeria |> 
+algeria |>
   autoplot(Exports) +
   labs(y = "% of GDP", title = "Algerian Exports")
 
 # Data is stationary - tested
-algeria |> 
+algeria |>
   features(Exports,unitroot_ndiffs)
 
 # But data is not WN
-algeria |> 
+algeria |>
   ACF(Exports) |>
   autoplot()
 
-# Clearly not WN 
+# Clearly not WN
 # This is what we will be modelling
 
 
