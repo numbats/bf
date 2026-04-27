@@ -25,9 +25,6 @@ You will be using this data in future assignments as you will build on the analy
 <i class="bi bi-download"></i> [GA_data.csv](../assignment_data/GA_data.csv){download="GA_data.csv"}
 :::
 
-<!-- ::: {.callout appearance="minimal"} -->
-<!-- <i class="bi bi-download"></i> [GA2 suggested solution.html](GroupAssignment2Solutions.html){download="GroupAssignment2Solutions.html"} -->
-<!-- ::: -->
 
 ```{r}
 #| output: asis
