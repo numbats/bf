@@ -5,7 +5,7 @@ library(fpp3)
 
 egypt <-global_economy |>
   filter(Code == "EGY")
-  
+
 egypt |> autoplot(Exports) +
   labs(y = "% of GDP", title = "Egyptian Exports")
 
@@ -18,12 +18,12 @@ egypt |>
   features(Exports,unitroot_ndiffs)
 
 # But data is not WN
-egypt |> 
+egypt |>
   gg_tsdisplay(Exports, plot_type = "partial")
 
-fit <- global_economy |> 
+fit <- global_economy |>
   filter(Code == "EGY") |>
-  model(ARIMA(Exports)) # Fully automated 
+  model(ARIMA(Exports)) # Fully automated
 report(fit)
 # See the written model in the extra slide
 
@@ -34,7 +34,7 @@ augment(fit) |>
   features(.innov, ljung_box, lag = 10, dof = 4)
 # Cannot reject H0: WN
 
-fit |> 
+fit |>
   forecast(h=60) |>
   autoplot(global_economy) +
   labs(y = "% of GDP", title = "Egyptian Exports")
@@ -81,18 +81,18 @@ caf_fit <- global_economy |>
   model(arima210 = ARIMA(Exports ~ pdq(2,1,0)),
         arima013 = ARIMA(Exports ~ pdq(0,1,3)),
         stepwise = ARIMA(Exports),
-        fullsearch = ARIMA(Exports, 
-                           stepwise=FALSE, 
-                           trace = TRUE, 
+        fullsearch = ARIMA(Exports,
+                           stepwise=FALSE,
+                           trace = TRUE,
                            approximation = FALSE))
 ?ARIMA
 # order_constraint = p + q + P + Q <= 6 & (constant + d + D <= 2)
 
 caf_fit
 
-glance(caf_fit) |> arrange(AICc) |> select(.model:BIC) 
+glance(caf_fit) |> arrange(AICc) |> select(.model:BIC)
 
-glance(caf_fit) |> arrange(AICc) |> select(.model:BIC) |> 
+glance(caf_fit) |> arrange(AICc) |> select(.model:BIC) |>
   mutate(across(where(is.numeric), ~ num(., digits = 3)))
 
 caf_fit |>
@@ -118,12 +118,12 @@ caf_fit |> tidy()
 
 # US Consumption ------------------------
 
-us_change 
+us_change
 # Quarterly changes in these variables
 
 us_change |> autoplot(Consumption) +
   labs(y="Quarterly percentage change", title="US consumption")
-# Is it stationary - already differenced data 
+# Is it stationary - already differenced data
 
 us_change |> gg_tsdisplay(Consumption, plot_type = 'partial')
 
@@ -168,7 +168,7 @@ fit |> report()
 
 # The rest is the same - just use the forecast function
 fit <- us_change |>
-  model(arima = ARIMA(Consumption ~ PDQ(0,0,0), 
+  model(arima = ARIMA(Consumption ~ PDQ(0,0,0),
                       stepwise = FALSE, trace = TRUE,
                       approximation = FALSE))
 
@@ -226,29 +226,29 @@ fit |> select(best) |> forecast(h=20) |> autoplot(mink)
 ?ARIMA
 # Scroll down to specials
 # Can look at more models
-mink |> 
-  model(ARIMA(value, stepwise=FALSE, order_constraint = p+q+P+Q<=6)) |> 
+mink |>
+  model(ARIMA(value, stepwise=FALSE, order_constraint = p+q+P+Q<=6)) |>
   report()
 
-# Can look harder by not making any approximations 
-mink |> 
-  model(ARIMA(value, stepwise=FALSE, trace=TRUE, 
+# Can look harder by not making any approximations
+mink |>
+  model(ARIMA(value, stepwise=FALSE, trace=TRUE,
               order_constraint = p+q+P+Q<=12, #There is a 10 upper limit here
-              approximation = FALSE)) |> 
+              approximation = FALSE)) |>
   report()
 
-mink |> 
-  model(ARIMA(value~pdq(p=0:6,q=0:6), stepwise=FALSE, 
-              order_constraint = p+q+P+Q<=12, 
-              approximation = FALSE, trace=TRUE)) |> 
+mink |>
+  model(ARIMA(value~pdq(p=0:6,q=0:6), stepwise=FALSE,
+              order_constraint = p+q+P+Q<=12,
+              approximation = FALSE, trace=TRUE)) |>
   report()
 
 
 # Commonly switching off stepwise will find a reasonable model
 
-mink |> 
-  model(ARIMA(value, stepwise=FALSE)) |> 
-  forecast(h=100) |> 
+mink |>
+  model(ARIMA(value, stepwise=FALSE)) |>
+  forecast(h=100) |>
   autoplot(mink)
 
 # Web-usage ---------------------------
@@ -286,11 +286,11 @@ dcmp <- elecequip |>
   model(STL(value ~ season(window = "periodic"))) |>
   components() |>
   select(-.model)
-dcmp |> 
+dcmp |>
   autoplot(season_adjust) + xlab("Year") +
   ylab("Seasonally adjusted new orders index")
 
-dcmp |> 
+dcmp |>
   gg_tsdisplay(
     difference(season_adjust), plot_type = 'partial'
     )
@@ -320,7 +320,7 @@ fit |> report()
 
 fit <- dcmp |>
   model(
-    arima = ARIMA(season_adjust ~ PDQ(0,0,0), stepwise = FALSE, 
+    arima = ARIMA(season_adjust ~ PDQ(0,0,0), stepwise = FALSE,
                   approximation = FALSE)
   )
 fit |> report()
@@ -373,5 +373,5 @@ fit |>
 fit |>
   filter(Country == "Australia") |>
   forecast(h=10) |>
-  autoplot(global_economy) 
+  autoplot(global_economy)
 # fairly wide prediction intervals
