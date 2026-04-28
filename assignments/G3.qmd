@@ -2,26 +2,22 @@
 title: Group Assignment 3 (10%)
 ---
 
-Coming soon. 🚒
 
-<!-- The data you are to forecast is the same series you used in GA2.  -->
+The data you are to forecast is the same series you used in GA2.
 
-<!-- **Files for download**: -->
+**Files for download**:
 
-<!-- * Download the template -->
+* Download the template
 
-<!-- ::: {.callout appearance="minimal"} -->
-<!-- <i class="bi bi-download"></i> [GA3_template.qmd](../assignment_data/GA3_template.qmd){download="GA3_template.qmd"} -->
-<!-- ::: -->
+::: {.callout appearance="minimal"}
+<i class="bi bi-download"></i> [GA3_template.qmd](../assignment_data/GA3_template.qmd){download="GA3_template.qmd"}
+:::
 
-<!-- ::: {.callout appearance="minimal"} -->
-<!-- <i class="bi bi-download"></i> [GA3 suggested solutions.html](GroupAssignment3Solutions.html){download="GroupAssignment3Solutions.html"} -->
-<!-- ::: -->
 
-<!-- You are to submit both an `GA3_GroupNo.qmd` file and a compiled `GA3_GroupNo.pdf` file for your assignment. -->
+You are to submit both an `GA3_GroupNo.qmd` file and a compiled `GA3_GroupNo.pdf` file for your assignment.
 
-<!-- ```{r} -->
-<!-- #| output: asis -->
-<!-- source(here::here("course_info.R")) -->
-<!-- submit(schedule, "GA3") -->
-<!-- ``` -->
+```{r}
+#| output: asis
+source(here::here("course_info.R"))
+submit(schedule, "GA3")
+```
