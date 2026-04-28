@@ -19,9 +19,16 @@ webr:
 
 {{< include /_extensions/r-wasm/live/_knitr.qmd >}}
 
+<<<<<<< Updated upstream
 # Time series data 
 
 ## Tourism Example
+=======
+# Time series data
+
+
+## Tourism example
+>>>>>>> Stashed changes
 
 The `tourism` dataset contains the quarterly overnight trips from 1998 Q1 to 2016 Q4 across Australia.
 
