@@ -2,30 +2,23 @@
 title: Individual Assignment 4 (15%)
 ---
 
-Coming soon. 🚒
 
-<!-- **Files for download**: -->
+**Files for download**:
 
 
-<!-- * Download the template -->
+* Download the template
 
-<!-- ::: {.callout appearance="minimal"} -->
-<!-- <i class="bi bi-download"></i> [IA4_template.qmd](../assignment_data/IA4_template.qmd){download="IA4_template.qmd"} -->
-<!-- ::: -->
+::: {.callout appearance="minimal"}
+<i class="bi bi-download"></i> [IA4_template.qmd](../assignment_data/IA4_template.qmd){download="IA4_template.qmd"}
+:::
 
-<!-- ::: {.callout appearance="minimal"} -->
-<!-- <i class="bi bi-download"></i> [IA4 suggested solutions.html](Assignment4Solutions.html){download="Assignment4Solutions.html"} -->
-<!-- ::: -->
+
+You are to submit both an `IA4_NameSurname.qmd` file and a compiled `IA4_NameSurname.pdf` file for your assignment.
 
 
 
-
-<!-- You are to submit both an `IA4_NameSurname.qmd` file and a compiled `IA4_NameSurname.pdf` file for your assignment. -->
-
-
-
-<!-- ```{r} -->
-<!-- #| output: asis -->
-<!-- source(here::here("course_info.R")) -->
-<!-- submit(schedule, "IA4") -->
-<!-- ``` -->
+```{r}
+#| output: asis
+source(here::here("course_info.R"))
+submit(schedule, "IA4")
+```
