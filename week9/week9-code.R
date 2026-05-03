@@ -1,6 +1,8 @@
 library(fpp3)
 
-# US Monthly Electricity -----------------------------------------------------
+
+# Workshop Activity 1 ---------------------------------------------------------
+## US Monthly Electricity -----------------------------------------------------
 
 usmelec <- as_tsibble(fpp2::usmelec) |>
   rename(Month = index, Generation = value)
@@ -22,9 +24,9 @@ usmelec |> autoplot(
   log(Generation) |> difference(12)
   )
   # Seems stationary - let's get some help from the ACF (recall PACF has less info than ACF)
-  
+
 usmelec |> gg_tsdisplay(
-  log(Generation) |> difference(12), 
+  log(Generation) |> difference(12),
   plot_type = "partial"
   )
   # You could possible work with this
@@ -67,7 +69,7 @@ augment(fit) |>
 # Don't run takes too long - see model below
 # usmelec |>
 #   model(arima = ARIMA(log(Generation),
-#                       stepwise = FALSE, 
+#                       stepwise = FALSE,
 #                       approximation = FALSE)
 #         ) |> report()
 
@@ -90,7 +92,7 @@ fit |>
   autoplot(filter(usmelec, year(Month) >= 2005))
   # Maybe peaks a little too low but not much we can do
 
-# US Leisure and Hospitality -------------
+## US Leisure and Hospitality -------------
 leisure <- us_employment |>
   filter(Title == "Leisure and Hospitality", year(Month) > 2000) |>
   mutate(Employed = Employed/1000) |> select(Month, Employed)
@@ -115,9 +117,9 @@ leisure |>
 # Lets think about models
 # Start with the seasonal component
 
-# 
+#
 # DO NOT RUN
-# I have already run this 
+# I have already run this
 # fit_leisure <- leisure |>
 #    model(
 #      arima012011 = ARIMA(Employed ~ pdq(0,1,2) + PDQ(0,1,1)),
@@ -125,14 +127,14 @@ leisure |>
 #      auto = ARIMA(Employed, stepwise = FALSE, approx = FALSE)
 #    )
 
-fit_leisure |> 
+fit_leisure |>
   pivot_longer(everything(), names_to = "Model name", values_to = "Orders")
 
 glance(fit_leisure) |> arrange(AICc) |> select(.model:BIC)
 
 fit_leisure |> select(auto) |>  report()
 fit_leisure |> select(auto) |> gg_tsresiduals()
-fit_leisure |> select(auto) |> augment() |> 
+fit_leisure |> select(auto) |> augment() |>
   features(.innov, ljung_box, lag=24, dof=4)
 
 forecast(fit_leisure, h=36) |>
@@ -142,7 +144,7 @@ forecast(fit_leisure, h=36) |>
        y="Number of people (millions)")
   # Question: where does the trend come from?
 
-# h02 drugs -------------------------
+## h02 drugs -------------------------
 
 h02 <- PBS |>
   filter(ATC2 == "H02") |>
@@ -155,9 +157,9 @@ h02 |> autoplot(log(Cost))
 # You may choose not to take logs
 
 # Clearly seasonal
-h02 |> 
-  gg_tsdisplay(difference(log(Cost),12), 
-               lag_max = 36, 
+h02 |>
+  gg_tsdisplay(difference(log(Cost),12),
+               lag_max = 36,
                plot_type='partial')
   # Debatable whether I should take another difference.
   # Stick with d=0, D=1 for the moment
@@ -177,11 +179,11 @@ fit |> gg_tsresiduals(lag_max=36)
 
 augment(fit) |>
   features(.innov, ljung_box, lag =36, dof = 6)
-# Change lag to 24 - 36 is very long 
+# Change lag to 24 - 36 is very long
 # Spikes are small and far away
 # So overall happy with this
 
-# Go to book and show plausible alternative models 
+# Go to book and show plausible alternative models
 # You will need to do this for IA4
 
 # Best of the alternative plausible models
@@ -191,7 +193,7 @@ fit <- h02 |>
     )
 fit |> report()
 fit |> gg_tsresiduals(lag_max=36)
-# better I think 
+# better I think
 # no spike at lag 4
 
 augment(fit) |>
@@ -200,21 +202,21 @@ augment(fit) |>
 # How about lag 24
 
 # Letting R choose
-fit <- h02 |> 
+fit <- h02 |>
   model(
-    auto = ARIMA(log(Cost), stepwise = FALSE)
+    auto = ARIMA(log(Cost), stepwise = TRUE)
     )
 # No better than my 'best' model with stepwise=TRUE
 # Try with turning this off
 report(fit)
 gg_tsresiduals(fit, lag_max=36)
-# Resids look even better - still using 6 parameters 
+# Resids look even better - still using 6 parameters
 augment(fit) |>
   features(.innov, ljung_box, lag = 36, dof = 6)
 # Still failing at lag 36 - but getting closer
 # How about lag 24 - clearly cannot reject WN
 
-# Getting R to work really hard now 
+# Getting R to work really hard now
 # DO NOT RUN
 # fit_h02 <- h02 |>
 #   model(best = ARIMA(log(Cost), stepwise = FALSE,
@@ -222,7 +224,7 @@ augment(fit) |>
 #                  order_constraint = p + q + P + Q <= 9 & (constant + d + D <= 2)
 #                  )
 #   )
-# 
+
 # This will take a while now
 # You should be experimenting with these in IA4 and GA4
 # Start early because these will take a while
@@ -243,20 +245,21 @@ augment(fit_h02) |>
   features(.innov, ljung_box, lag = 36, dof = 9)
   # Success :-)
 
-# However we have a problem? 
+# However we have a problem?
 # d=1, D=1 - cannot compare this to my models
 
 # How are we going to do that
 # Test-set evaluation - see book
 
 # The forecasts
-fit_h02 |> 
-  forecast() |> 
+fit_h02 |>
+  forecast() |>
   autoplot(h02) +
   labs(y="H02 Expenditure ($AUD)")
 
 
-# Example: Australian population -------------
+# Workshop Activity 2 ---------------------------------------------------------
+## Example: Australian population -------------
 # Non-seasonal
 aus_economy <- global_economy |> filter(Code == "AUS") |>
   mutate(Population = Population/1e6)
@@ -276,7 +279,7 @@ aus_economy |>
   forecast(h = 1) |>
   accuracy(aus_economy) |>
   select(.model, ME:RMSSE)
-# ETS seems better 
+# ETS seems better
 
 # Forecasts
 aus_economy |>
@@ -295,19 +298,19 @@ aus_economy |>
        y = "People (millions)")
 
 
-# Example: Cement production ------------
+## Example: Cement production ------------
 # Seasonal data
 
 cement <- aus_production |>
   select(Cement) |>
   filter_index("1988 Q1" ~ .)
 
-cement |> autoplot(Cement) 
-# Seasonality changing 
+cement |> autoplot(Cement)
+# Seasonality changing
 
-# We are doing a train-test split 
+# We are doing a train-test split
 # Best to do a cv stretch_tsibble
-# You will do that in your assignment 
+# You will do that in your assignment
 # but it will take longer - so be prepared - start early
 
 train <- cement |> filter_index(. ~ "2007 Q4")
@@ -339,8 +342,8 @@ fit |>
   forecast(h = "2 years 6 months") |>
   accuracy(cement) |>
   select(-ME, -MPE, -ACF1)
-# ARIMA does slightly better 
-# Remember only 10 obs 
+# ARIMA does slightly better
+# Remember only 10 obs
 # So do not get too excited about it
 # But I still go with the ARIMA
 

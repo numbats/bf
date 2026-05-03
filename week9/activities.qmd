@@ -1,3 +1,9 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
 1. Identify, estimate and generate forecasts from ARIMA models for the `usmelec`, `leisure` and `h02` as specified below:
 
     ```r
