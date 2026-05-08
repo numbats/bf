@@ -18,13 +18,27 @@ source(here::here("course_info.R"))
 Read [Chapter 7 of the textbook](https://otexts.com/fpp3/regression.html) and watch all embedded videos
 
 
+
+```{r}
+#| output: asis
+#show_slides(week)
+show_slides_ann(week)
+show_activity(week, show_solutions = FALSE)
+```
+
+## Seminar Code
+
+::: {.callout appearance="minimal"}
+<!-- <i class="bi bi-download"></i> [week4-code-incomplete.R](week4-code-incomplete.R){download="week4-code-incomplete.R"} -->
+<i class="bi bi-download"></i> [week10-code.R](week10-code.R){download="week10-code.R"}
+:::
+
+
 ## Tutorial exercises
 
 ::: {.callout-note}
 
 ## Tutorial Learning Objectives
-
-
 
 :::
 
@@ -32,24 +46,6 @@ Read [Chapter 7 of the textbook](https://otexts.com/fpp3/regression.html) and wa
 
 <!-- -   <i class="bi bi-download"></i> [Week 10 Tutorial Solution.html](Week10.html){download="Week 10 Tutorial Solution.html"} -->
 
-
-<!-- # ```{r} -->
-<!-- # #| output: asis -->
-<!-- # show_slides(week) -->
-<!-- # ``` -->
-
-<!-- ## Seminar activities -->
-
-<!-- ```{r} -->
-<!-- #| child: activities.md -->
-<!-- ``` -->
-
-
-<!-- ## Seminar code -->
-
-<!-- ::: {.callout appearance="minimal"} -->
-<!-- <i class="bi bi-download"></i> [week10.R](week10.R){download="week10.R"} -->
-<!-- ::: -->
 
 
 
