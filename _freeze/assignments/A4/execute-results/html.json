@@ -1,9 +1,11 @@
 {
-  "hash": "5c0677c1759d5572d3437c51a3138526",
+  "hash": "84228d32d51d255289fe9ff6131e5ab9",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: Individual Assignment 4 (18%)\n---\n\n\n\n\n**Files for download**:\n\n\n* Download the template\n\n::: {.callout appearance=\"minimal\"}\n<i class=\"bi bi-download\"></i> [IA4_template.qmd](../assignment_data/IA4_template.qmd){download=\"IA4_template.qmd\"}\n:::\n\n::: {.callout appearance=\"minimal\"}\n<i class=\"bi bi-download\"></i> [IA4 suggested solutions.html](Assignment4Solutions.html){download=\"Assignment4Solutions.html\"}\n:::\n\n\n\n\nYou are to submit both an `IA4_NameSurname.qmd` file and a compiled `IA4_NameSurname.pdf` file for your assignment.\n\n\n\n\n\n<br><br><hr><b>Due: 19 May 2025</b><br><a href=https://learning.monash.edu/mod/assign/view.php?id=3444678 class = 'badge badge-large badge-blue'><font size='+2'>&nbsp;&nbsp;<b>Submit (ETF5231)</b>&nbsp;&nbsp;</font><br></a><br><br><hr><b>Due: 19 May 2025</b><br><a href=https://learning.monash.edu/mod/assign/view.php?id=3444677 class = 'badge badge-large badge-blue'><font size='+2'>&nbsp;&nbsp;<b>Submit (ETF3231)</b>&nbsp;&nbsp;</font><br></a>\n",
-    "supporting": [],
+    "markdown": "---\ntitle: Individual Assignment 4 (15%)\n---\n\n\n\n\n\n\n**Files for download**:\n\n\n* Download the template\n\n::: {.callout appearance=\"minimal\"}\n<i class=\"bi bi-download\"></i> [IA4_template.qmd](../assignment_data/IA4_template.qmd){download=\"IA4_template.qmd\"}\n:::\n\n\nYou are to submit both an `IA4_NameSurname.qmd` file and a compiled `IA4_NameSurname.pdf` file for your assignment.\n\n\n\n\n\n\n\n<br><br><hr><b>Due: 15 May 2026</b><br><a href=https://learning.monash.edu/mod/assign/view.php?id=5141451 class = 'badge badge-large badge-blue'><font size='+2'>&nbsp;&nbsp;<b>Submit (ETF5231)</b>&nbsp;&nbsp;</font><br></a><br><br><hr><b>Due: 15 May 2026</b><br><a href=https://learning.monash.edu/mod/assign/view.php?id=5141444 class = 'badge badge-large badge-blue'><font size='+2'>&nbsp;&nbsp;<b>Submit (ETF3231)</b>&nbsp;&nbsp;</font><br></a>\n",
+    "supporting": [
+      "A4_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

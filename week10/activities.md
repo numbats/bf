@@ -1,8 +1,0 @@
-1. Build a multiple regression model to forecast US consumption expenditure in the `us_change` tsibble. 
-
-2. Build a harmonic regression model to forecast weekly US finished motor gasoline products supplied in barrels in the `us_gasoline` tsibble. 
-
-3. Exam 2023
-
-      - Section A: Q4, Q5
-      - Section B: Q3 (g-h) 
