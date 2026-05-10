@@ -40,6 +40,15 @@ show_activity(week, show_solutions = FALSE)
 
 ## Tutorial Learning Objectives
 
+1. **Fit and forecast with `TSLM()`**.  
+    - Able to build linear time series regression models for forecasting. 
+   - Understand how to use regression models for forecasting, including selecting predictors and evaluating forecasts.
+
+2. **Evaluate regression forecasts**.  
+    - Able to use residual diagnostics and information criteria to compare models. 
+    - Able to interpret relationships on transformed scales where used. 
+    - Able to write out the regression equation for a fitted model, including interpreting coefficients and using the equation to compute forecasts.
+
 :::
 
 -   Complete Exercises 1-7 from [Section 7.10 of the book](https://otexts.com/fpp3/regression-exercises.html).
