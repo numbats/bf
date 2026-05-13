@@ -1,7 +1,7 @@
 library(fpp3)
 
-## 1. ------------------------------------------------------------------
-# Build a multiple regression model to forecast US consumption expenditure in the us_change tsibble.
+# Workshop Activity 1 ---------------------------------------------------------
+## Build a multiple regression model to forecast US consumption expenditure in the us_change tsibble.
 
 # Percentage changes of these variables
 us_change
@@ -15,25 +15,25 @@ us_change |>
 
 # GGally package - Di Cook
 us_change %>%
-  GGally::ggpairs(columns = 2:6) 
+  GGally::ggpairs(columns = 2:6)
 
 my_fn <- function(data, mapping, ...){
-    p <- ggplot(data = data, mapping = mapping) + 
-      geom_point() + 
+    p <- ggplot(data = data, mapping = mapping) +
+      geom_point() +
       geom_smooth(method=lm, se=FALSE )
   }
 
 us_change %>%
   GGally::ggpairs(columns = 2:6,
-                  lower = list(continuous = my_fn)) 
-  
-# Select variables  
+                  lower = list(continuous = my_fn))
+
+# Select variables
 
 us_change
 
 2^4 #models
 2^10
-2^20 # over a million 
+2^20 # over a million
 
 # Notice how fast
 fit_all <- us_change %>%
@@ -56,6 +56,12 @@ fit_all <- us_change %>%
     TSLM(Consumption ~ 1 ),
   )
 
+# The best model contains all four predictors
+# Clear separation between the models in the first four rows - first three almost identical AICc
+# Income and Savings more important than Production and Unemployment
+# Could drop either Production or Unemployment (they are highly negatively correlated)
+# Hence, most of the predictive information in Production is also contained in the Unemployment variable.
+
 glance(fit_all) %>%
   select(.model, AICc, BIC, CV) %>%
   arrange(AICc)
@@ -63,9 +69,9 @@ glance(fit_all) %>%
 # Interaction effects
 fit_inter <- us_change %>%
   model(
-    TSLM(Consumption ~ Income + Savings + Production + Unemployment 
+    TSLM(Consumption ~ Income + Savings + Production + Unemployment
          + Income * Unemployment),
-  ) 
+  )
 
 fit_inter %>% glance() %>% select(.model, AICc,CV)
 
@@ -116,13 +122,13 @@ us_change |>
 
 # Scenario based forecasting
 
-future_scenarios <- 
+future_scenarios <-
   scenarios(
-    Increase = 
-      new_data(us_change, 4) |> 
+    Increase =
+      new_data(us_change, 4) |>
       mutate(Income=1, Savings=0.5, Unemployment=0, Production=0),
-    Decrease = 
-      new_data(us_change, 4) |> 
+    Decrease =
+      new_data(us_change, 4) |>
       mutate(Income=-1, Savings=-0.5, Unemployment=0, Production=0),
     names_to = "Scenario")
 
@@ -134,23 +140,31 @@ us_change %>% autoplot(Consumption) +
   labs(title = "US consumption", y = "% change")
 
 
-## 2.  ------------------------
-# Build a harmonic regression model to forecast weekly US finished motor gasoline products 
-# supplied in barrels in the us_gasoline tsibble.
+# Workshop Activity 2 ---------------------------------------------------------
+## Build a harmonic regression model to forecast weekly US finished motor gasoline products
+## supplied in barrels in the us_gasoline tsibble.
 
-# Weekly data with Fourier terms
+## Weekly data with Fourier terms
 
 us_gasoline  |>
   autoplot(Barrels) +
   labs(title = "Weekly US finished motor gasoline product supplied (million barrels)")
 
-us_gasoline |> 
+us_gasoline |>
   gg_season(Barrels)
 
-us_gasoline |> 
-  model(STL()) |> 
-  components() |> 
+stl_gasoline <-us_gasoline |>
+  model(STL())
+
+stl_gasoline |>
+  components() |>
   autoplot()
+
+stl_gasoline |>
+  components() |>
+  select(season_year) |>
+  gg_season()
+
 
 fit <- us_gasoline |>
   model(
@@ -184,9 +198,12 @@ fit |>
   select(K06) |>
   gg_tsresiduals()
 
+# Next week we learn how to fit ARIMA models to deal with dynamics
+# Dynamic regression
+
 fit |>
   select(K06) |>
-  forecast(h="3 years") |> 
+  forecast(h="3 years") |>
   autoplot(us_gasoline)
 
 
