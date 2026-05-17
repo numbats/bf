@@ -1,3 +1,10 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+
 1. Review the model for US gasoline data from last week to now be a dynamic harmonic regression model. 
 
 
@@ -52,12 +59,5 @@
 
       - Section A: Q4
       - Section B: Q3 (i-j) 
-      - Section E: all questions
-      
-4. Exam 2023
-
-      - Section A: Q6
-      - Section B: Q3 (i-j) 
-      - Section D: all questions
       - Section E: all questions
 

@@ -18,6 +18,22 @@ source(here::here("course_info.R"))
 
 Read [Chapter 10 of the textbook](https://otexts.com/fpp3/dynamic.html) and watch all embedded videos
 
+
+```{r}
+#| output: asis
+show_slides(week)
+#show_slides_ann(week)
+show_activity(week, show_solutions = FALSE)
+```
+
+## Seminar Code
+
+::: {.callout appearance="minimal"}
+<!-- <i class="bi bi-download"></i> [week4-code-incomplete.R](week4-code-incomplete.R){download="week4-code-incomplete.R"} -->
+<i class="bi bi-download"></i> [week11-code.R](week11-code.R){download="week11-code.R"}
+:::
+
+
 ## Tutorial exercises
 
 ::: {.callout-note}
