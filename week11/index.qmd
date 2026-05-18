@@ -51,7 +51,7 @@ show_activity(week, show_solutions = FALSE)
 
 :::
 
--   Complete Exercises 1-7 from [Section 10.7 of the book](https://otexts.com/fpp3/dynamic-exercises.html).
+-   Complete Exercises 1, 2, 4, 5, 6, and 7 from [Section 10.7 of the book](https://otexts.com/fpp3/dynamic-exercises.html).
 
 <!-- -   <i class="bi bi-download"></i> [Week 11 Tutorial Solution.html](Tutorial11Solution.html){download="Tutorial11Solution.html"} -->
 
