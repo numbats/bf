@@ -5,10 +5,12 @@ library(lubridate)
 ## AUSTRALIAN CAFE DATA --------------------------------------------------
 
 # Do this quickly
-aus_cafe <- aus_retail |> filter(
-  Industry == "Cafes, restaurants and takeaway food services",
-  year(Month) %in% 2004:2018
-) |> summarise(Turnover = sum(Turnover)) # add up across the states
+aus_cafe <- aus_retail |>
+  filter(
+    Industry == "Cafes, restaurants and takeaway food services",
+    year(Month) %in% 2004:2018
+    ) |> summarise(Turnover = sum(Turnover)) # add up across the states
+
 aus_cafe |> autoplot(Turnover)
 # Total monthly turnover across all states
 
@@ -22,9 +24,10 @@ cafe_fit <- aus_cafe |> model(
   `K = 4` = ARIMA(log(Turnover) ~ fourier(K = 4) + PDQ(0,0,0)),
   `K = 5` = ARIMA(log(Turnover) ~ fourier(K = 5) + PDQ(0,0,0)),
   `K = 6` = ARIMA(log(Turnover) ~ fourier(K = 6) + PDQ(0,0,0))
-)
+  )
 
 cafe_fit |> select("K = 2") |> report()
+
 glance(cafe_fit) |>
   select(.model, sigma2, log_lik, AIC, AICc, BIC)
 # Not surprising that we need all terms to deal
@@ -33,7 +36,8 @@ glance(cafe_fit) |>
 
 ## US GASOLINE ---------------------------------------------------
 # Weekly data
-us_gasoline |> autoplot(Barrels)
+us_gasoline |>
+  autoplot(Barrels)
 
 # The ugly way
 # Assuming 52 weeks in the year
@@ -43,7 +47,7 @@ us_gasoline |> autoplot(Barrels)
 # ARIMA deals with change in trends
 
 ##############################################
-# DO NOT RUN 
+# DO NOT RUN
 ##############################################
 gas_fit <- us_gasoline |>
   model(
@@ -69,8 +73,8 @@ gas_fit <- us_gasoline |>
   )
 
 
-glance(gas_fit) |> 
-  select(.model, sigma2, log_lik, AIC, AICc, BIC) |> 
+glance(gas_fit) |>
+  select(.model, sigma2, log_lik, AIC, AICc, BIC) |>
   arrange(AICc)
 
 gas_fit |>
@@ -86,16 +90,20 @@ gas_fit |>
   report()
 
 gas_fit |>
-  select(best_lm3) 
+  select(best_lm3) |>
+  gg_tsresiduals()
+  # Still hetero but cannot deal with it through transformations
+
+gas_fit |>
+  select(F6) |>
+  forecast(h = "3 years") |>
+  autoplot(us_gasoline, alpha=0.6)
 
 gas_fit |>
   select(best_lm3) |>
-  gg_tsresiduals()
-
-gas_fit |>
-  select(F6, best_lm3) |>
   forecast(h = "3 years") |>
   autoplot(us_gasoline, alpha=0.6)
+
 
 # Prediction intervals much better - although a bit of  hetero left over
 # This is the only way to handle weekly data
@@ -149,7 +157,7 @@ vic_elec_daily |>
   labs(x = "Maximum temperature", y = "Electricity demand (GW)")
 
 # Highly non-linear pattern
-# Heating for below maybe 18 degrees 
+# Heating for below maybe 18 degrees
 # min demand (18-25)
 # Cooling above 25 degrees
 # Holidays clustered within/similar to Weekends
@@ -162,7 +170,7 @@ vic_elec_daily |>
 # Let's try three different models
 
 ##############################################
-# DO NOT RUN 
+# DO NOT RUN
 ##############################################
 elec_fit <- vic_elec_daily |>
   model(
@@ -290,7 +298,7 @@ forecast(elec_fit, new_data = vic_elec_future) |>
   labs(y = "Electricity demand (GW)")
 
 forecast(elec_fit, new_data = vic_elec_future) |>
-  autoplot(vic_elec_daily |> tail(100), level = 80) + 
+  autoplot(vic_elec_daily |> tail(100), level = 80) +
   autolayer(forecast(fit_better,new_data = vic_elec_future))+
   labs(y = "Electricity demand (GW)")
 
@@ -368,7 +376,7 @@ bind_cols(fit_deterministic, fit_stochastic) |>
   autoplot(aus_visitors) +
   facet_grid(vars(.model)) +
   labs(y = "Australian International Visitors (millions)",
-       title = "Forecasts from trend models") 
+       title = "Forecasts from trend models")
 
 aus_visitors |>
   autoplot(value) +
@@ -377,7 +385,7 @@ aus_visitors |>
   autolayer(fit_deterministic |> forecast(h = 20),
             colour = "#D55E00", alpha = 0.7, level = 95) +
   labs(y = "Australian International Visitors (millions)",
-       title = "Forecasts from trend models") 
+       title = "Forecasts from trend models")
 
 
 ## AUSTRALIAN AIR PASSENGERS -------------------------------------------------
