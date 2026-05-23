@@ -5,10 +5,12 @@ library(lubridate)
 ## AUSTRALIAN CAFE DATA --------------------------------------------------
 
 # Do this quickly
-aus_cafe <- aus_retail |> filter(
-  Industry == "Cafes, restaurants and takeaway food services",
-  year(Month) %in% 2004:2018
-) |> summarise(Turnover = sum(Turnover)) # add up across the states
+aus_cafe <- aus_retail |>
+  filter(
+    Industry == "Cafes, restaurants and takeaway food services",
+    year(Month) %in% 2004:2018
+    ) |> summarise(Turnover = sum(Turnover)) # add up across the states
+
 aus_cafe |> autoplot(Turnover)
 # Total monthly turnover across all states
 
@@ -22,18 +24,46 @@ cafe_fit <- aus_cafe |> model(
   `K = 4` = ARIMA(log(Turnover) ~ fourier(K = 4) + PDQ(0,0,0)),
   `K = 5` = ARIMA(log(Turnover) ~ fourier(K = 5) + PDQ(0,0,0)),
   `K = 6` = ARIMA(log(Turnover) ~ fourier(K = 6) + PDQ(0,0,0))
-)
+  )
 
 cafe_fit |> select("K = 2") |> report()
+
 glance(cafe_fit) |>
   select(.model, sigma2, log_lik, AIC, AICc, BIC)
 # Not surprising that we need all terms to deal
 # with this complicated seasonal pattern - so using max dof to use
 
 
+## AUSTRALIAN AIR PASSENGERS -------------------------------------------------
+aus_airpassengers |>
+  autoplot(Passengers) +
+  labs(y = "Passengers (millions)",
+       title = "Total annual air passengers")
+
+fit_deterministic <- aus_airpassengers |>
+  model(deterministic = ARIMA(Passengers ~ 1 + trend() + pdq(d = 0)))
+report(fit_deterministic)
+
+fit_stochastic <- aus_airpassengers |>
+  model(stochastic = ARIMA(Passengers ~ 1 + pdq(d = 1)))
+report(fit_stochastic)
+
+fc_deterministic <- forecast(fit_deterministic, h = 200)
+fc_stochastic <- forecast(fit_stochastic, h = 200)
+
+aus_airpassengers |>
+  autoplot(Passengers) +
+  autolayer(fc_stochastic, colour = "#0072B2", level = 95) +
+  autolayer(fc_deterministic, colour = "#D55E00", alpha = 0.65, level = 95) +
+  labs(y = "Air passengers (millions)",
+       title = "Forecasts from trend models")
+
+
+# Workshop Activity 1 ---------------------------------------------------------
 ## US GASOLINE ---------------------------------------------------
 # Weekly data
-us_gasoline |> autoplot(Barrels)
+us_gasoline |>
+  autoplot(Barrels)
 
 # The ugly way
 # Assuming 52 weeks in the year
@@ -43,34 +73,34 @@ us_gasoline |> autoplot(Barrels)
 # ARIMA deals with change in trends
 
 ##############################################
-# DO NOT RUN 
+# DO NOT RUN
 ##############################################
-gas_fit <- us_gasoline |>
-  model(
-    F1 = ARIMA(Barrels ~ fourier(K = 1) + PDQ(0,0,0)),
-    F2 = ARIMA(Barrels ~ fourier(K = 2) + PDQ(0,0,0)),
-    F3 = ARIMA(Barrels ~ fourier(K = 3) + PDQ(0,0,0)),
-    F4 = ARIMA(Barrels ~ fourier(K = 4) + PDQ(0,0,0)),
-    F5 = ARIMA(Barrels ~ fourier(K = 5) + PDQ(0,0,0)),
-    F6 = ARIMA(Barrels ~ fourier(K = 6) + PDQ(0,0,0)),
-    F7 = ARIMA(Barrels ~ fourier(K = 7) + PDQ(0,0,0)),
-    F8 = ARIMA(Barrels ~ fourier(K = 8) + PDQ(0,0,0)),
-    F9 = ARIMA(Barrels ~ fourier(K = 9) + PDQ(0,0,0)),
-    F10 = ARIMA(Barrels ~ fourier(K = 10) + PDQ(0,0,0)),
-    F11 = ARIMA(Barrels ~ fourier(K = 11) + PDQ(0,0,0)),
-    F12 = ARIMA(Barrels ~ fourier(K = 12) + PDQ(0,0,0)),
-    F13 = ARIMA(Barrels ~ fourier(K = 13) + PDQ(0,0,0)),
-    F14 = ARIMA(Barrels ~ fourier(K = 14) + PDQ(0,0,0)),
-    best_lm = TSLM(Barrels ~ trend(knots = yearweek(c("2006 W1", "2013 W1"))) + fourier(K = 6)), #these are identical
-    best_lm2 = ARIMA(Barrels ~ trend(knots = yearweek(c("2006 W1", "2013 W1"))) + fourier(K = 6)
-                     + pdq(0,0,0) + PDQ(0,0,0)),
-    best_lm3 = ARIMA(Barrels ~ trend(knots = yearweek(c("2006 W1", "2013 W1"))) + fourier(K = 6)
-                     + PDQ(0,0,0))
-  )
+# gas_fit <- us_gasoline |>
+#   model(
+#     F1 = ARIMA(Barrels ~ fourier(K = 1) + PDQ(0,0,0)),
+#     F2 = ARIMA(Barrels ~ fourier(K = 2) + PDQ(0,0,0)),
+#     F3 = ARIMA(Barrels ~ fourier(K = 3) + PDQ(0,0,0)),
+#     F4 = ARIMA(Barrels ~ fourier(K = 4) + PDQ(0,0,0)),
+#     F5 = ARIMA(Barrels ~ fourier(K = 5) + PDQ(0,0,0)),
+#     F6 = ARIMA(Barrels ~ fourier(K = 6) + PDQ(0,0,0)),
+#     F7 = ARIMA(Barrels ~ fourier(K = 7) + PDQ(0,0,0)),
+#     F8 = ARIMA(Barrels ~ fourier(K = 8) + PDQ(0,0,0)),
+#     F9 = ARIMA(Barrels ~ fourier(K = 9) + PDQ(0,0,0)),
+#     F10 = ARIMA(Barrels ~ fourier(K = 10) + PDQ(0,0,0)),
+#     F11 = ARIMA(Barrels ~ fourier(K = 11) + PDQ(0,0,0)),
+#     F12 = ARIMA(Barrels ~ fourier(K = 12) + PDQ(0,0,0)),
+#     F13 = ARIMA(Barrels ~ fourier(K = 13) + PDQ(0,0,0)),
+#     F14 = ARIMA(Barrels ~ fourier(K = 14) + PDQ(0,0,0)),
+#     best_lm = TSLM(Barrels ~ trend(knots = yearweek(c("2006 W1", "2013 W1"))) + fourier(K = 6)), #these are identical
+#     best_lm2 = ARIMA(Barrels ~ trend(knots = yearweek(c("2006 W1", "2013 W1"))) + fourier(K = 6)
+#                      + pdq(0,0,0) + PDQ(0,0,0)),
+#     best_lm3 = ARIMA(Barrels ~ trend(knots = yearweek(c("2006 W1", "2013 W1"))) + fourier(K = 6)
+#                      + PDQ(0,0,0))
+#   )
 
 
-glance(gas_fit) |> 
-  select(.model, sigma2, log_lik, AIC, AICc, BIC) |> 
+glance(gas_fit) |>
+  select(.model, sigma2, log_lik, AIC, AICc, BIC) |>
   arrange(AICc)
 
 gas_fit |>
@@ -80,28 +110,33 @@ gas_fit |>
 gas_fit |>
   select(F6) |>
   gg_tsresiduals()
+  # Some hetero but cannot deal with it through transformations
 
 gas_fit |>
   select(best_lm3) |>
   report()
 
 gas_fit |>
-  select(best_lm3) 
+  select(best_lm3) |>
+  gg_tsresiduals()
+  # Still hetero but cannot deal with it through transformations
+
+gas_fit |>
+  select(F6) |>
+  forecast(h = "3 years") |>
+  autoplot(us_gasoline, alpha=0.6)
 
 gas_fit |>
   select(best_lm3) |>
-  gg_tsresiduals()
-
-gas_fit |>
-  select(F6, best_lm3) |>
   forecast(h = "3 years") |>
   autoplot(us_gasoline, alpha=0.6)
+
 
 # Prediction intervals much better - although a bit of  hetero left over
 # This is the only way to handle weekly data
 
 
-
+# Workshop Activity 2 ---------------------------------------------------------
 ## VICTORIAN ELECTRICITY ---------------------------------------------
 # Daily data with annual and weekly seasonality
 
@@ -149,7 +184,7 @@ vic_elec_daily |>
   labs(x = "Maximum temperature", y = "Electricity demand (GW)")
 
 # Highly non-linear pattern
-# Heating for below maybe 18 degrees 
+# Heating for below maybe 18 degrees
 # min demand (18-25)
 # Cooling above 25 degrees
 # Holidays clustered within/similar to Weekends
@@ -162,22 +197,23 @@ vic_elec_daily |>
 # Let's try three different models
 
 ##############################################
-# DO NOT RUN 
+# DO NOT RUN
 ##############################################
-elec_fit <- vic_elec_daily |>
-  model(
-    ets = ETS(Demand),
-    arima = ARIMA(log(Demand)),
-    dhr = ARIMA(log(Demand) ~ Temperature + I(Temperature^2) +
-                  (Day_Type == "Weekday") +
-                  fourier(period = "year", K = 4))
-  )
+# elec_fit <- vic_elec_daily |>
+#   model(
+#     ets = ETS(Demand),
+#     arima = ARIMA(log(Demand)),
+#     dhr = ARIMA(log(Demand) ~ Temperature + I(Temperature^2) +
+#                   (Day_Type == "Weekday") +
+#                   fourier(period = "year", K = 4))
+#   )
 
 # I() treats this a new variable rather than interaction
 # Modelling with quadratic is fine in this case
 # within the range of the data/temperature
 # y=f(x,x^2) not y=f(t,t^2)
 
+elec_fit
 
 # On the training data
 accuracy(elec_fit) |> arrange(RMSE)
@@ -252,16 +288,16 @@ elec_fit |>
 # DO NOT RUN
 #############################################################
 
-fit_better <- vic_elec_daily |>
-  model(
-    ARIMA(
-      Demand ~ Temperature + I(Temperature^2) +
-        (Day_Type == "Weekday") +
-        fourier(period="year",K=4) +
-        PDQ(period = "week") +
-        pdq(0:7),
-      stepwise=FALSE, order_constraint = p + q + P + Q <= 10)
-  )
+# fit_better <- vic_elec_daily |>
+#   model(
+#     ARIMA(
+#       Demand ~ Temperature + I(Temperature^2) +
+#         (Day_Type == "Weekday") +
+#         fourier(period="year",K=4) +
+#         PDQ(period = "week") +
+#         pdq(0:7),
+#       stepwise=FALSE, order_constraint = p + q + P + Q <= 10)
+#   )
 
 fit_better |> report()
 fit_better |> gg_tsresiduals()
@@ -290,7 +326,7 @@ forecast(elec_fit, new_data = vic_elec_future) |>
   labs(y = "Electricity demand (GW)")
 
 forecast(elec_fit, new_data = vic_elec_future) |>
-  autoplot(vic_elec_daily |> tail(100), level = 80) + 
+  autoplot(vic_elec_daily |> tail(100), level = 80) +
   autolayer(forecast(fit_better,new_data = vic_elec_future))+
   labs(y = "Electricity demand (GW)")
 
@@ -368,7 +404,7 @@ bind_cols(fit_deterministic, fit_stochastic) |>
   autoplot(aus_visitors) +
   facet_grid(vars(.model)) +
   labs(y = "Australian International Visitors (millions)",
-       title = "Forecasts from trend models") 
+       title = "Forecasts from trend models")
 
 aus_visitors |>
   autoplot(value) +
@@ -377,30 +413,6 @@ aus_visitors |>
   autolayer(fit_deterministic |> forecast(h = 20),
             colour = "#D55E00", alpha = 0.7, level = 95) +
   labs(y = "Australian International Visitors (millions)",
-       title = "Forecasts from trend models") 
-
-
-## AUSTRALIAN AIR PASSENGERS -------------------------------------------------
-aus_airpassengers |>
-  autoplot(Passengers) +
-  labs(y = "Passengers (millions)",
-       title = "Total annual air passengers")
-
-fit_deterministic <- aus_airpassengers |>
-  model(deterministic = ARIMA(Passengers ~ 1 + trend() + pdq(d = 0)))
-report(fit_deterministic)
-
-fit_stochastic <- aus_airpassengers |>
-  model(stochastic = ARIMA(Passengers ~ 1 + pdq(d = 1)))
-report(fit_stochastic)
-
-fc_deterministic <- forecast(fit_deterministic, h = 200)
-fc_stochastic <- forecast(fit_stochastic, h = 200)
-
-aus_airpassengers |>
-  autoplot(Passengers) +
-  autolayer(fc_stochastic, colour = "#0072B2", level = 95) +
-  autolayer(fc_deterministic, colour = "#D55E00", alpha = 0.65, level = 95) +
-  labs(y = "Air passengers (millions)",
        title = "Forecasts from trend models")
+
 
