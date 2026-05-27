@@ -7,21 +7,45 @@ week <- 12
 source(here::here("course_info.R"))
 ```
 
-<!-- ## What you will learn this week -->
+## What you will learn this week
 
-<!-- * Review Assignment 1 -->
-<!-- * Announce winner of the forecasting competition -->
-<!-- * Discuss exam -->
+* Review Assignment 1
+* Announce winner of the forecasting competition
+* Discuss exam
 
-<!-- ## Pre-seminar activities -->
+## Pre-class activities
 
-<!-- Catch up on any exercises not yet done -->
+Catch up on any exercises not yet done
 
 
-<!-- ## Tutorial exercises -->
+<!-- ```{r} -->
+<!-- #| output: asis -->
+<!-- show_slides(week) -->
+<!-- # show_slides_ann(week) -->
+<!-- # show_activity(week, show_solutions = FALSE) -->
+<!-- ``` -->
 
-<!-- -   [Tutorial learning objectives](tute-lo.qmd). -->
-<!-- -   <i class="bi bi-download"></i> [Week 12 Tutorial Solution.html](Tutorial12Solution.html){download="Week 12 Tutorial Solution.html"} -->
+
+## Tutorial exercises
+
+
+::: {.callout-note}
+
+## Tutorial Learning Objectives
+
+**The key points to understand**
+
+- dynamic regression = regression model + ARIMA errors
+- the difference between regression errors and white-noise innovations
+- how to expand the model formula using lag/backshift notation
+- how to form forecast equations by replacing future errors with zero and future values with forecasts
+
+:::
+
+
+
+-   Complete Q2 and Q7 from Tutorial 11 and Q16 from Tutorial 8. 
+
 
 
 
@@ -43,7 +67,7 @@ source(here::here("course_info.R"))
 
 ## Past exams
 
-* [[2023](exams/Exam2023.pdf)] [[2024](exams/Exam2024.pdf)] 
+* [[2023](exams/Exam2023.pdf)] [[2024](exams/Exam2024.pdf)][[2025](exams/Exam2025.pdf)]  
 
 
 ```{r, echo=FALSE}
