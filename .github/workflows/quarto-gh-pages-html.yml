@@ -48,6 +48,9 @@ jobs:
         with:
           use-public-rspm: true
 
+      - name: Install Rcpp and RcppArmadillo as binaries
+        run: Rscript -e 'install.packages(c("Rcpp", "RcppArmadillo"), type = "binary")'
+
       - uses: r-lib/actions/setup-renv@v2
 
       - name: Install Quarto
