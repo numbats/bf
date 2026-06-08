@@ -28,7 +28,7 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
   RENV_CONFIG_SANDBOX_ENABLED: false
   RENV_CONFIG_INSTALL_TRANSACTIONAL: false
-  RENV_CONFIG_EXTERNAL_LIBRARIES: /usr/lib/R/library
+  RENV_CONFIG_INSTALL_STAGED: false
 
 jobs:
   build:
@@ -50,7 +50,7 @@ jobs:
 
       - name: Install R build tools from CRAN repo
         run: |
-          sudo apt-get install -y r-base-dev
+          sudo apt-get install -y r-base-dev liblapack-dev libblas-dev libopenblas-dev
 
       - uses: r-lib/actions/setup-renv@v2
 
