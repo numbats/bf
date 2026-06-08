@@ -44,7 +44,13 @@ jobs:
         with:
           use-public-rspm: true
 
-      - uses: r-lib/actions/setup-renv@v2
+      - name: Restore renv packages
+        run: |
+          Rscript -e '
+            options(renv.config.install.transactional = FALSE)
+            options(renv.config.sandbox.enabled = FALSE)
+            renv::restore()
+          '
 
       - name: Install Quarto
         uses: quarto-dev/quarto-actions/setup@v2
