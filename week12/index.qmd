@@ -38,7 +38,7 @@ show_slides(week)
 - dynamic regression = regression model + ARIMA errors
 - the difference between regression errors and white-noise innovations
 - how to expand the model formula using lag/backshift notation
-- how to form forecast equations by replacing future errors with zero and future values with forecasts
+- how to form forecast equations by replacing future errors with zero and future values with forecasts 
 
 :::
 
