@@ -24,6 +24,9 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -33,7 +36,7 @@ jobs:
       - name: Install R package dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y libmagick++-dev libudunits2-dev libgdal-dev gdal-bin libgeos-dev libproj-dev libsqlite3-dev libssl-dev
+          sudo apt-get install -y libmagick++-dev libudunits2-dev libgdal-dev gdal-bin libgeos-dev libproj-dev libsqlite3-dev libssl-dev liblapack-dev libblas-dev libgfortran-12-dev
 
       - uses: r-lib/actions/setup-r@v2
         with:
