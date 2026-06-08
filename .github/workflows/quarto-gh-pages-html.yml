@@ -52,7 +52,14 @@ jobs:
         run: |
           sudo apt-get install -y r-base-dev liblapack-dev libblas-dev libopenblas-dev
 
-      - uses: r-lib/actions/setup-renv@v2
+      - name: Restore renv packages
+        run: |
+          Rscript -e '
+            source("renv/activate.R")
+            options(renv.config.install.staged = FALSE)
+            options(renv.config.install.transactional = FALSE)
+            renv::restore(prompt = FALSE)
+          '
 
       - name: Install Quarto
         uses: quarto-dev/quarto-actions/setup@v2
