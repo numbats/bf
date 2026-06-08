@@ -52,20 +52,9 @@ jobs:
         run: |
           sudo apt-get install -y r-base-dev liblapack-dev libblas-dev libopenblas-dev
 
-      - name: Restore renv packages
-        run: |
-          Rscript -e '
-            source("renv/activate.R")
-            options(renv.config.install.staged = FALSE)
-            options(renv.config.install.transactional = FALSE)
-            renv::restore(prompt = FALSE)
-          '
-
-      - name: Debug RcppArmadillo load failure
-        if: failure()
-        run: |
-          Rscript -e 'tryCatch(library("RcppArmadillo"), error = function(e) message("LOAD ERROR: ", conditionMessage(e)))'
-          find /home/runner -name "RcppArmadillo.so" 2>/dev/null | xargs ldd 2>/dev/null || true
+      - uses: r-lib/actions/setup-renv@v2
+        with:
+          cache-version: 2
 
       - name: Install Quarto
         uses: quarto-dev/quarto-actions/setup@v2
