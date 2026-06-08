@@ -24,37 +24,22 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-  RENV_CONFIG_SANDBOX_ENABLED: false
-  RENV_CONFIG_INSTALL_TRANSACTIONAL: false
-  RENV_CONFIG_INSTALL_STAGED: false
-
 jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
 
-      - name: Remove local R profile to avoid overriding runner environment
-        run: rm -f .Rprofile
-
-      - name: Install system libraries
+      - name: Install R package dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y libmagick++-dev libudunits2-dev libgdal-dev gdal-bin libgeos-dev libproj-dev libsqlite3-dev libssl-dev
+          sudo apt-get install -y libmagick++-dev libudunits2-dev libgdal-dev gdal-bin libgeos-dev libproj-dev libsqlite3-dev libssl-dev r-base-dev gfortran
 
       - uses: r-lib/actions/setup-r@v2
         with:
           use-public-rspm: true
 
-      - name: Install R build tools from CRAN repo
-        run: |
-          sudo apt-get install -y r-base-dev liblapack-dev libblas-dev libopenblas-dev
-
       - uses: r-lib/actions/setup-renv@v2
-        with:
-          cache-version: 2
 
       - name: Install Quarto
         uses: quarto-dev/quarto-actions/setup@v2
