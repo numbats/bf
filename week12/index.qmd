@@ -68,7 +68,9 @@ show_slides(week)
 ## Past exams
 
 * [[2023](exams/Exam2023.pdf)] [[2024](exams/Exam2024.pdf)][[2025](exams/Exam2025.pdf)]  
-* Exam solutions: [[2023](exams/Exam2023_solutions.pdf)][[2024](exams/Exam2024_solutions.pdf)][[2025](exams/Exam2025_solutions.pdf)]
+
+<!-- * Exam solutions: [[2023](exams/Exam2023_solutions.pdf)][[2024](exams/Exam2024_solutions.pdf)][[2025](exams/Exam2025_solutions.pdf)] -->
+
 ```{r, echo=FALSE}
 #| output: asis
 show_assignments(week)
