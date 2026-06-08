@@ -26,6 +26,7 @@ concurrency:
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  RENV_CONFIG_SANDBOX_ENABLED: false
 
 jobs:
   build:
