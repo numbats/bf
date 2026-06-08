@@ -61,6 +61,12 @@ jobs:
             renv::restore(prompt = FALSE)
           '
 
+      - name: Debug RcppArmadillo load failure
+        if: failure()
+        run: |
+          Rscript -e 'tryCatch(library("RcppArmadillo"), error = function(e) message("LOAD ERROR: ", conditionMessage(e)))'
+          find /home/runner -name "RcppArmadillo.so" 2>/dev/null | xargs ldd 2>/dev/null || true
+
       - name: Install Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         with:
